@@ -59,3 +59,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* define logo characteristics */
+.logo img {
+    height: 50px;  /* Adjust this number to make logo bigger/smaller */
+    width: auto;   /* Keeps proportions correct */
+    display: block;
+}
