@@ -1,10 +1,12 @@
-body { /* We can style any HTML element by using its name - here we're styling the body */
-  /* We want text that uses a clean sans-serif font, is usually 16px big and close to black */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+/* import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  color: #333;
+  color: #000000; /* black text */
   line-height: 1.6;
-  background-color: #faf7f2;
+  background-color: #faf7f2; /* warm beige background */
   margin:0 auto;
   max-width: 800px;
   padding-top: 60px;
