@@ -1,19 +1,28 @@
-/* import Montserrat font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+/* Complete CSS file for your portfolio site */
 
+/* ===== BASE STYLES ===== */
 body {
-  font-family: 'Montserrat', sans-serif;
+  /* Clean sans-serif font, 16px, dark grey text */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: #000000; /* black text */
+  color: #333;
   line-height: 1.6;
-  background-color: #faf7f2; /* warm beige background */
-  margin:0 auto;
+  
+  /* White/beige background */
+  background-color: #faf8f3;  /* Soft beige - change to #fff for pure white */
+  margin: 0;
+  padding: 0;
+}
+
+/* Main content container - centered and constrained */
+main {
   max-width: 800px;
-  padding-top: 60px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 
-/* Headings */
+/* ===== HEADINGS ===== */
 h1, h2, h3, h4, h5, h6 {
   color: #333;
   margin-top: 24px;
@@ -21,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-.big { /* This is the class we created in the HTML file, you can use it to style any element */
+.big {
   font-size: 2.5em;
 }
 
@@ -33,18 +42,21 @@ h2 {
   font-size: 1.25em;
 }
 
-/* Paragraph */
+
+/* ===== PARAGRAPHS ===== */
 p {
   margin-bottom: 1em;
   font-weight: 300;
 }
 
+
+/* ===== SECTIONS ===== */
 section {
-  margin-bottom: 2.5em;  /* We want a little more space between sections */
+  margin-bottom: 2.5em;
 }
 
-/* Links */
-/* We want the links to be a little more visible  and a different color */
+
+/* ===== LINKS ===== */
 a {
   color: #065f46;
   text-decoration: none;
@@ -53,15 +65,238 @@ a {
 a:hover {
   text-decoration: underline;
 }
-  
-/* Images */
+
+
+/* ===== IMAGES ===== */
 img {
   max-width: 100%;
   height: auto;
 }
-/* define logo characteristics */
-.logo img {
-    height: 50px;  /* Adjust this number to make logo bigger/smaller */
-    width: auto;   /* Keeps proportions correct */
-    display: block;
+
+
+/* ===== HEADER - SPLIT LAYOUT ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  margin-bottom: 40px;
+  background-color: #faf8f3;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #333;
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+}
+
+.header-right a {
+  color: #333;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.header-right a:hover {
+  text-decoration: underline;
+}
+
+
+/* ===== FOOTER - SIMPLE ===== */
+footer {
+  margin-top: 60px;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin-top: 10px;
+  color: #666;
+  font-size: 0.85em;
+}
+
+
+/* ===== CHART CONTAINERS ===== */
+.chart-container {
+  margin: 30px 0;
+}
+
+.chart-description {
+  margin-top: 10px;
+  color: #555;
+}
+
+
+/* ===== DASHBOARD GRID (for CC6) ===== */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.dashboard-chart {
+  min-height: 200px;
+}
+
+/* For mobile responsiveness - stack charts on small screens */
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ===== POLICY TOPICS AND COMMENTARY (for CC3) ===== */
+.policy-topic {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-left: 4px solid #065f46;
+  margin: 20px 0;
+}
+
+.chart-commentary {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}
+
+
+/* ===== API DESCRIPTION (for CC5) ===== */
+.api-description {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.api-description code {
+  background-color: #e8e8e8;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+
+/* ===== BIG DATA EXPLANATION (for CC8) ===== */
+.big-data-explanation {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-left: 3px solid #065f46;
+  margin: 20px 0;
+}
+
+
+/* ===== HYPOTHESIS AND FINDINGS (for CC10) ===== */
+.hypothesis {
+  font-weight: 500;
+  color: #333;
+}
+
+
+/* ===== NAVIGATION GUIDE (for index.html) ===== */
+#navigation-guide p {
+  margin-bottom: 1.2em;
+}
+
+
+/* ===== INDEX PAGE SPECIFIC STYLES ===== */
+
+/* Centered title */
+.centered-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+/* Centered quote styling */
+.centered-quote {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 700px;
+}
+
+.quote-text {
+  font-style: italic;
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.quote-author {
+  font-style: normal;
+  font-weight: 400;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Navigation links - large header style (only on index page) */
+#navigation h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+#navigation h2 a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#navigation h2 a:hover {
+  color: #065f46;
+  text-decoration: underline;
+}
+
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+  
+  main {
+    padding: 0 15px;
+  }
+  
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px 20px;
+  }
+  
+  .header-right {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .header-left h1 {
+    font-size: 1.5em;
+  }
+  
+  /* Adjust carousel item width on mobile */
+  .carousel-item {
+    flex: 0 0 300px;
+  }
 }
