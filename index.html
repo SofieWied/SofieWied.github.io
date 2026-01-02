@@ -1,149 +1,103 @@
-<!-- This HTML file provides a simple example of a portfolio page. It contains a header, a few sections, and a few charts. -->
-<!-- It works with the three css files in this folder: example1.css, example2.css and example3.css. -->
-<!-- The HTML file defines the structure of the page, and the CSS files define how it looks. -->
-<!-- The CSS examples are all designed to work with this page. Try swapping them out on line 29 and see what happens. -->
-
-<!-- Take a look around and make your own copy to adapt for your own use. -->
-
-<!-- This is a comment -->
-<!-- Comments are not displayed in the browser -->
-<!-- They can be used to leave notes in the code -->
-
+<!-- INDEX = home page -->
 <!DOCTYPE html>
-<html> 
-    <!-- HTML is heirarchial: tags like this define elements on the page. 
-    Each tag does something different. For example:
-        - The <html> tag defines the whole document.
-        - The <h1> tag defines a large heading
-        - The <p> tag defines a paragraph
-        - Tags appear as an opening <div> and closing </div> pair
-    -->
-
-<head>    
-    <!-- The head tag links to resources our page needs and defines information about it. Tags in the <head> aren't displayed on the page. -->
-
-    <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
-    <!-- Try swapping example1.css to another, and take a look at example1.css to see if you understand it-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Your Name</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <title>My Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
-
-    <!-- This is a link to the vega-lite which we're using to make graphs -->
+    
+    <!-- Vega-Lite for charts -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-
-    <style>
-        #chartGrid {
-            display: flex;
-        }
-        
-    </style>
 </head>
 
-<!-- OPENING BODY TAG -->
-<body> 
+<body>
+    <!-- HEADER - always the same!!! -->
     <header>
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="logo.jpg" alt="logo">
-                </a>
-            </div>
-        <div class="header-links">
-            <span>Sofie Wiedemeyer</span>
-            <span class="separator">|</span>
-            <a href="https://www.linkedin.com/in/sofie-wiedemeyer/" target="_blank">LinkedIn</a>
-            <span class="separator">|</span>
-            <a href="https://github.com/SofieWied/SofieWied.github.io" target="_blank">GitHub</a>
+        <div class="header-left">
+            <h1>Charts as Data</h1>
         </div>
-    </div>
-</header>
+        <nav class="header-right">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="project.html">Project</a>
+        </nav>
+    </header>
 
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="project.html">Project</a></li>
-        </ul>
-    </nav>
-<!-- The body tag contains the elements that visitors to our page will see. -->
-    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-        <!-- This is a header, it is the largest text on the page -->
-        Your name
-    </h1>
-    <p style="margin-top: 0px; color: darkblue">
-        <!-- we're setting the margin to 0px so the header and authour name are close together -->
-        Your Name | <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/">LinkedIn</a> | <a
-            href="https://www.github.com/YOUR_GITHUB">GitHub</a>
-    </p>
-    <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        This is my test page for the PP434 portfolio and project!  
-    </h3>
+    <!-- MAIN CONTENT -->
+        <main>
+        <!-- Title Section -->
+        <section id="title">
+            <h1 class="centered-title">Charts are a kind of data.</h1>
+            <blockquote class="centered-quote">
+                <p class="quote-text">
+                    "Most of us need to listen to the music to understand how beautiful it is. But often that's how we present statistics: 
+                    we just show the notes, we don't play the music."
+                </p>
+                <p class="quote-author">~ Hans Rosling ("Factfulness")</p>
+            </blockquote>
+        </section>
 
-    <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
-    <section>
-        <div class="chart-description">
-            <h2>Section 1: Simple Correlation Plot </h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
+        <!-- Why Visualization Section -->
+        <section id="why-visualization">
+            <h2>Why use data visualisations?</h2>
+            <p>
+                [PLACEHOLDER: Write based on course introduction. Explain the importance of data visualization in understanding 
+                complex data, communicating insights effectively, and enabling data-driven decision making.]
             </p>
-        </div>
-        <figure id="Location1"></figure> <!-- we give it an ID so we can put a vega-lite graph here with VegaEmbed -->
-    </section>
-
-<section>
-        <div class="chart-description">
-            <h2>Section 2: Simple Stacked (Horizontal) Bar Chart </h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
+            <p>
+                [PLACEHOLDER: Comparison of good and bad chart]
             </p>
-        </div>
-        <figure id="Location2"></figure> <!-- we give it an ID so we can put a vega-lite graph here with VegaEmbed -->
-    </section>
+        </section>
 
-<section>
-        <div class="chart-description">
-            <h2>Section 3: Inflation Plot (via OneDrive Folder on Desktop)  </h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About me</h2>
+            <p>
+                I am a Masters student in Data Science for Public Policy at the London School of Economics. My focus is on how data can be 
+                used to inform decision making, especially in policy settings. [PLACEHOLDER: Add more about your background, 
+                interests, or what drives your passion for data visualization.]
             </p>
-        </div>
-        <figure id="Location3"></figure> <!-- we give it an ID so we can put a vega-lite graph here with VegaEmbed -->
-    </section>
+            <p>
+                The charts on this page are my final submission for the PP434 Automated Data Visualisation for Policymaking course. 
+                If there is one thing I've learnt throughout this course, it is that creating "good" charts is as much an art as it 
+                is a science. Browse the links below to see my attempt at striking this balance.
+            </p>
+        </section>
 
-    <!-- Do you want to add more sections? -->
-        <!-- Try copying pasting the section above -->
-        <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
-        <!-- ... and add a new variable for the graph spec in the script at the bottom of the page -->
+        <!-- Navigation to Other Pages -->
+        <section id="navigation">
+            <h2><a href="portfolio.html">Portfolio</a></h2>
+            <h2><a href="project.html">Project</a></h2>
+        </section>
 
+        <!-- Selection of Good Charts -->
+        <section id="featured-works">
+            <h2>Featured works</h2>
+            <p>
+                 [PLACEHOLDER: Add text, change title, and add carousel of selection of good charts.]
+            </p>
+        </section>
+    </main>
+ 
 
-    <!-- This is a script, it's a way to run JavaScript code on the page -->
+    <!-- FOOTER -->
+    <footer>
+        <a href="https://www.linkedin.com/in/sofie-wiedemeyer/">LinkedIn</a> | 
+        <a href="https://github.com/SofieWied/SofieWied.github.io">GitHub</a>
+        <p>&copy; 2025 Sofie Wiedemeyer</p>
+    </footer>
+
+    <!-- JavaScript for charts -->
     <script>
-        // This is a comment in JavaScript - it's a different language to HTML and CSS
-
-        let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
-                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
-        let figure_2_spec = "https://raw.githubusercontent.com/EconomicsObservatory/datavis/refs/heads/main/newsletters/2025-04-05-liberation-day/visualisation/fig5_survey-tariff-harm.json";
-                                                                                                                    // IMPORTANT: if using a link from an online github repo, then use the RAW link!!!
-        let figure_3_spec = "C:\Users\wiede\OneDrive\Dokumente\MPA\Year 2\PP434 Automated Data Visualisation\PP434_Labs\Seminar 1\fig3_uk-oil-prices.json"; // this one is from my OneDrive folder on my desktop
-
-        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-        vegaEmbed('#Location2', figure_2_spec)
-        vegaEmbed('#Location', figure_3_spec)
-
-        // Do you want to add more graphs?
-        // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
-        // e.g. 
-        // let figure_3_spec = ...
-        // vegaEmbed('#Location3', figure_3_spec)
-
-
+        // Featured charts - replace with your actual chart specifications
+        let featured_spec1 = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json";
+        let featured_spec2 = "https://raw.githubusercontent.com/EconomicsObservatory/datavis/refs/heads/main/newsletters/2025-04-05-liberation-day/visualisation/fig5_survey-tariff-harm.json";
+        
+        vegaEmbed('#featured_chart1', featured_spec1);
+        vegaEmbed('#featured_chart2', featured_spec2);
     </script>
-
 </body>
-    
 </html>
