@@ -11,7 +11,7 @@
   "layer": [
     {
       "data": {
-        "url": "data/londonBoroughs.json",
+        "url": "https://raw.githubusercontent.com/jwoLondon/vega/4d46875e75df160d3f599c37d16f76ad516440b4/docs/data/londonBoroughs.json",
         "format": {
           "type": "topojson",
           "feature": "boroughs"
@@ -30,7 +30,7 @@
     },
     {
       "data": {
-        "url": "data/londonCentroids.json",
+        "url": "https://raw.githubusercontent.com/jwoLondon/vega/4d46875e75df160d3f599c37d16f76ad516440b4/docs/data/londonCentroids.json",
         "format": {
           "type": "json"
         }
@@ -65,7 +65,7 @@
     },
     {
       "data": {
-        "url": "data/londonTubeLines.json",
+        "url": "https://raw.githubusercontent.com/jwoLondon/vega/4d46875e75df160d3f599c37d16f76ad516440b4/docs/data/londonTubeLines.json",
         "format": {
           "type": "topojson",
           "feature": "line"
