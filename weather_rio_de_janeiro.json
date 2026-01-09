@@ -1,0 +1,3007 @@
+{
+    "city": "Rio de Janeiro",
+    "latitude": -22.91,
+    "longitude": -43.17,
+    "data": [
+        {
+            "date": "1975-01-01",
+            "temperature": 25.345161290322583,
+            "rainfall": 451.2
+        },
+        {
+            "date": "1975-02-01",
+            "temperature": 26.61785714285714,
+            "rainfall": 189.3
+        },
+        {
+            "date": "1975-03-01",
+            "temperature": 25.76774193548387,
+            "rainfall": 83.5
+        },
+        {
+            "date": "1975-04-01",
+            "temperature": 22.653333333333332,
+            "rainfall": 108.7
+        },
+        {
+            "date": "1975-05-01",
+            "temperature": 20.84193548387097,
+            "rainfall": 92.0
+        },
+        {
+            "date": "1975-06-01",
+            "temperature": 20.183333333333334,
+            "rainfall": 32.199999999999996
+        },
+        {
+            "date": "1975-07-01",
+            "temperature": 18.980645161290322,
+            "rainfall": 46.9
+        },
+        {
+            "date": "1975-08-01",
+            "temperature": 22.47741935483871,
+            "rainfall": 10.0
+        },
+        {
+            "date": "1975-09-01",
+            "temperature": 22.176666666666666,
+            "rainfall": 64.0
+        },
+        {
+            "date": "1975-10-01",
+            "temperature": 22.651612903225807,
+            "rainfall": 213.3
+        },
+        {
+            "date": "1975-11-01",
+            "temperature": 23.793333333333333,
+            "rainfall": 389.4
+        },
+        {
+            "date": "1975-12-01",
+            "temperature": 25.929032258064513,
+            "rainfall": 190.1
+        },
+        {
+            "date": "1976-01-01",
+            "temperature": 27.177419354838708,
+            "rainfall": 121.2
+        },
+        {
+            "date": "1976-02-01",
+            "temperature": 25.955172413793104,
+            "rainfall": 257.4
+        },
+        {
+            "date": "1976-03-01",
+            "temperature": 25.58709677419355,
+            "rainfall": 203.79999999999998
+        },
+        {
+            "date": "1976-04-01",
+            "temperature": 24.086666666666666,
+            "rainfall": 98.6
+        },
+        {
+            "date": "1976-05-01",
+            "temperature": 21.761290322580646,
+            "rainfall": 89.3
+        },
+        {
+            "date": "1976-06-01",
+            "temperature": 20.959999999999997,
+            "rainfall": 50.7
+        },
+        {
+            "date": "1976-07-01",
+            "temperature": 19.76451612903226,
+            "rainfall": 87.5
+        },
+        {
+            "date": "1976-08-01",
+            "temperature": 20.89032258064516,
+            "rainfall": 104.80000000000001
+        },
+        {
+            "date": "1976-09-01",
+            "temperature": 20.746666666666666,
+            "rainfall": 220.7
+        },
+        {
+            "date": "1976-10-01",
+            "temperature": 21.793548387096774,
+            "rainfall": 151.5
+        },
+        {
+            "date": "1976-11-01",
+            "temperature": 24.016666666666666,
+            "rainfall": 195.9
+        },
+        {
+            "date": "1976-12-01",
+            "temperature": 25.387096774193548,
+            "rainfall": 315.5
+        },
+        {
+            "date": "1977-01-01",
+            "temperature": 26.348387096774193,
+            "rainfall": 226.29999999999998
+        },
+        {
+            "date": "1977-02-01",
+            "temperature": 27.857142857142858,
+            "rainfall": 7.4
+        },
+        {
+            "date": "1977-03-01",
+            "temperature": 27.17096774193548,
+            "rainfall": 150.5
+        },
+        {
+            "date": "1977-04-01",
+            "temperature": 23.85666666666667,
+            "rainfall": 210.6
+        },
+        {
+            "date": "1977-05-01",
+            "temperature": 21.906451612903226,
+            "rainfall": 49.199999999999996
+        },
+        {
+            "date": "1977-06-01",
+            "temperature": 21.543333333333333,
+            "rainfall": 38.7
+        },
+        {
+            "date": "1977-07-01",
+            "temperature": 22.24516129032258,
+            "rainfall": 23.8
+        },
+        {
+            "date": "1977-08-01",
+            "temperature": 22.46451612903226,
+            "rainfall": 34.3
+        },
+        {
+            "date": "1977-09-01",
+            "temperature": 22.363333333333333,
+            "rainfall": 133.5
+        },
+        {
+            "date": "1977-10-01",
+            "temperature": 23.648387096774194,
+            "rainfall": 87.0
+        },
+        {
+            "date": "1977-11-01",
+            "temperature": 24.05666666666667,
+            "rainfall": 271.1
+        },
+        {
+            "date": "1977-12-01",
+            "temperature": 24.338709677419356,
+            "rainfall": 216.4
+        },
+        {
+            "date": "1978-01-01",
+            "temperature": 26.929032258064513,
+            "rainfall": 164.0
+        },
+        {
+            "date": "1978-02-01",
+            "temperature": 26.310714285714287,
+            "rainfall": 207.1
+        },
+        {
+            "date": "1978-03-01",
+            "temperature": 26.19677419354839,
+            "rainfall": 296.2
+        },
+        {
+            "date": "1978-04-01",
+            "temperature": 22.759999999999998,
+            "rainfall": 183.4
+        },
+        {
+            "date": "1978-05-01",
+            "temperature": 21.096774193548388,
+            "rainfall": 116.2
+        },
+        {
+            "date": "1978-06-01",
+            "temperature": 19.96333333333333,
+            "rainfall": 22.8
+        },
+        {
+            "date": "1978-07-01",
+            "temperature": 21.44193548387097,
+            "rainfall": 20.3
+        },
+        {
+            "date": "1978-08-01",
+            "temperature": 20.845161290322583,
+            "rainfall": 60.6
+        },
+        {
+            "date": "1978-09-01",
+            "temperature": 21.709999999999997,
+            "rainfall": 59.800000000000004
+        },
+        {
+            "date": "1978-10-01",
+            "temperature": 23.816129032258065,
+            "rainfall": 102.30000000000001
+        },
+        {
+            "date": "1978-11-01",
+            "temperature": 24.40666666666667,
+            "rainfall": 215.5
+        },
+        {
+            "date": "1978-12-01",
+            "temperature": 25.258064516129032,
+            "rainfall": 187.3
+        },
+        {
+            "date": "1979-01-01",
+            "temperature": 23.774193548387096,
+            "rainfall": 375.2
+        },
+        {
+            "date": "1979-02-01",
+            "temperature": 25.539285714285715,
+            "rainfall": 250.8
+        },
+        {
+            "date": "1979-03-01",
+            "temperature": 24.238709677419354,
+            "rainfall": 190.9
+        },
+        {
+            "date": "1979-04-01",
+            "temperature": 22.603333333333335,
+            "rainfall": 101.5
+        },
+        {
+            "date": "1979-05-01",
+            "temperature": 22.393548387096775,
+            "rainfall": 67.5
+        },
+        {
+            "date": "1979-06-01",
+            "temperature": 19.77,
+            "rainfall": 54.4
+        },
+        {
+            "date": "1979-07-01",
+            "temperature": 19.6,
+            "rainfall": 68.7
+        },
+        {
+            "date": "1979-08-01",
+            "temperature": 21.72258064516129,
+            "rainfall": 101.9
+        },
+        {
+            "date": "1979-09-01",
+            "temperature": 21.293333333333333,
+            "rainfall": 166.5
+        },
+        {
+            "date": "1979-10-01",
+            "temperature": 23.458064516129035,
+            "rainfall": 167.4
+        },
+        {
+            "date": "1979-11-01",
+            "temperature": 23.206666666666667,
+            "rainfall": 245.29999999999998
+        },
+        {
+            "date": "1979-12-01",
+            "temperature": 25.287096774193547,
+            "rainfall": 216.1
+        },
+        {
+            "date": "1980-01-01",
+            "temperature": 25.11935483870968,
+            "rainfall": 267.09999999999997
+        },
+        {
+            "date": "1980-02-01",
+            "temperature": 26.33448275862069,
+            "rainfall": 201.6
+        },
+        {
+            "date": "1980-03-01",
+            "temperature": 27.4741935483871,
+            "rainfall": 96.5
+        },
+        {
+            "date": "1980-04-01",
+            "temperature": 24.27,
+            "rainfall": 105.6
+        },
+        {
+            "date": "1980-05-01",
+            "temperature": 23.05806451612903,
+            "rainfall": 65.1
+        },
+        {
+            "date": "1980-06-01",
+            "temperature": 20.313333333333333,
+            "rainfall": 56.0
+        },
+        {
+            "date": "1980-07-01",
+            "temperature": 20.52258064516129,
+            "rainfall": 51.0
+        },
+        {
+            "date": "1980-08-01",
+            "temperature": 21.60967741935484,
+            "rainfall": 71.3
+        },
+        {
+            "date": "1980-09-01",
+            "temperature": 20.709999999999997,
+            "rainfall": 120.6
+        },
+        {
+            "date": "1980-10-01",
+            "temperature": 22.83225806451613,
+            "rainfall": 130.3
+        },
+        {
+            "date": "1980-11-01",
+            "temperature": 23.256666666666668,
+            "rainfall": 208.4
+        },
+        {
+            "date": "1980-12-01",
+            "temperature": 26.10967741935484,
+            "rainfall": 290.0
+        },
+        {
+            "date": "1981-01-01",
+            "temperature": 26.05483870967742,
+            "rainfall": 365.7
+        },
+        {
+            "date": "1981-02-01",
+            "temperature": 26.539285714285715,
+            "rainfall": 122.9
+        },
+        {
+            "date": "1981-03-01",
+            "temperature": 25.312903225806455,
+            "rainfall": 227.3
+        },
+        {
+            "date": "1981-04-01",
+            "temperature": 22.740000000000002,
+            "rainfall": 99.3
+        },
+        {
+            "date": "1981-05-01",
+            "temperature": 22.16774193548387,
+            "rainfall": 58.300000000000004
+        },
+        {
+            "date": "1981-06-01",
+            "temperature": 19.923333333333336,
+            "rainfall": 44.9
+        },
+        {
+            "date": "1981-07-01",
+            "temperature": 18.96451612903226,
+            "rainfall": 65.5
+        },
+        {
+            "date": "1981-08-01",
+            "temperature": 20.493548387096773,
+            "rainfall": 77.4
+        },
+        {
+            "date": "1981-09-01",
+            "temperature": 22.75,
+            "rainfall": 37.400000000000006
+        },
+        {
+            "date": "1981-10-01",
+            "temperature": 21.67096774193548,
+            "rainfall": 164.29999999999998
+        },
+        {
+            "date": "1981-11-01",
+            "temperature": 24.383333333333333,
+            "rainfall": 277.0
+        },
+        {
+            "date": "1981-12-01",
+            "temperature": 24.990322580645163,
+            "rainfall": 302.0
+        },
+        {
+            "date": "1982-01-01",
+            "temperature": 24.193548387096776,
+            "rainfall": 351.2
+        },
+        {
+            "date": "1982-02-01",
+            "temperature": 26.32857142857143,
+            "rainfall": 169.2
+        },
+        {
+            "date": "1982-03-01",
+            "temperature": 24.40967741935484,
+            "rainfall": 335.6
+        },
+        {
+            "date": "1982-04-01",
+            "temperature": 21.8,
+            "rainfall": 133.3
+        },
+        {
+            "date": "1982-05-01",
+            "temperature": 20.700000000000003,
+            "rainfall": 58.7
+        },
+        {
+            "date": "1982-06-01",
+            "temperature": 21.85,
+            "rainfall": 33.1
+        },
+        {
+            "date": "1982-07-01",
+            "temperature": 20.86774193548387,
+            "rainfall": 43.5
+        },
+        {
+            "date": "1982-08-01",
+            "temperature": 21.532258064516128,
+            "rainfall": 95.0
+        },
+        {
+            "date": "1982-09-01",
+            "temperature": 21.31,
+            "rainfall": 55.6
+        },
+        {
+            "date": "1982-10-01",
+            "temperature": 23.141935483870967,
+            "rainfall": 128.7
+        },
+        {
+            "date": "1982-11-01",
+            "temperature": 25.959999999999997,
+            "rainfall": 154.6
+        },
+        {
+            "date": "1982-12-01",
+            "temperature": 24.606451612903225,
+            "rainfall": 297.9
+        },
+        {
+            "date": "1983-01-01",
+            "temperature": 25.938709677419357,
+            "rainfall": 387.6
+        },
+        {
+            "date": "1983-02-01",
+            "temperature": 26.79642857142857,
+            "rainfall": 177.29999999999998
+        },
+        {
+            "date": "1983-03-01",
+            "temperature": 25.5258064516129,
+            "rainfall": 303.7
+        },
+        {
+            "date": "1983-04-01",
+            "temperature": 23.836666666666666,
+            "rainfall": 187.0
+        },
+        {
+            "date": "1983-05-01",
+            "temperature": 23.23548387096774,
+            "rainfall": 116.4
+        },
+        {
+            "date": "1983-06-01",
+            "temperature": 20.986666666666668,
+            "rainfall": 69.3
+        },
+        {
+            "date": "1983-07-01",
+            "temperature": 20.700000000000003,
+            "rainfall": 69.10000000000001
+        },
+        {
+            "date": "1983-08-01",
+            "temperature": 20.061290322580643,
+            "rainfall": 38.3
+        },
+        {
+            "date": "1983-09-01",
+            "temperature": 20.546666666666667,
+            "rainfall": 260.90000000000003
+        },
+        {
+            "date": "1983-10-01",
+            "temperature": 22.470967741935485,
+            "rainfall": 158.1
+        },
+        {
+            "date": "1983-11-01",
+            "temperature": 24.583333333333332,
+            "rainfall": 236.2
+        },
+        {
+            "date": "1983-12-01",
+            "temperature": 25.46451612903226,
+            "rainfall": 279.9
+        },
+        {
+            "date": "1984-01-01",
+            "temperature": 27.561290322580643,
+            "rainfall": 148.1
+        },
+        {
+            "date": "1984-02-01",
+            "temperature": 27.696551724137933,
+            "rainfall": 44.6
+        },
+        {
+            "date": "1984-03-01",
+            "temperature": 25.5258064516129,
+            "rainfall": 200.9
+        },
+        {
+            "date": "1984-04-01",
+            "temperature": 23.403333333333332,
+            "rainfall": 136.9
+        },
+        {
+            "date": "1984-05-01",
+            "temperature": 24.148387096774194,
+            "rainfall": 35.3
+        },
+        {
+            "date": "1984-06-01",
+            "temperature": 22.28666666666667,
+            "rainfall": 14.4
+        },
+        {
+            "date": "1984-07-01",
+            "temperature": 21.148387096774194,
+            "rainfall": 58.2
+        },
+        {
+            "date": "1984-08-01",
+            "temperature": 20.08709677419355,
+            "rainfall": 121.9
+        },
+        {
+            "date": "1984-09-01",
+            "temperature": 20.82,
+            "rainfall": 113.39999999999999
+        },
+        {
+            "date": "1984-10-01",
+            "temperature": 23.23548387096774,
+            "rainfall": 81.8
+        },
+        {
+            "date": "1984-11-01",
+            "temperature": 23.913333333333334,
+            "rainfall": 201.0
+        },
+        {
+            "date": "1984-12-01",
+            "temperature": 24.05483870967742,
+            "rainfall": 257.6
+        },
+        {
+            "date": "1985-01-01",
+            "temperature": 24.47741935483871,
+            "rainfall": 526.9
+        },
+        {
+            "date": "1985-02-01",
+            "temperature": 26.782142857142855,
+            "rainfall": 366.2
+        },
+        {
+            "date": "1985-03-01",
+            "temperature": 25.88064516129032,
+            "rainfall": 253.20000000000002
+        },
+        {
+            "date": "1985-04-01",
+            "temperature": 24.60666666666667,
+            "rainfall": 113.9
+        },
+        {
+            "date": "1985-05-01",
+            "temperature": 21.570967741935487,
+            "rainfall": 42.300000000000004
+        },
+        {
+            "date": "1985-06-01",
+            "temperature": 19.626666666666665,
+            "rainfall": 31.799999999999997
+        },
+        {
+            "date": "1985-07-01",
+            "temperature": 19.335483870967742,
+            "rainfall": 7.5
+        },
+        {
+            "date": "1985-08-01",
+            "temperature": 21.509677419354837,
+            "rainfall": 44.6
+        },
+        {
+            "date": "1985-09-01",
+            "temperature": 20.93,
+            "rainfall": 100.6
+        },
+        {
+            "date": "1985-10-01",
+            "temperature": 22.76774193548387,
+            "rainfall": 69.9
+        },
+        {
+            "date": "1985-11-01",
+            "temperature": 23.946666666666665,
+            "rainfall": 161.1
+        },
+        {
+            "date": "1985-12-01",
+            "temperature": 24.29032258064516,
+            "rainfall": 189.9
+        },
+        {
+            "date": "1986-01-01",
+            "temperature": 26.712903225806453,
+            "rainfall": 235.0
+        },
+        {
+            "date": "1986-02-01",
+            "temperature": 26.917857142857144,
+            "rainfall": 244.8
+        },
+        {
+            "date": "1986-03-01",
+            "temperature": 25.822580645161292,
+            "rainfall": 236.4
+        },
+        {
+            "date": "1986-04-01",
+            "temperature": 24.686666666666667,
+            "rainfall": 99.1
+        },
+        {
+            "date": "1986-05-01",
+            "temperature": 23.438709677419357,
+            "rainfall": 68.5
+        },
+        {
+            "date": "1986-06-01",
+            "temperature": 20.81,
+            "rainfall": 7.9
+        },
+        {
+            "date": "1986-07-01",
+            "temperature": 19.364516129032257,
+            "rainfall": 145.3
+        },
+        {
+            "date": "1986-08-01",
+            "temperature": 21.34193548387097,
+            "rainfall": 109.9
+        },
+        {
+            "date": "1986-09-01",
+            "temperature": 20.996666666666666,
+            "rainfall": 62.1
+        },
+        {
+            "date": "1986-10-01",
+            "temperature": 22.35483870967742,
+            "rainfall": 68.3
+        },
+        {
+            "date": "1986-11-01",
+            "temperature": 24.723333333333336,
+            "rainfall": 152.2
+        },
+        {
+            "date": "1986-12-01",
+            "temperature": 25.419354838709676,
+            "rainfall": 369.3
+        },
+        {
+            "date": "1987-01-01",
+            "temperature": 26.929032258064517,
+            "rainfall": 280.5
+        },
+        {
+            "date": "1987-02-01",
+            "temperature": 26.332142857142856,
+            "rainfall": 182.9
+        },
+        {
+            "date": "1987-03-01",
+            "temperature": 24.46451612903226,
+            "rainfall": 130.1
+        },
+        {
+            "date": "1987-04-01",
+            "temperature": 24.73,
+            "rainfall": 158.4
+        },
+        {
+            "date": "1987-05-01",
+            "temperature": 22.229032258064517,
+            "rainfall": 59.1
+        },
+        {
+            "date": "1987-06-01",
+            "temperature": 20.0,
+            "rainfall": 78.2
+        },
+        {
+            "date": "1987-07-01",
+            "temperature": 21.396774193548385,
+            "rainfall": 43.6
+        },
+        {
+            "date": "1987-08-01",
+            "temperature": 20.48709677419355,
+            "rainfall": 23.8
+        },
+        {
+            "date": "1987-09-01",
+            "temperature": 20.94333333333333,
+            "rainfall": 130.2
+        },
+        {
+            "date": "1987-10-01",
+            "temperature": 22.825806451612905,
+            "rainfall": 122.5
+        },
+        {
+            "date": "1987-11-01",
+            "temperature": 24.096666666666668,
+            "rainfall": 128.3
+        },
+        {
+            "date": "1987-12-01",
+            "temperature": 25.62258064516129,
+            "rainfall": 448.2
+        },
+        {
+            "date": "1988-01-01",
+            "temperature": 27.825806451612905,
+            "rainfall": 195.6
+        },
+        {
+            "date": "1988-02-01",
+            "temperature": 25.79655172413793,
+            "rainfall": 396.59999999999997
+        },
+        {
+            "date": "1988-03-01",
+            "temperature": 25.4,
+            "rainfall": 161.1
+        },
+        {
+            "date": "1988-04-01",
+            "temperature": 24.146666666666665,
+            "rainfall": 198.6
+        },
+        {
+            "date": "1988-05-01",
+            "temperature": 22.219354838709677,
+            "rainfall": 161.0
+        },
+        {
+            "date": "1988-06-01",
+            "temperature": 19.57,
+            "rainfall": 102.8
+        },
+        {
+            "date": "1988-07-01",
+            "temperature": 18.419354838709676,
+            "rainfall": 64.6
+        },
+        {
+            "date": "1988-08-01",
+            "temperature": 20.200000000000003,
+            "rainfall": 3.8
+        },
+        {
+            "date": "1988-09-01",
+            "temperature": 22.30666666666667,
+            "rainfall": 59.2
+        },
+        {
+            "date": "1988-10-01",
+            "temperature": 22.23225806451613,
+            "rainfall": 153.7
+        },
+        {
+            "date": "1988-11-01",
+            "temperature": 23.063333333333333,
+            "rainfall": 188.1
+        },
+        {
+            "date": "1988-12-01",
+            "temperature": 24.983870967741936,
+            "rainfall": 304.2
+        },
+        {
+            "date": "1989-01-01",
+            "temperature": 26.66774193548387,
+            "rainfall": 165.5
+        },
+        {
+            "date": "1989-02-01",
+            "temperature": 26.678571428571427,
+            "rainfall": 325.4
+        },
+        {
+            "date": "1989-03-01",
+            "temperature": 25.548387096774192,
+            "rainfall": 188.0
+        },
+        {
+            "date": "1989-04-01",
+            "temperature": 24.706666666666667,
+            "rainfall": 145.2
+        },
+        {
+            "date": "1989-05-01",
+            "temperature": 21.322580645161292,
+            "rainfall": 50.400000000000006
+        },
+        {
+            "date": "1989-06-01",
+            "temperature": 20.136666666666667,
+            "rainfall": 132.8
+        },
+        {
+            "date": "1989-07-01",
+            "temperature": 18.848387096774193,
+            "rainfall": 75.5
+        },
+        {
+            "date": "1989-08-01",
+            "temperature": 20.506451612903227,
+            "rainfall": 53.2
+        },
+        {
+            "date": "1989-09-01",
+            "temperature": 21.540000000000003,
+            "rainfall": 133.6
+        },
+        {
+            "date": "1989-10-01",
+            "temperature": 20.906451612903226,
+            "rainfall": 98.6
+        },
+        {
+            "date": "1989-11-01",
+            "temperature": 23.35,
+            "rainfall": 159.5
+        },
+        {
+            "date": "1989-12-01",
+            "temperature": 24.490322580645163,
+            "rainfall": 142.3
+        },
+        {
+            "date": "1990-01-01",
+            "temperature": 27.916129032258063,
+            "rainfall": 88.7
+        },
+        {
+            "date": "1990-02-01",
+            "temperature": 27.107142857142858,
+            "rainfall": 138.4
+        },
+        {
+            "date": "1990-03-01",
+            "temperature": 26.94516129032258,
+            "rainfall": 184.9
+        },
+        {
+            "date": "1990-04-01",
+            "temperature": 25.996666666666666,
+            "rainfall": 243.50000000000003
+        },
+        {
+            "date": "1990-05-01",
+            "temperature": 21.641935483870967,
+            "rainfall": 85.3
+        },
+        {
+            "date": "1990-06-01",
+            "temperature": 20.709999999999997,
+            "rainfall": 47.6
+        },
+        {
+            "date": "1990-07-01",
+            "temperature": 20.08709677419355,
+            "rainfall": 55.9
+        },
+        {
+            "date": "1990-08-01",
+            "temperature": 19.69677419354839,
+            "rainfall": 55.8
+        },
+        {
+            "date": "1990-09-01",
+            "temperature": 20.5,
+            "rainfall": 127.7
+        },
+        {
+            "date": "1990-10-01",
+            "temperature": 23.541935483870965,
+            "rainfall": 143.79999999999998
+        },
+        {
+            "date": "1990-11-01",
+            "temperature": 25.736666666666668,
+            "rainfall": 147.6
+        },
+        {
+            "date": "1990-12-01",
+            "temperature": 25.074193548387097,
+            "rainfall": 165.0
+        },
+        {
+            "date": "1991-01-01",
+            "temperature": 25.083870967741937,
+            "rainfall": 311.5
+        },
+        {
+            "date": "1991-02-01",
+            "temperature": 25.785714285714285,
+            "rainfall": 233.7
+        },
+        {
+            "date": "1991-03-01",
+            "temperature": 25.35483870967742,
+            "rainfall": 282.6
+        },
+        {
+            "date": "1991-04-01",
+            "temperature": 23.956666666666667,
+            "rainfall": 158.0
+        },
+        {
+            "date": "1991-05-01",
+            "temperature": 21.761290322580646,
+            "rainfall": 71.6
+        },
+        {
+            "date": "1991-06-01",
+            "temperature": 21.683333333333334,
+            "rainfall": 74.0
+        },
+        {
+            "date": "1991-07-01",
+            "temperature": 19.896774193548385,
+            "rainfall": 55.9
+        },
+        {
+            "date": "1991-08-01",
+            "temperature": 20.55806451612903,
+            "rainfall": 29.9
+        },
+        {
+            "date": "1991-09-01",
+            "temperature": 20.776666666666664,
+            "rainfall": 84.6
+        },
+        {
+            "date": "1991-10-01",
+            "temperature": 22.938709677419357,
+            "rainfall": 73.1
+        },
+        {
+            "date": "1991-11-01",
+            "temperature": 23.826666666666664,
+            "rainfall": 126.2
+        },
+        {
+            "date": "1991-12-01",
+            "temperature": 27.006451612903227,
+            "rainfall": 218.4
+        },
+        {
+            "date": "1992-01-01",
+            "temperature": 25.6,
+            "rainfall": 336.40000000000003
+        },
+        {
+            "date": "1992-02-01",
+            "temperature": 26.76551724137931,
+            "rainfall": 107.7
+        },
+        {
+            "date": "1992-03-01",
+            "temperature": 26.458064516129035,
+            "rainfall": 80.3
+        },
+        {
+            "date": "1992-04-01",
+            "temperature": 25.006666666666668,
+            "rainfall": 102.60000000000001
+        },
+        {
+            "date": "1992-05-01",
+            "temperature": 23.316129032258065,
+            "rainfall": 73.2
+        },
+        {
+            "date": "1992-06-01",
+            "temperature": 22.476666666666667,
+            "rainfall": 11.600000000000001
+        },
+        {
+            "date": "1992-07-01",
+            "temperature": 20.406451612903226,
+            "rainfall": 71.1
+        },
+        {
+            "date": "1992-08-01",
+            "temperature": 20.141935483870967,
+            "rainfall": 57.9
+        },
+        {
+            "date": "1992-09-01",
+            "temperature": 21.290000000000003,
+            "rainfall": 192.9
+        },
+        {
+            "date": "1992-10-01",
+            "temperature": 22.85483870967742,
+            "rainfall": 155.9
+        },
+        {
+            "date": "1992-11-01",
+            "temperature": 23.216666666666665,
+            "rainfall": 315.4
+        },
+        {
+            "date": "1992-12-01",
+            "temperature": 24.074193548387097,
+            "rainfall": 214.6
+        },
+        {
+            "date": "1993-01-01",
+            "temperature": 27.067741935483873,
+            "rainfall": 178.0
+        },
+        {
+            "date": "1993-02-01",
+            "temperature": 26.635714285714283,
+            "rainfall": 290.0
+        },
+        {
+            "date": "1993-03-01",
+            "temperature": 26.283870967741933,
+            "rainfall": 219.6
+        },
+        {
+            "date": "1993-04-01",
+            "temperature": 24.709999999999997,
+            "rainfall": 99.3
+        },
+        {
+            "date": "1993-05-01",
+            "temperature": 21.951612903225808,
+            "rainfall": 57.99999999999999
+        },
+        {
+            "date": "1993-06-01",
+            "temperature": 20.376666666666665,
+            "rainfall": 77.8
+        },
+        {
+            "date": "1993-07-01",
+            "temperature": 21.190322580645162,
+            "rainfall": 27.1
+        },
+        {
+            "date": "1993-08-01",
+            "temperature": 20.26774193548387,
+            "rainfall": 35.4
+        },
+        {
+            "date": "1993-09-01",
+            "temperature": 21.936666666666667,
+            "rainfall": 127.7
+        },
+        {
+            "date": "1993-10-01",
+            "temperature": 23.86774193548387,
+            "rainfall": 119.0
+        },
+        {
+            "date": "1993-11-01",
+            "temperature": 25.96333333333333,
+            "rainfall": 92.6
+        },
+        {
+            "date": "1993-12-01",
+            "temperature": 26.051612903225806,
+            "rainfall": 193.9
+        },
+        {
+            "date": "1994-01-01",
+            "temperature": 25.516129032258064,
+            "rainfall": 365.9
+        },
+        {
+            "date": "1994-02-01",
+            "temperature": 28.74285714285714,
+            "rainfall": 58.7
+        },
+        {
+            "date": "1994-03-01",
+            "temperature": 25.151612903225807,
+            "rainfall": 576.7
+        },
+        {
+            "date": "1994-04-01",
+            "temperature": 23.470000000000002,
+            "rainfall": 162.4
+        },
+        {
+            "date": "1994-05-01",
+            "temperature": 23.46451612903226,
+            "rainfall": 68.3
+        },
+        {
+            "date": "1994-06-01",
+            "temperature": 20.33,
+            "rainfall": 60.0
+        },
+        {
+            "date": "1994-07-01",
+            "temperature": 20.25483870967742,
+            "rainfall": 37.2
+        },
+        {
+            "date": "1994-08-01",
+            "temperature": 20.26451612903226,
+            "rainfall": 35.300000000000004
+        },
+        {
+            "date": "1994-09-01",
+            "temperature": 21.826666666666664,
+            "rainfall": 59.2
+        },
+        {
+            "date": "1994-10-01",
+            "temperature": 23.916129032258063,
+            "rainfall": 120.8
+        },
+        {
+            "date": "1994-11-01",
+            "temperature": 25.236666666666668,
+            "rainfall": 262.7
+        },
+        {
+            "date": "1994-12-01",
+            "temperature": 26.30322580645161,
+            "rainfall": 295.5
+        },
+        {
+            "date": "1995-01-01",
+            "temperature": 28.032258064516128,
+            "rainfall": 292.0
+        },
+        {
+            "date": "1995-02-01",
+            "temperature": 26.7,
+            "rainfall": 416.5
+        },
+        {
+            "date": "1995-03-01",
+            "temperature": 25.851612903225806,
+            "rainfall": 157.7
+        },
+        {
+            "date": "1995-04-01",
+            "temperature": 23.676666666666666,
+            "rainfall": 50.2
+        },
+        {
+            "date": "1995-05-01",
+            "temperature": 22.103225806451615,
+            "rainfall": 161.1
+        },
+        {
+            "date": "1995-06-01",
+            "temperature": 21.026666666666664,
+            "rainfall": 28.6
+        },
+        {
+            "date": "1995-07-01",
+            "temperature": 21.538709677419355,
+            "rainfall": 37.7
+        },
+        {
+            "date": "1995-08-01",
+            "temperature": 22.812903225806455,
+            "rainfall": 45.2
+        },
+        {
+            "date": "1995-09-01",
+            "temperature": 22.470000000000002,
+            "rainfall": 97.5
+        },
+        {
+            "date": "1995-10-01",
+            "temperature": 22.16774193548387,
+            "rainfall": 239.3
+        },
+        {
+            "date": "1995-11-01",
+            "temperature": 23.4,
+            "rainfall": 249.29999999999998
+        },
+        {
+            "date": "1995-12-01",
+            "temperature": 24.683870967741935,
+            "rainfall": 334.9
+        },
+        {
+            "date": "1996-01-01",
+            "temperature": 27.53548387096774,
+            "rainfall": 195.6
+        },
+        {
+            "date": "1996-02-01",
+            "temperature": 27.03448275862069,
+            "rainfall": 421.59999999999997
+        },
+        {
+            "date": "1996-03-01",
+            "temperature": 25.93548387096774,
+            "rainfall": 285.0
+        },
+        {
+            "date": "1996-04-01",
+            "temperature": 24.19,
+            "rainfall": 112.8
+        },
+        {
+            "date": "1996-05-01",
+            "temperature": 20.89032258064516,
+            "rainfall": 79.9
+        },
+        {
+            "date": "1996-06-01",
+            "temperature": 20.086666666666666,
+            "rainfall": 63.199999999999996
+        },
+        {
+            "date": "1996-07-01",
+            "temperature": 18.94516129032258,
+            "rainfall": 36.1
+        },
+        {
+            "date": "1996-08-01",
+            "temperature": 19.76774193548387,
+            "rainfall": 38.4
+        },
+        {
+            "date": "1996-09-01",
+            "temperature": 20.73,
+            "rainfall": 137.4
+        },
+        {
+            "date": "1996-10-01",
+            "temperature": 22.822580645161292,
+            "rainfall": 95.0
+        },
+        {
+            "date": "1996-11-01",
+            "temperature": 23.046666666666667,
+            "rainfall": 213.20000000000002
+        },
+        {
+            "date": "1996-12-01",
+            "temperature": 25.74516129032258,
+            "rainfall": 270.1
+        },
+        {
+            "date": "1997-01-01",
+            "temperature": 26.032258064516128,
+            "rainfall": 378.3
+        },
+        {
+            "date": "1997-02-01",
+            "temperature": 27.039285714285715,
+            "rainfall": 151.5
+        },
+        {
+            "date": "1997-03-01",
+            "temperature": 24.274193548387096,
+            "rainfall": 176.6
+        },
+        {
+            "date": "1997-04-01",
+            "temperature": 23.336666666666666,
+            "rainfall": 56.6
+        },
+        {
+            "date": "1997-05-01",
+            "temperature": 21.32903225806452,
+            "rainfall": 66.4
+        },
+        {
+            "date": "1997-06-01",
+            "temperature": 21.1,
+            "rainfall": 31.6
+        },
+        {
+            "date": "1997-07-01",
+            "temperature": 21.345161290322583,
+            "rainfall": 5.7
+        },
+        {
+            "date": "1997-08-01",
+            "temperature": 21.451612903225808,
+            "rainfall": 31.8
+        },
+        {
+            "date": "1997-09-01",
+            "temperature": 23.060000000000002,
+            "rainfall": 60.4
+        },
+        {
+            "date": "1997-10-01",
+            "temperature": 23.66774193548387,
+            "rainfall": 147.2
+        },
+        {
+            "date": "1997-11-01",
+            "temperature": 25.683333333333334,
+            "rainfall": 300.8
+        },
+        {
+            "date": "1997-12-01",
+            "temperature": 26.851612903225806,
+            "rainfall": 151.70000000000002
+        },
+        {
+            "date": "1998-01-01",
+            "temperature": 27.70967741935484,
+            "rainfall": 323.6
+        },
+        {
+            "date": "1998-02-01",
+            "temperature": 27.810714285714287,
+            "rainfall": 310.3
+        },
+        {
+            "date": "1998-03-01",
+            "temperature": 26.69677419354839,
+            "rainfall": 129.0
+        },
+        {
+            "date": "1998-04-01",
+            "temperature": 25.14,
+            "rainfall": 63.5
+        },
+        {
+            "date": "1998-05-01",
+            "temperature": 21.838709677419356,
+            "rainfall": 119.4
+        },
+        {
+            "date": "1998-06-01",
+            "temperature": 19.68,
+            "rainfall": 51.6
+        },
+        {
+            "date": "1998-07-01",
+            "temperature": 20.31935483870968,
+            "rainfall": 23.5
+        },
+        {
+            "date": "1998-08-01",
+            "temperature": 22.480645161290322,
+            "rainfall": 81.1
+        },
+        {
+            "date": "1998-09-01",
+            "temperature": 22.459999999999997,
+            "rainfall": 125.6
+        },
+        {
+            "date": "1998-10-01",
+            "temperature": 22.63225806451613,
+            "rainfall": 125.3
+        },
+        {
+            "date": "1998-11-01",
+            "temperature": 22.8,
+            "rainfall": 185.0
+        },
+        {
+            "date": "1998-12-01",
+            "temperature": 25.948387096774194,
+            "rainfall": 245.4
+        },
+        {
+            "date": "1999-01-01",
+            "temperature": 26.835483870967742,
+            "rainfall": 294.1
+        },
+        {
+            "date": "1999-02-01",
+            "temperature": 27.185714285714287,
+            "rainfall": 170.6
+        },
+        {
+            "date": "1999-03-01",
+            "temperature": 25.64516129032258,
+            "rainfall": 200.6
+        },
+        {
+            "date": "1999-04-01",
+            "temperature": 23.576666666666664,
+            "rainfall": 99.9
+        },
+        {
+            "date": "1999-05-01",
+            "temperature": 20.96451612903226,
+            "rainfall": 48.599999999999994
+        },
+        {
+            "date": "1999-06-01",
+            "temperature": 20.05666666666667,
+            "rainfall": 62.2
+        },
+        {
+            "date": "1999-07-01",
+            "temperature": 20.041935483870965,
+            "rainfall": 41.4
+        },
+        {
+            "date": "1999-08-01",
+            "temperature": 19.951612903225808,
+            "rainfall": 28.0
+        },
+        {
+            "date": "1999-09-01",
+            "temperature": 22.123333333333335,
+            "rainfall": 76.0
+        },
+        {
+            "date": "1999-10-01",
+            "temperature": 20.929032258064513,
+            "rainfall": 99.1
+        },
+        {
+            "date": "1999-11-01",
+            "temperature": 22.09333333333333,
+            "rainfall": 184.5
+        },
+        {
+            "date": "1999-12-01",
+            "temperature": 24.861290322580647,
+            "rainfall": 275.09999999999997
+        },
+        {
+            "date": "2000-01-01",
+            "temperature": 26.283870967741933,
+            "rainfall": 216.6
+        },
+        {
+            "date": "2000-02-01",
+            "temperature": 25.727586206896554,
+            "rainfall": 161.4
+        },
+        {
+            "date": "2000-03-01",
+            "temperature": 24.916129032258063,
+            "rainfall": 248.1
+        },
+        {
+            "date": "2000-04-01",
+            "temperature": 23.626666666666665,
+            "rainfall": 65.4
+        },
+        {
+            "date": "2000-05-01",
+            "temperature": 21.335483870967742,
+            "rainfall": 33.3
+        },
+        {
+            "date": "2000-06-01",
+            "temperature": 20.86,
+            "rainfall": 8.799999999999999
+        },
+        {
+            "date": "2000-07-01",
+            "temperature": 19.335483870967742,
+            "rainfall": 69.8
+        },
+        {
+            "date": "2000-08-01",
+            "temperature": 20.374193548387098,
+            "rainfall": 90.7
+        },
+        {
+            "date": "2000-09-01",
+            "temperature": 21.490000000000002,
+            "rainfall": 125.2
+        },
+        {
+            "date": "2000-10-01",
+            "temperature": 25.070967741935487,
+            "rainfall": 67.0
+        },
+        {
+            "date": "2000-11-01",
+            "temperature": 24.759999999999998,
+            "rainfall": 198.0
+        },
+        {
+            "date": "2000-12-01",
+            "temperature": 25.93548387096774,
+            "rainfall": 177.4
+        },
+        {
+            "date": "2001-01-01",
+            "temperature": 27.461290322580645,
+            "rainfall": 148.4
+        },
+        {
+            "date": "2001-02-01",
+            "temperature": 28.364285714285717,
+            "rainfall": 122.1
+        },
+        {
+            "date": "2001-03-01",
+            "temperature": 27.193548387096776,
+            "rainfall": 210.8
+        },
+        {
+            "date": "2001-04-01",
+            "temperature": 25.35666666666667,
+            "rainfall": 49.1
+        },
+        {
+            "date": "2001-05-01",
+            "temperature": 22.364516129032257,
+            "rainfall": 105.2
+        },
+        {
+            "date": "2001-06-01",
+            "temperature": 21.75,
+            "rainfall": 27.2
+        },
+        {
+            "date": "2001-07-01",
+            "temperature": 21.070967741935487,
+            "rainfall": 56.9
+        },
+        {
+            "date": "2001-08-01",
+            "temperature": 21.83225806451613,
+            "rainfall": 18.4
+        },
+        {
+            "date": "2001-09-01",
+            "temperature": 21.65,
+            "rainfall": 76.0
+        },
+        {
+            "date": "2001-10-01",
+            "temperature": 22.693548387096776,
+            "rainfall": 77.0
+        },
+        {
+            "date": "2001-11-01",
+            "temperature": 24.773333333333333,
+            "rainfall": 134.9
+        },
+        {
+            "date": "2001-12-01",
+            "temperature": 25.738709677419354,
+            "rainfall": 274.1
+        },
+        {
+            "date": "2002-01-01",
+            "temperature": 26.212903225806453,
+            "rainfall": 218.4
+        },
+        {
+            "date": "2002-02-01",
+            "temperature": 25.63214285714286,
+            "rainfall": 195.1
+        },
+        {
+            "date": "2002-03-01",
+            "temperature": 27.432258064516127,
+            "rainfall": 78.4
+        },
+        {
+            "date": "2002-04-01",
+            "temperature": 25.633333333333333,
+            "rainfall": 46.2
+        },
+        {
+            "date": "2002-05-01",
+            "temperature": 23.529032258064515,
+            "rainfall": 87.9
+        },
+        {
+            "date": "2002-06-01",
+            "temperature": 22.85,
+            "rainfall": 39.2
+        },
+        {
+            "date": "2002-07-01",
+            "temperature": 20.73225806451613,
+            "rainfall": 24.900000000000002
+        },
+        {
+            "date": "2002-08-01",
+            "temperature": 23.4741935483871,
+            "rainfall": 15.3
+        },
+        {
+            "date": "2002-09-01",
+            "temperature": 21.476666666666667,
+            "rainfall": 121.4
+        },
+        {
+            "date": "2002-10-01",
+            "temperature": 25.4741935483871,
+            "rainfall": 78.7
+        },
+        {
+            "date": "2002-11-01",
+            "temperature": 25.490000000000002,
+            "rainfall": 175.2
+        },
+        {
+            "date": "2002-12-01",
+            "temperature": 26.203225806451613,
+            "rainfall": 241.8
+        },
+        {
+            "date": "2003-01-01",
+            "temperature": 26.641935483870967,
+            "rainfall": 367.0
+        },
+        {
+            "date": "2003-02-01",
+            "temperature": 28.478571428571428,
+            "rainfall": 35.7
+        },
+        {
+            "date": "2003-03-01",
+            "temperature": 26.570967741935487,
+            "rainfall": 191.20000000000002
+        },
+        {
+            "date": "2003-04-01",
+            "temperature": 24.726666666666667,
+            "rainfall": 52.7
+        },
+        {
+            "date": "2003-05-01",
+            "temperature": 21.938709677419357,
+            "rainfall": 75.5
+        },
+        {
+            "date": "2003-06-01",
+            "temperature": 22.240000000000002,
+            "rainfall": 64.5
+        },
+        {
+            "date": "2003-07-01",
+            "temperature": 20.97741935483871,
+            "rainfall": 29.8
+        },
+        {
+            "date": "2003-08-01",
+            "temperature": 20.312903225806455,
+            "rainfall": 107.0
+        },
+        {
+            "date": "2003-09-01",
+            "temperature": 21.403333333333332,
+            "rainfall": 67.3
+        },
+        {
+            "date": "2003-10-01",
+            "temperature": 22.845161290322583,
+            "rainfall": 251.1
+        },
+        {
+            "date": "2003-11-01",
+            "temperature": 24.396666666666665,
+            "rainfall": 280.7
+        },
+        {
+            "date": "2003-12-01",
+            "temperature": 25.541935483870965,
+            "rainfall": 284.2
+        },
+        {
+            "date": "2004-01-01",
+            "temperature": 24.858064516129033,
+            "rainfall": 201.4
+        },
+        {
+            "date": "2004-02-01",
+            "temperature": 25.155172413793103,
+            "rainfall": 321.1
+        },
+        {
+            "date": "2004-03-01",
+            "temperature": 24.57741935483871,
+            "rainfall": 138.70000000000002
+        },
+        {
+            "date": "2004-04-01",
+            "temperature": 24.456666666666667,
+            "rainfall": 208.1
+        },
+        {
+            "date": "2004-05-01",
+            "temperature": 21.883870967741935,
+            "rainfall": 81.0
+        },
+        {
+            "date": "2004-06-01",
+            "temperature": 20.67,
+            "rainfall": 46.300000000000004
+        },
+        {
+            "date": "2004-07-01",
+            "temperature": 19.748387096774195,
+            "rainfall": 122.8
+        },
+        {
+            "date": "2004-08-01",
+            "temperature": 20.32903225806452,
+            "rainfall": 21.7
+        },
+        {
+            "date": "2004-09-01",
+            "temperature": 23.256666666666668,
+            "rainfall": 36.2
+        },
+        {
+            "date": "2004-10-01",
+            "temperature": 22.506451612903227,
+            "rainfall": 136.7
+        },
+        {
+            "date": "2004-11-01",
+            "temperature": 23.94,
+            "rainfall": 196.20000000000002
+        },
+        {
+            "date": "2004-12-01",
+            "temperature": 24.567741935483873,
+            "rainfall": 183.7
+        },
+        {
+            "date": "2005-01-01",
+            "temperature": 25.874193548387098,
+            "rainfall": 273.1
+        },
+        {
+            "date": "2005-02-01",
+            "temperature": 25.071428571428573,
+            "rainfall": 170.5
+        },
+        {
+            "date": "2005-03-01",
+            "temperature": 25.703225806451613,
+            "rainfall": 419.8
+        },
+        {
+            "date": "2005-04-01",
+            "temperature": 25.040000000000003,
+            "rainfall": 170.0
+        },
+        {
+            "date": "2005-05-01",
+            "temperature": 22.758064516129032,
+            "rainfall": 52.7
+        },
+        {
+            "date": "2005-06-01",
+            "temperature": 21.75,
+            "rainfall": 36.6
+        },
+        {
+            "date": "2005-07-01",
+            "temperature": 20.187096774193545,
+            "rainfall": 99.6
+        },
+        {
+            "date": "2005-08-01",
+            "temperature": 22.396774193548385,
+            "rainfall": 13.5
+        },
+        {
+            "date": "2005-09-01",
+            "temperature": 21.646666666666665,
+            "rainfall": 129.9
+        },
+        {
+            "date": "2005-10-01",
+            "temperature": 24.61935483870968,
+            "rainfall": 85.1
+        },
+        {
+            "date": "2005-11-01",
+            "temperature": 23.529999999999998,
+            "rainfall": 221.6
+        },
+        {
+            "date": "2005-12-01",
+            "temperature": 24.358064516129033,
+            "rainfall": 266.2
+        },
+        {
+            "date": "2006-01-01",
+            "temperature": 26.603225806451615,
+            "rainfall": 287.3
+        },
+        {
+            "date": "2006-02-01",
+            "temperature": 27.17142857142857,
+            "rainfall": 248.2
+        },
+        {
+            "date": "2006-03-01",
+            "temperature": 26.39032258064516,
+            "rainfall": 135.4
+        },
+        {
+            "date": "2006-04-01",
+            "temperature": 23.823333333333334,
+            "rainfall": 77.2
+        },
+        {
+            "date": "2006-05-01",
+            "temperature": 20.861290322580647,
+            "rainfall": 94.9
+        },
+        {
+            "date": "2006-06-01",
+            "temperature": 20.366666666666667,
+            "rainfall": 29.099999999999998
+        },
+        {
+            "date": "2006-07-01",
+            "temperature": 21.206451612903226,
+            "rainfall": 32.3
+        },
+        {
+            "date": "2006-08-01",
+            "temperature": 21.77741935483871,
+            "rainfall": 27.5
+        },
+        {
+            "date": "2006-09-01",
+            "temperature": 21.6,
+            "rainfall": 76.1
+        },
+        {
+            "date": "2006-10-01",
+            "temperature": 22.77741935483871,
+            "rainfall": 99.9
+        },
+        {
+            "date": "2006-11-01",
+            "temperature": 23.790000000000003,
+            "rainfall": 194.6
+        },
+        {
+            "date": "2006-12-01",
+            "temperature": 25.72258064516129,
+            "rainfall": 266.9
+        },
+        {
+            "date": "2007-01-01",
+            "temperature": 25.54516129032258,
+            "rainfall": 314.0
+        },
+        {
+            "date": "2007-02-01",
+            "temperature": 26.275000000000002,
+            "rainfall": 96.60000000000001
+        },
+        {
+            "date": "2007-03-01",
+            "temperature": 27.238709677419354,
+            "rainfall": 90.39999999999999
+        },
+        {
+            "date": "2007-04-01",
+            "temperature": 25.273333333333333,
+            "rainfall": 98.2
+        },
+        {
+            "date": "2007-05-01",
+            "temperature": 21.5,
+            "rainfall": 83.2
+        },
+        {
+            "date": "2007-06-01",
+            "temperature": 21.303333333333335,
+            "rainfall": 30.3
+        },
+        {
+            "date": "2007-07-01",
+            "temperature": 20.583870967741937,
+            "rainfall": 54.6
+        },
+        {
+            "date": "2007-08-01",
+            "temperature": 21.30322580645161,
+            "rainfall": 23.8
+        },
+        {
+            "date": "2007-09-01",
+            "temperature": 23.06,
+            "rainfall": 33.1
+        },
+        {
+            "date": "2007-10-01",
+            "temperature": 24.200000000000003,
+            "rainfall": 194.2
+        },
+        {
+            "date": "2007-11-01",
+            "temperature": 24.113333333333333,
+            "rainfall": 259.0
+        },
+        {
+            "date": "2007-12-01",
+            "temperature": 25.516129032258064,
+            "rainfall": 232.2
+        },
+        {
+            "date": "2008-01-01",
+            "temperature": 25.338709677419356,
+            "rainfall": 245.3
+        },
+        {
+            "date": "2008-02-01",
+            "temperature": 25.7551724137931,
+            "rainfall": 305.1
+        },
+        {
+            "date": "2008-03-01",
+            "temperature": 25.161290322580644,
+            "rainfall": 236.3
+        },
+        {
+            "date": "2008-04-01",
+            "temperature": 24.453333333333333,
+            "rainfall": 177.1
+        },
+        {
+            "date": "2008-05-01",
+            "temperature": 21.51290322580645,
+            "rainfall": 59.0
+        },
+        {
+            "date": "2008-06-01",
+            "temperature": 20.65,
+            "rainfall": 44.2
+        },
+        {
+            "date": "2008-07-01",
+            "temperature": 19.993548387096773,
+            "rainfall": 7.2
+        },
+        {
+            "date": "2008-08-01",
+            "temperature": 22.154838709677417,
+            "rainfall": 55.3
+        },
+        {
+            "date": "2008-09-01",
+            "temperature": 20.973333333333336,
+            "rainfall": 109.7
+        },
+        {
+            "date": "2008-10-01",
+            "temperature": 23.364516129032257,
+            "rainfall": 161.8
+        },
+        {
+            "date": "2008-11-01",
+            "temperature": 23.033333333333335,
+            "rainfall": 335.3
+        },
+        {
+            "date": "2008-12-01",
+            "temperature": 23.835483870967742,
+            "rainfall": 367.0
+        },
+        {
+            "date": "2009-01-01",
+            "temperature": 25.825806451612905,
+            "rainfall": 359.8
+        },
+        {
+            "date": "2009-02-01",
+            "temperature": 26.814285714285713,
+            "rainfall": 230.0
+        },
+        {
+            "date": "2009-03-01",
+            "temperature": 25.970967741935485,
+            "rainfall": 232.0
+        },
+        {
+            "date": "2009-04-01",
+            "temperature": 23.373333333333335,
+            "rainfall": 143.7
+        },
+        {
+            "date": "2009-05-01",
+            "temperature": 22.10967741935484,
+            "rainfall": 86.4
+        },
+        {
+            "date": "2009-06-01",
+            "temperature": 19.486666666666668,
+            "rainfall": 61.9
+        },
+        {
+            "date": "2009-07-01",
+            "temperature": 20.519354838709678,
+            "rainfall": 58.4
+        },
+        {
+            "date": "2009-08-01",
+            "temperature": 21.01290322580645,
+            "rainfall": 54.4
+        },
+        {
+            "date": "2009-09-01",
+            "temperature": 23.290000000000003,
+            "rainfall": 86.4
+        },
+        {
+            "date": "2009-10-01",
+            "temperature": 23.177419354838708,
+            "rainfall": 217.9
+        },
+        {
+            "date": "2009-11-01",
+            "temperature": 26.793333333333333,
+            "rainfall": 227.9
+        },
+        {
+            "date": "2009-12-01",
+            "temperature": 25.73548387096774,
+            "rainfall": 524.5
+        },
+        {
+            "date": "2010-01-01",
+            "temperature": 28.019354838709678,
+            "rainfall": 212.6
+        },
+        {
+            "date": "2010-02-01",
+            "temperature": 28.525000000000002,
+            "rainfall": 106.89999999999999
+        },
+        {
+            "date": "2010-03-01",
+            "temperature": 26.470967741935485,
+            "rainfall": 224.9
+        },
+        {
+            "date": "2010-04-01",
+            "temperature": 23.743333333333332,
+            "rainfall": 186.5
+        },
+        {
+            "date": "2010-05-01",
+            "temperature": 21.812903225806455,
+            "rainfall": 48.4
+        },
+        {
+            "date": "2010-06-01",
+            "temperature": 19.48,
+            "rainfall": 45.4
+        },
+        {
+            "date": "2010-07-01",
+            "temperature": 20.783870967741933,
+            "rainfall": 55.4
+        },
+        {
+            "date": "2010-08-01",
+            "temperature": 20.393548387096775,
+            "rainfall": 22.6
+        },
+        {
+            "date": "2010-09-01",
+            "temperature": 22.186666666666667,
+            "rainfall": 82.0
+        },
+        {
+            "date": "2010-10-01",
+            "temperature": 22.203225806451613,
+            "rainfall": 115.89999999999999
+        },
+        {
+            "date": "2010-11-01",
+            "temperature": 23.81,
+            "rainfall": 229.4
+        },
+        {
+            "date": "2010-12-01",
+            "temperature": 25.980645161290322,
+            "rainfall": 317.8
+        },
+        {
+            "date": "2011-01-01",
+            "temperature": 26.896774193548385,
+            "rainfall": 210.5
+        },
+        {
+            "date": "2011-02-01",
+            "temperature": 27.928571428571427,
+            "rainfall": 118.0
+        },
+        {
+            "date": "2011-03-01",
+            "temperature": 24.719354838709677,
+            "rainfall": 286.9
+        },
+        {
+            "date": "2011-04-01",
+            "temperature": 24.523333333333333,
+            "rainfall": 147.0
+        },
+        {
+            "date": "2011-05-01",
+            "temperature": 21.009677419354837,
+            "rainfall": 55.7
+        },
+        {
+            "date": "2011-06-01",
+            "temperature": 19.573333333333334,
+            "rainfall": 33.2
+        },
+        {
+            "date": "2011-07-01",
+            "temperature": 19.96451612903226,
+            "rainfall": 27.400000000000002
+        },
+        {
+            "date": "2011-08-01",
+            "temperature": 21.370967741935484,
+            "rainfall": 48.6
+        },
+        {
+            "date": "2011-09-01",
+            "temperature": 20.90666666666667,
+            "rainfall": 32.5
+        },
+        {
+            "date": "2011-10-01",
+            "temperature": 23.261290322580646,
+            "rainfall": 127.4
+        },
+        {
+            "date": "2011-11-01",
+            "temperature": 22.716666666666665,
+            "rainfall": 177.3
+        },
+        {
+            "date": "2011-12-01",
+            "temperature": 24.693548387096776,
+            "rainfall": 231.6
+        },
+        {
+            "date": "2012-01-01",
+            "temperature": 25.11935483870968,
+            "rainfall": 334.1
+        },
+        {
+            "date": "2012-02-01",
+            "temperature": 26.917241379310347,
+            "rainfall": 80.10000000000001
+        },
+        {
+            "date": "2012-03-01",
+            "temperature": 25.906451612903226,
+            "rainfall": 196.6
+        },
+        {
+            "date": "2012-04-01",
+            "temperature": 24.396666666666665,
+            "rainfall": 117.1
+        },
+        {
+            "date": "2012-05-01",
+            "temperature": 21.23548387096774,
+            "rainfall": 86.7
+        },
+        {
+            "date": "2012-06-01",
+            "temperature": 21.743333333333332,
+            "rainfall": 82.8
+        },
+        {
+            "date": "2012-07-01",
+            "temperature": 20.774193548387096,
+            "rainfall": 33.3
+        },
+        {
+            "date": "2012-08-01",
+            "temperature": 20.89032258064516,
+            "rainfall": 29.3
+        },
+        {
+            "date": "2012-09-01",
+            "temperature": 22.81,
+            "rainfall": 54.800000000000004
+        },
+        {
+            "date": "2012-10-01",
+            "temperature": 25.07741935483871,
+            "rainfall": 36.099999999999994
+        },
+        {
+            "date": "2012-11-01",
+            "temperature": 23.55666666666667,
+            "rainfall": 153.6
+        },
+        {
+            "date": "2012-12-01",
+            "temperature": 28.183870967741935,
+            "rainfall": 160.79999999999998
+        },
+        {
+            "date": "2013-01-01",
+            "temperature": 25.574193548387097,
+            "rainfall": 517.2
+        },
+        {
+            "date": "2013-02-01",
+            "temperature": 27.189285714285713,
+            "rainfall": 147.9
+        },
+        {
+            "date": "2013-03-01",
+            "temperature": 25.4,
+            "rainfall": 260.4
+        },
+        {
+            "date": "2013-04-01",
+            "temperature": 23.05666666666667,
+            "rainfall": 55.3
+        },
+        {
+            "date": "2013-05-01",
+            "temperature": 21.838709677419356,
+            "rainfall": 71.4
+        },
+        {
+            "date": "2013-06-01",
+            "temperature": 21.576666666666664,
+            "rainfall": 86.6
+        },
+        {
+            "date": "2013-07-01",
+            "temperature": 19.96451612903226,
+            "rainfall": 90.4
+        },
+        {
+            "date": "2013-08-01",
+            "temperature": 20.73225806451613,
+            "rainfall": 21.1
+        },
+        {
+            "date": "2013-09-01",
+            "temperature": 22.35,
+            "rainfall": 83.39999999999999
+        },
+        {
+            "date": "2013-10-01",
+            "temperature": 22.629032258064516,
+            "rainfall": 138.6
+        },
+        {
+            "date": "2013-11-01",
+            "temperature": 23.826666666666664,
+            "rainfall": 249.1
+        },
+        {
+            "date": "2013-12-01",
+            "temperature": 25.325806451612905,
+            "rainfall": 160.8
+        },
+        {
+            "date": "2014-01-01",
+            "temperature": 28.570967741935487,
+            "rainfall": 71.60000000000001
+        },
+        {
+            "date": "2014-02-01",
+            "temperature": 28.271428571428572,
+            "rainfall": 63.9
+        },
+        {
+            "date": "2014-03-01",
+            "temperature": 26.612903225806452,
+            "rainfall": 155.8
+        },
+        {
+            "date": "2014-04-01",
+            "temperature": 23.676666666666666,
+            "rainfall": 185.3
+        },
+        {
+            "date": "2014-05-01",
+            "temperature": 21.816129032258065,
+            "rainfall": 45.4
+        },
+        {
+            "date": "2014-06-01",
+            "temperature": 21.476666666666667,
+            "rainfall": 61.5
+        },
+        {
+            "date": "2014-07-01",
+            "temperature": 20.10967741935484,
+            "rainfall": 105.4
+        },
+        {
+            "date": "2014-08-01",
+            "temperature": 20.719354838709677,
+            "rainfall": 51.2
+        },
+        {
+            "date": "2014-09-01",
+            "temperature": 22.80666666666667,
+            "rainfall": 38.0
+        },
+        {
+            "date": "2014-10-01",
+            "temperature": 24.154838709677417,
+            "rainfall": 36.3
+        },
+        {
+            "date": "2014-11-01",
+            "temperature": 24.94333333333333,
+            "rainfall": 153.6
+        },
+        {
+            "date": "2014-12-01",
+            "temperature": 27.161290322580644,
+            "rainfall": 129.7
+        },
+        {
+            "date": "2015-01-01",
+            "temperature": 29.470967741935485,
+            "rainfall": 124.8
+        },
+        {
+            "date": "2015-02-01",
+            "temperature": 27.464285714285715,
+            "rainfall": 223.9
+        },
+        {
+            "date": "2015-03-01",
+            "temperature": 25.85483870967742,
+            "rainfall": 251.20000000000002
+        },
+        {
+            "date": "2015-04-01",
+            "temperature": 24.0,
+            "rainfall": 83.7
+        },
+        {
+            "date": "2015-05-01",
+            "temperature": 22.074193548387097,
+            "rainfall": 67.9
+        },
+        {
+            "date": "2015-06-01",
+            "temperature": 21.55666666666667,
+            "rainfall": 52.1
+        },
+        {
+            "date": "2015-07-01",
+            "temperature": 21.848387096774193,
+            "rainfall": 47.199999999999996
+        },
+        {
+            "date": "2015-08-01",
+            "temperature": 22.4741935483871,
+            "rainfall": 20.0
+        },
+        {
+            "date": "2015-09-01",
+            "temperature": 23.676666666666666,
+            "rainfall": 151.3
+        },
+        {
+            "date": "2015-10-01",
+            "temperature": 25.051612903225806,
+            "rainfall": 65.5
+        },
+        {
+            "date": "2015-11-01",
+            "temperature": 25.446666666666665,
+            "rainfall": 238.2
+        },
+        {
+            "date": "2015-12-01",
+            "temperature": 27.206451612903226,
+            "rainfall": 124.7
+        },
+        {
+            "date": "2016-01-01",
+            "temperature": 26.200000000000003,
+            "rainfall": 319.6
+        },
+        {
+            "date": "2016-02-01",
+            "temperature": 28.03448275862069,
+            "rainfall": 240.6
+        },
+        {
+            "date": "2016-03-01",
+            "temperature": 26.58709677419355,
+            "rainfall": 155.9
+        },
+        {
+            "date": "2016-04-01",
+            "temperature": 26.476666666666667,
+            "rainfall": 38.5
+        },
+        {
+            "date": "2016-05-01",
+            "temperature": 22.048387096774192,
+            "rainfall": 51.4
+        },
+        {
+            "date": "2016-06-01",
+            "temperature": 19.64333333333333,
+            "rainfall": 51.8
+        },
+        {
+            "date": "2016-07-01",
+            "temperature": 20.770967741935483,
+            "rainfall": 6.8
+        },
+        {
+            "date": "2016-08-01",
+            "temperature": 21.693548387096776,
+            "rainfall": 47.8
+        },
+        {
+            "date": "2016-09-01",
+            "temperature": 22.66,
+            "rainfall": 47.8
+        },
+        {
+            "date": "2016-10-01",
+            "temperature": 23.274193548387096,
+            "rainfall": 115.1
+        },
+        {
+            "date": "2016-11-01",
+            "temperature": 23.776666666666664,
+            "rainfall": 254.29999999999998
+        },
+        {
+            "date": "2016-12-01",
+            "temperature": 26.65806451612903,
+            "rainfall": 177.5
+        },
+        {
+            "date": "2017-01-01",
+            "temperature": 27.948387096774194,
+            "rainfall": 122.8
+        },
+        {
+            "date": "2017-02-01",
+            "temperature": 27.685714285714287,
+            "rainfall": 39.4
+        },
+        {
+            "date": "2017-03-01",
+            "temperature": 25.729032258064517,
+            "rainfall": 174.7
+        },
+        {
+            "date": "2017-04-01",
+            "temperature": 23.89,
+            "rainfall": 82.7
+        },
+        {
+            "date": "2017-05-01",
+            "temperature": 21.91290322580645,
+            "rainfall": 77.5
+        },
+        {
+            "date": "2017-06-01",
+            "temperature": 21.246666666666666,
+            "rainfall": 59.699999999999996
+        },
+        {
+            "date": "2017-07-01",
+            "temperature": 20.125806451612902,
+            "rainfall": 21.8
+        },
+        {
+            "date": "2017-08-01",
+            "temperature": 20.416129032258063,
+            "rainfall": 54.9
+        },
+        {
+            "date": "2017-09-01",
+            "temperature": 22.05666666666667,
+            "rainfall": 14.5
+        },
+        {
+            "date": "2017-10-01",
+            "temperature": 23.583870967741937,
+            "rainfall": 42.5
+        },
+        {
+            "date": "2017-11-01",
+            "temperature": 23.81,
+            "rainfall": 126.9
+        },
+        {
+            "date": "2017-12-01",
+            "temperature": 25.13225806451613,
+            "rainfall": 95.2
+        },
+        {
+            "date": "2018-01-01",
+            "temperature": 26.419354838709676,
+            "rainfall": 232.4
+        },
+        {
+            "date": "2018-02-01",
+            "temperature": 25.817857142857143,
+            "rainfall": 144.1
+        },
+        {
+            "date": "2018-03-01",
+            "temperature": 26.42258064516129,
+            "rainfall": 110.8
+        },
+        {
+            "date": "2018-04-01",
+            "temperature": 24.303333333333335,
+            "rainfall": 74.3
+        },
+        {
+            "date": "2018-05-01",
+            "temperature": 22.190322580645162,
+            "rainfall": 44.6
+        },
+        {
+            "date": "2018-06-01",
+            "temperature": 21.763333333333332,
+            "rainfall": 45.0
+        },
+        {
+            "date": "2018-07-01",
+            "temperature": 21.470967741935485,
+            "rainfall": 68.0
+        },
+        {
+            "date": "2018-08-01",
+            "temperature": 20.519354838709678,
+            "rainfall": 60.1
+        },
+        {
+            "date": "2018-09-01",
+            "temperature": 22.223333333333336,
+            "rainfall": 45.9
+        },
+        {
+            "date": "2018-10-01",
+            "temperature": 23.151612903225807,
+            "rainfall": 101.5
+        },
+        {
+            "date": "2018-11-01",
+            "temperature": 24.11,
+            "rainfall": 139.6
+        },
+        {
+            "date": "2018-12-01",
+            "temperature": 25.570967741935487,
+            "rainfall": 70.0
+        },
+        {
+            "date": "2019-01-01",
+            "temperature": 28.219354838709677,
+            "rainfall": 25.4
+        },
+        {
+            "date": "2019-02-01",
+            "temperature": 26.714285714285715,
+            "rainfall": 141.7
+        },
+        {
+            "date": "2019-03-01",
+            "temperature": 26.351612903225806,
+            "rainfall": 239.4
+        },
+        {
+            "date": "2019-04-01",
+            "temperature": 25.456666666666667,
+            "rainfall": 83.2
+        },
+        {
+            "date": "2019-05-01",
+            "temperature": 24.006451612903227,
+            "rainfall": 119.80000000000001
+        },
+        {
+            "date": "2019-06-01",
+            "temperature": 22.626666666666665,
+            "rainfall": 19.5
+        },
+        {
+            "date": "2019-07-01",
+            "temperature": 21.05806451612903,
+            "rainfall": 48.199999999999996
+        },
+        {
+            "date": "2019-08-01",
+            "temperature": 20.741935483870968,
+            "rainfall": 77.10000000000001
+        },
+        {
+            "date": "2019-09-01",
+            "temperature": 21.86,
+            "rainfall": 97.0
+        },
+        {
+            "date": "2019-10-01",
+            "temperature": 23.480645161290322,
+            "rainfall": 49.9
+        },
+        {
+            "date": "2019-11-01",
+            "temperature": 23.516666666666666,
+            "rainfall": 152.2
+        },
+        {
+            "date": "2019-12-01",
+            "temperature": 24.81935483870968,
+            "rainfall": 89.89999999999999
+        },
+        {
+            "date": "2020-01-01",
+            "temperature": 26.212903225806453,
+            "rainfall": 103.0
+        },
+        {
+            "date": "2020-02-01",
+            "temperature": 25.727586206896554,
+            "rainfall": 262.5
+        },
+        {
+            "date": "2020-03-01",
+            "temperature": 24.461290322580645,
+            "rainfall": 146.8
+        },
+        {
+            "date": "2020-04-01",
+            "temperature": 23.38,
+            "rainfall": 45.6
+        },
+        {
+            "date": "2020-05-01",
+            "temperature": 21.66774193548387,
+            "rainfall": 95.9
+        },
+        {
+            "date": "2020-06-01",
+            "temperature": 22.386666666666667,
+            "rainfall": 27.1
+        },
+        {
+            "date": "2020-07-01",
+            "temperature": 21.822580645161292,
+            "rainfall": 61.5
+        },
+        {
+            "date": "2020-08-01",
+            "temperature": 21.0258064516129,
+            "rainfall": 64.0
+        },
+        {
+            "date": "2020-09-01",
+            "temperature": 23.333333333333332,
+            "rainfall": 155.5
+        },
+        {
+            "date": "2020-10-01",
+            "temperature": 23.57741935483871,
+            "rainfall": 89.39999999999999
+        },
+        {
+            "date": "2020-11-01",
+            "temperature": 23.21333333333333,
+            "rainfall": 126.19999999999999
+        },
+        {
+            "date": "2020-12-01",
+            "temperature": 25.38064516129032,
+            "rainfall": 188.9
+        },
+        {
+            "date": "2021-01-01",
+            "temperature": 26.683870967741935,
+            "rainfall": 88.1
+        },
+        {
+            "date": "2021-02-01",
+            "temperature": 25.532142857142855,
+            "rainfall": 104.80000000000001
+        },
+        {
+            "date": "2021-03-01",
+            "temperature": 26.20967741935484,
+            "rainfall": 71.9
+        },
+        {
+            "date": "2021-04-01",
+            "temperature": 23.243333333333332,
+            "rainfall": 101.4
+        },
+        {
+            "date": "2021-05-01",
+            "temperature": 22.151612903225807,
+            "rainfall": 40.4
+        },
+        {
+            "date": "2021-06-01",
+            "temperature": 21.083333333333332,
+            "rainfall": 42.5
+        },
+        {
+            "date": "2021-07-01",
+            "temperature": 19.606451612903225,
+            "rainfall": 22.3
+        },
+        {
+            "date": "2021-08-01",
+            "temperature": 21.10967741935484,
+            "rainfall": 61.1
+        },
+        {
+            "date": "2021-09-01",
+            "temperature": 22.333333333333332,
+            "rainfall": 21.6
+        },
+        {
+            "date": "2021-10-01",
+            "temperature": 21.925806451612903,
+            "rainfall": 161.8
+        },
+        {
+            "date": "2021-11-01",
+            "temperature": 22.363333333333333,
+            "rainfall": 106.9
+        },
+        {
+            "date": "2021-12-01",
+            "temperature": 24.041935483870965,
+            "rainfall": 174.6
+        },
+        {
+            "date": "2022-01-01",
+            "temperature": 25.97741935483871,
+            "rainfall": 207.8
+        },
+        {
+            "date": "2022-02-01",
+            "temperature": 25.489285714285717,
+            "rainfall": 135.1
+        },
+        {
+            "date": "2022-03-01",
+            "temperature": 26.358064516129033,
+            "rainfall": 46.5
+        },
+        {
+            "date": "2022-04-01",
+            "temperature": 23.993333333333332,
+            "rainfall": 209.8
+        },
+        {
+            "date": "2022-05-01",
+            "temperature": 21.993548387096773,
+            "rainfall": 40.3
+        },
+        {
+            "date": "2022-06-01",
+            "temperature": 20.44333333333333,
+            "rainfall": 71.6
+        },
+        {
+            "date": "2022-07-01",
+            "temperature": 21.580645161290324,
+            "rainfall": 22.200000000000003
+        },
+        {
+            "date": "2022-08-01",
+            "temperature": 20.73225806451613,
+            "rainfall": 57.0
+        },
+        {
+            "date": "2022-09-01",
+            "temperature": 20.509999999999998,
+            "rainfall": 125.10000000000001
+        },
+        {
+            "date": "2022-10-01",
+            "temperature": 23.23225806451613,
+            "rainfall": 82.60000000000001
+        },
+        {
+            "date": "2022-11-01",
+            "temperature": 22.733333333333334,
+            "rainfall": 150.6
+        },
+        {
+            "date": "2022-12-01",
+            "temperature": 24.361290322580647,
+            "rainfall": 191.1
+        },
+        {
+            "date": "2023-01-01",
+            "temperature": 25.541935483870965,
+            "rainfall": 197.5
+        },
+        {
+            "date": "2023-02-01",
+            "temperature": 26.667857142857144,
+            "rainfall": 128.7
+        },
+        {
+            "date": "2023-03-01",
+            "temperature": 26.12258064516129,
+            "rainfall": 72.2
+        },
+        {
+            "date": "2023-04-01",
+            "temperature": 23.793333333333333,
+            "rainfall": 80.2
+        },
+        {
+            "date": "2023-05-01",
+            "temperature": 22.0,
+            "rainfall": 63.3
+        },
+        {
+            "date": "2023-06-01",
+            "temperature": 21.266666666666666,
+            "rainfall": 28.1
+        },
+        {
+            "date": "2023-07-01",
+            "temperature": 21.164516129032258,
+            "rainfall": 55.8
+        },
+        {
+            "date": "2023-08-01",
+            "temperature": 22.11935483870968,
+            "rainfall": 113.5
+        },
+        {
+            "date": "2023-09-01",
+            "temperature": 23.959999999999997,
+            "rainfall": 33.3
+        },
+        {
+            "date": "2023-10-01",
+            "temperature": 23.96451612903226,
+            "rainfall": 75.7
+        },
+        {
+            "date": "2023-11-01",
+            "temperature": 25.80666666666667,
+            "rainfall": 50.9
+        },
+        {
+            "date": "2023-12-01",
+            "temperature": 26.274193548387096,
+            "rainfall": 90.39999999999999
+        },
+        {
+            "date": "2024-01-01",
+            "temperature": 26.538709677419355,
+            "rainfall": 184.20000000000002
+        },
+        {
+            "date": "2024-02-01",
+            "temperature": 27.158620689655173,
+            "rainfall": 64.7
+        },
+        {
+            "date": "2024-03-01",
+            "temperature": 26.299999999999997,
+            "rainfall": 253.6
+        },
+        {
+            "date": "2024-04-01",
+            "temperature": 24.936666666666667,
+            "rainfall": 12.8
+        },
+        {
+            "date": "2024-05-01",
+            "temperature": 24.812903225806455,
+            "rainfall": 38.9
+        },
+        {
+            "date": "2024-06-01",
+            "temperature": 23.466666666666665,
+            "rainfall": 19.299999999999997
+        },
+        {
+            "date": "2024-07-01",
+            "temperature": 21.345161290322583,
+            "rainfall": 48.8
+        },
+        {
+            "date": "2024-08-01",
+            "temperature": 21.596774193548388,
+            "rainfall": 74.2
+        },
+        {
+            "date": "2024-09-01",
+            "temperature": 24.12,
+            "rainfall": 14.3
+        },
+        {
+            "date": "2024-10-01",
+            "temperature": 23.387096774193548,
+            "rainfall": 98.0
+        },
+        {
+            "date": "2024-11-01",
+            "temperature": 24.15666666666667,
+            "rainfall": 117.30000000000001
+        },
+        {
+            "date": "2024-12-01",
+            "temperature": 25.374193548387098,
+            "rainfall": 163.7
+        }
+    ]
+}
