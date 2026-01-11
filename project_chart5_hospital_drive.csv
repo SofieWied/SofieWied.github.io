@@ -1,0 +1,401 @@
+district_code,district_name,hospital_drive
+01001,"Flensburg, kreisfreie Stadt",6.83330909090909
+01002,"Kiel, kreisfreie Stadt",8.6711232187762
+01003,"Lübeck, kreisfreie Stadt",9.16691489361702
+01004,"Neumünster, kreisfreie Stadt",7.27233333333333
+01051,"Dithmarschen, Landkreis",21.9571889566153
+01053,"Herzogtum Lauenburg, Landkreis",17.1440783289817
+01054,"Nordfriesland, Landkreis",20.6256902066929
+01055,"Ostholstein, Landkreis",13.9012963701635
+01056,"Pinneberg, Landkreis",13.147405170331
+01057,"Plön, Landkreis",17.8272498090145
+01058,"Rendsburg-Eckernförde, Landkreis",16.6399206833435
+01059,"Schleswig-Flensburg, Landkreis",20.4389674813587
+01060,"Segeberg, Landkreis",17.1367772603803
+01061,"Steinburg, Landkreis",17.857182448037
+01062,"Stormarn, Landkreis",14.7391914569031
+02000,"Hamburg, kreisfreie Stadt",8.57070488206253
+03101,"Braunschweig, kreisfreie Stadt",8.48709520500347
+03102,"Salzgitter, kreisfreie Stadt",7.35885245901639
+03103,"Wolfsburg, kreisfreie Stadt",11.9735576923077
+03151,"Gifhorn, Landkreis",14.7361381294964
+03153,"Goslar, Landkreis",10.5570093896714
+03154,"Helmstedt, Landkreis",14.9166063044936
+03155,"Northeim, Landkreis",16.985488155061
+03157,"Peine, Landkreis",12.9705
+03158,"Wolfenbüttel, Landkreis",14.0573612684032
+03159,"Göttingen, Landkreis",12.7100180995475
+03241,"Region Hannover, Landkreis",12.4200629203732
+03251,"Diepholz, Landkreis",15.008942193087
+03252,"Hameln-Pyrmont, Landkreis",13.2232854368932
+03254,"Hildesheim, Landkreis",13.0197743148845
+03255,"Holzminden, Landkreis",17.1537890625
+03256,"Nienburg (Weser), Landkreis",17.7319578754579
+03257,"Schaumburg, Landkreis",16.4973124630833
+03351,"Celle, Landkreis",19.3960657504716
+03352,"Cuxhaven, Landkreis",19.8331479320628
+03353,"Harburg, Landkreis",14.6521631878558
+03354,"Lüchow-Dannenberg, Landkreis",18.1621666666667
+03355,"Lüneburg, Landkreis",19.3238779956427
+03356,"Osterholz, Landkreis",13.7797990815155
+03357,"Rotenburg (Wümme), Landkreis",26.4284247027741
+03358,Heidekreis,15.587190960452
+03359,"Stade, Landkreis",19.3267953192363
+03360,"Uelzen, Landkreis",17.9210204081633
+03361,"Verden, Landkreis",15.1221152770006
+03401,"Delmenhorst, kreisfreie Stadt",9.48714285714286
+03402,"Emden, kreisfreie Stadt",9.65896193771626
+03403,"Oldenburg (Oldenburg), kreisfreie Stadt",7.44859511343805
+03404,"Osnabrück, kreisfreie Stadt",8.87739452257587
+03405,"Wilhelmshaven, kreisfreie Stadt",8.04227866473149
+03451,"Ammerland, Landkreis",15.0858169425511
+03452,"Aurich, Landkreis",15.6130687830688
+03453,"Cloppenburg, Landkreis",12.478796652942
+03454,"Emsland, Landkreis",14.2041529222702
+03455,"Friesland, Landkreis",14.726673553719
+03456,"Grafschaft Bentheim, Landkreis",17.1584507042254
+03457,"Leer, Landkreis",15.1357061864265
+03458,"Oldenburg, Landkreis",13.1233449538086
+03459,"Osnabrück, Landkreis",12.0151776578597
+03460,"Vechta, Landkreis",11.1532107295265
+03461,"Wesermarsch, Landkreis",14.654500254972
+03462,"Wittmund, Landkreis",17.7843038331454
+04011,"Bremen, kreisfreie Stadt",7.46430030257186
+04012,"Bremerhaven, kreisfreie Stadt",7.20373942470389
+05111,"Düsseldorf, kreisfreie Stadt",6.68823529411765
+05112,"Duisburg, kreisfreie Stadt",5.94498058252427
+05113,"Essen, kreisfreie Stadt",6.41432301380082
+05114,"Krefeld, kreisfreie Stadt",9.27707439198855
+05116,"Mönchengladbach, kreisfreie Stadt",7.31612407862408
+05117,"Mülheim an der Ruhr, kreisfreie Stadt",7.34701388888889
+05119,"Oberhausen, kreisfreie Stadt",5.40401247401247
+05120,"Remscheid, kreisfreie Stadt",6.62247002398082
+05122,"Solingen, kreisfreie Stadt",7.36718348623853
+05124,"Wuppertal, kreisfreie Stadt",7.67608562691132
+05154,"Kleve, Landkreis",11.5903788063337
+05158,"Mettmann, Landkreis",8.88180187010361
+05162,Rhein-Kreis Neuss,9.09703587699317
+05166,"Viersen, Landkreis",12.3016807116105
+05170,"Wesel, Landkreis",11.2035711560473
+05314,"Bonn, kreisfreie Stadt",6.34818181818182
+05315,"Köln, kreisfreie Stadt",7.21448367166814
+05316,"Leverkusen, kreisfreie Stadt",8.68702947845805
+05334,"Städteregion Aachen, Landkreis",10.1548096192385
+05358,"Düren, Landkreis",11.9147693672383
+05362,Rhein-Erft-Kreis,9.71085863232137
+05366,"Euskirchen, Landkreis",13.3958641509434
+05370,"Heinsberg, Landkreis",10.3994603259418
+05374,Oberbergischer Kreis,11.2679555981473
+05378,Rheinisch-Bergischer Kreis,11.6261436576668
+05382,Rhein-Sieg-Kreis,13.0808382229673
+05512,"Bottrop, kreisfreie Stadt",5.69212694877506
+05513,"Gelsenkirchen, kreisfreie Stadt",4.77626184323859
+05515,"Münster, kreisfreie Stadt",9.21032258064516
+05554,"Borken, Landkreis",11.5017921762863
+05558,"Coesfeld, Landkreis",12.1995164353543
+05562,"Recklinghausen, Landkreis",7.61638192728556
+05566,"Steinfurt, Landkreis",12.3184476843911
+05570,"Warendorf, Landkreis",12.09304400978
+05711,"Bielefeld, kreisfreie Stadt",9.44288096032011
+05754,"Gütersloh, Landkreis",14.0976038855909
+05758,"Herford, Landkreis",10.6808215408805
+05762,"Höxter, Landkreis",10.7088682123246
+05766,"Lippe, Landkreis",13.7772295664534
+05770,"Minden-Lübbecke, Landkreis",13.1600977506832
+05774,"Paderborn, Landkreis",12.7057657323185
+05911,"Bochum, kreisfreie Stadt",6.1756512378902
+05913,"Dortmund, kreisfreie Stadt",6.51021262675826
+05914,"Hagen, kreisfreie Stadt",8.97024926686217
+05915,"Hamm, kreisfreie Stadt",8.30398512221042
+05916,"Herne, kreisfreie Stadt",4.85283667621777
+05954,Ennepe-Ruhr-Kreis,10.3098518164436
+05958,Hochsauerlandkreis,11.6402084476138
+05962,Märkischer Kreis,12.1087216594308
+05966,"Olpe, Landkreis",13.9426064610866
+05970,"Siegen-Wittgenstein, Landkreis",17.9579501514093
+05974,"Soest, Landkreis",10.2592971576227
+05978,"Unna, Landkreis",8.51849182592678
+06411,"Darmstadt, kreisfreie Stadt",7.14907913669065
+06412,"Frankfurt am Main, kreisfreie Stadt",6.55680452978828
+06413,"Offenbach am Main, kreisfreie Stadt",5.80005263157895
+06414,"Wiesbaden, kreisfreie Stadt",7.47859497645212
+06431,"Bergstraße, Landkreis",15.5724558019929
+06432,"Darmstadt-Dieburg, Landkreis",12.8425028835063
+06433,"Groß-Gerau, Landkreis",11.4617537746806
+06434,Hochtaunuskreis,11.1635606820461
+06435,Main-Kinzig-Kreis,15.1858497833414
+06436,Main-Taunus-Kreis,10.2936206896552
+06437,Odenwaldkreis,17.1045533558667
+06438,"Offenbach, Landkreis",10.0115453116815
+06439,Rheingau-Taunus-Kreis,14.5754553775744
+06440,Wetteraukreis,12.8733223782492
+06531,"Gießen, Landkreis",12.3482577319588
+06532,Lahn-Dill-Kreis,13.0676360495249
+06533,"Limburg-Weilburg, Landkreis",13.3530451415455
+06534,"Marburg-Biedenkopf, Landkreis",17.3543249176729
+06535,Vogelsbergkreis,15.6352373995617
+06611,"Kassel, kreisfreie Stadt",5.96983706720978
+06631,"Fulda, Landkreis",15.2840916236245
+06632,"Hersfeld-Rotenburg, Landkreis",15.7563984375
+06633,"Kassel, Landkreis",13.0806425591099
+06634,Schwalm-Eder-Kreis,13.4458320610687
+06635,"Waldeck-Frankenberg, Landkreis",12.2998029682702
+06636,Werra-Meißner-Kreis,12.4530688294608
+07111,"Koblenz, kreisfreie Stadt",6.10384397163121
+07131,"Ahrweiler, Landkreis",12.8283235046335
+07132,"Altenkirchen (Westerwald), Landkreis",13.2132308190353
+07133,"Bad Kreuznach, Landkreis",15.8760885311871
+07134,"Birkenfeld, Landkreis",19.8527886136004
+07135,"Cochem-Zell, Landkreis",15.815970437018
+07137,"Mayen-Koblenz, Landkreis",12.6483522142122
+07138,"Neuwied, Landkreis",9.86882047958522
+07140,Rhein-Hunsrück-Kreis,13.8194743429287
+07141,Rhein-Lahn-Kreis,13.9561852166525
+07143,Westerwaldkreis,12.2104108108108
+07211,"Trier, kreisfreie Stadt",7.52439374185137
+07231,"Bernkastel-Wittlich, Landkreis",15.6965688822874
+07232,Eifelkreis Bitburg-Prüm,18.8766734693878
+07233,"Vulkaneifel, Landkreis",14.1252734731085
+07235,"Trier-Saarburg, Landkreis",13.581346911958
+07311,"Frankenthal (Pfalz), kreisfreie Stadt",7.06966037735849
+07312,"Kaiserslautern, kreisfreie Stadt",8.08931137724551
+07313,"Landau in der Pfalz, kreisfreie Stadt",5.13957055214724
+07314,"Ludwigshafen am Rhein, kreisfreie Stadt",5.67908517350158
+07315,"Mainz, kreisfreie Stadt",8.00822902796272
+07316,"Neustadt an der Weinstraße, kreisfreie Stadt",6.6278354978355
+07317,"Pirmasens, kreisfreie Stadt",6.54217283950617
+07318,"Speyer, kreisfreie Stadt",5.46845878136201
+07319,"Worms, kreisfreie Stadt",9.46042047531993
+07320,"Zweibrücken, kreisfreie Stadt",6.11972906403941
+07331,"Alzey-Worms, Landkreis",12.2472303030303
+07332,"Bad Dürkheim, Landkreis",11.5157070135747
+07333,Donnersbergkreis,12.1099309912171
+07334,"Germersheim, Landkreis",9.69656752411576
+07335,"Kaiserslautern, Landkreis",15.3303907074974
+07336,"Kusel, Landkreis",15.044772985244
+07337,"Südliche Weinstraße, Landkreis",8.99007272727273
+07338,Rhein-Pfalz-Kreis,10.5291055045872
+07339,"Mainz-Bingen, Landkreis",13.4172469252602
+07340,"Südwestpfalz, Landkreis",14.9459551098376
+08111,"Stuttgart, kreisfreie Stadt",8.95801814708691
+08115,"Böblingen, Landkreis",10.3492892436336
+08116,"Esslingen, Landkreis",11.3149459613197
+08117,"Göppingen, Landkreis",13.2605906853465
+08118,"Ludwigsburg, Landkreis",10.3357587232892
+08119,Rems-Murr-Kreis,16.072843355605
+08121,"Heilbronn, kreisfreie Stadt",8.84284603421462
+08125,"Heilbronn, Landkreis",16.7262273838631
+08126,Hohenlohekreis,17.8471083297367
+08127,"Schwäbisch Hall, Landkreis",17.0120921743098
+08128,Main-Tauber-Kreis,15.9712110311751
+08135,"Heidenheim, Landkreis",15.0272790845518
+08136,Ostalbkreis,14.4911192696964
+08211,"Baden-Baden, kreisfreie Stadt",10.6128571428571
+08212,"Karlsruhe, kreisfreie Stadt",8.52545101088647
+08215,"Karlsruhe, Landkreis",12.6870890322581
+08216,"Rastatt, Landkreis",13.8921914357683
+08221,"Heidelberg, kreisfreie Stadt",7.08491228070175
+08222,"Mannheim, kreisfreie Stadt",9.4469364664926
+08225,Neckar-Odenwald-Kreis,13.1267285298399
+08226,Rhein-Neckar-Kreis,11.2274062705547
+08231,"Pforzheim, kreisfreie Stadt",7.91701587301587
+08235,"Calw, Landkreis",12.7238739462063
+08236,Enzkreis,11.6040723774622
+08237,"Freudenstadt, Landkreis",17.5646540880503
+08311,"Freiburg im Breisgau, kreisfreie Stadt",7.75566101694915
+08315,"Breisgau-Hochschwarzwald, Landkreis",19.8002177452177
+08316,"Emmendingen, Landkreis",16.929774690199
+08317,Ortenaukreis,16.9735482187133
+08325,"Rottweil, Landkreis",16.3260547132498
+08326,Schwarzwald-Baar-Kreis,18.9220437386097
+08327,"Tuttlingen, Landkreis",13.7734768568353
+08335,"Konstanz, Landkreis",11.3174919923126
+08336,"Lörrach, Landkreis",14.0415802382621
+08337,"Waldshut, Landkreis",18.4476491812379
+08415,"Reutlingen, Landkreis",13.5263154293534
+08416,"Tübingen, Landkreis",15.3885888945492
+08417,Zollernalbkreis,13.1189928315412
+08421,"Ulm, kreisfreie Stadt",7.94286944045911
+08425,Alb-Donau-Kreis,16.3197110552764
+08426,"Biberach, Landkreis",12.64497799511
+08435,Bodenseekreis,12.1279891156463
+08436,"Ravensburg, Landkreis",14.2297670632436
+08437,"Sigmaringen, Landkreis",12.9086375488918
+09161,"Ingolstadt, kreisfreie Stadt",12.0339691943128
+09162,"München, kreisfreie Stadt",7.39161780673181
+09163,"Rosenheim, kreisfreie Stadt",6.74748717948718
+09171,"Altötting, Landkreis",14.3572249494658
+09172,"Berchtesgadener Land, Landkreis",12.0993425488874
+09173,"Bad Tölz-Wolfratshausen, Landkreis",11.0608702175544
+09174,"Dachau, Landkreis",11.0556829896907
+09175,"Ebersberg, Landkreis",14.9227876106195
+09176,"Eichstätt, Landkreis",16.4469521988528
+09177,"Erding, Landkreis",17.0275476522548
+09178,"Freising, Landkreis",16.023
+09179,"Fürstenfeldbruck, Landkreis",12.6014203954214
+09180,"Garmisch-Partenkirchen, Landkreis",13.4675381552754
+09181,"Landsberg am Lech, Landkreis",16.5359520578924
+09182,"Miesbach, Landkreis",16.4726405274115
+09183,"Mühldorf am Inn, Landkreis",15.1410199168308
+09184,"München, Landkreis",15.0761797337278
+09185,"Neuburg-Schrobenhausen, Landkreis",11.5709901835254
+09186,"Pfaffenhofen an der Ilm, Landkreis",14.417388829598
+09187,"Rosenheim, Landkreis",12.0365493741307
+09188,"Starnberg, Landkreis",9.96998964803313
+09189,"Traunstein, Landkreis",15.545015537601
+09190,"Weilheim-Schongau, Landkreis",13.7283772626231
+09261,"Landshut, kreisfreie Stadt",7.25641304347826
+09262,"Passau, kreisfreie Stadt",9.9073399715505
+09263,"Straubing, kreisfreie Stadt",15.4351507537688
+09271,"Deggendorf, Landkreis",14.2157531630461
+09272,"Freyung-Grafenau, Landkreis",16.9415079900968
+09273,"Kelheim, Landkreis",14.2005142269455
+09274,"Landshut, Landkreis",18.1267761738842
+09275,"Passau, Landkreis",24.8383418128959
+09276,"Regen, Landkreis",15.8885234240863
+09277,"Rottal-Inn, Landkreis",16.9158899962155
+09278,"Straubing-Bogen, Landkreis",16.6453028009084
+09279,"Dingolfing-Landau, Landkreis",14.3612704174229
+09361,"Amberg, kreisfreie Stadt",5.7309793814433
+09362,"Regensburg, kreisfreie Stadt",7.21557220708447
+09363,"Weiden in der Oberpfalz, kreisfreie Stadt",7.17949519230769
+09371,"Amberg-Sulzbach, Landkreis",13.7025688916105
+09372,"Cham, Landkreis",16.7198797250859
+09373,"Neumarkt in der Oberpfalz, Landkreis",15.4555276532138
+09374,"Neustadt an der Waldnaab, Landkreis",16.8030919825979
+09375,"Regensburg, Landkreis",15.771101905551
+09376,"Schwandorf, Landkreis",13.5879115536004
+09377,"Tirschenreuth, Landkreis",12.955914893617
+09461,"Bamberg, kreisfreie Stadt",9.69142857142857
+09462,"Bayreuth, kreisfreie Stadt",7.55945614035088
+09463,"Coburg, kreisfreie Stadt",7.19795454545455
+09464,"Hof, kreisfreie Stadt",6.00647727272727
+09471,"Bamberg, Landkreis",12.6974811354653
+09472,"Bayreuth, Landkreis",16.0349986504723
+09473,"Coburg, Landkreis",13.0749749861034
+09474,"Forchheim, Landkreis",15.3449413808076
+09475,"Hof, Landkreis",12.1546096189881
+09476,"Kronach, Landkreis",16.2809625390219
+09477,"Kulmbach, Landkreis",15.2163685882887
+09478,"Lichtenfels, Landkreis",12.5226333113891
+09479,"Wunsiedel im Fichtelgebirge, Landkreis",11.9723216995448
+09561,"Ansbach, kreisfreie Stadt",10.0409129511677
+09562,"Erlangen, kreisfreie Stadt",7.54099830795262
+09563,"Fürth, kreisfreie Stadt",7.89723549488055
+09564,"Nürnberg, kreisfreie Stadt",7.80061488673139
+09565,"Schwabach, kreisfreie Stadt",7.4434011627907
+09571,"Ansbach, Landkreis",16.7742328346759
+09572,"Erlangen-Höchstadt, Landkreis",12.1998326133909
+09573,"Fürth, Landkreis",15.9897735314933
+09574,"Nürnberger Land, Landkreis",11.978170995671
+09575,"Neustadt an der Aisch-Bad Windsheim, Landkreis",18.9102687358062
+09576,"Roth, Landkreis",16.3902440976391
+09577,"Weißenburg-Gunzenhausen, Landkreis",14.6892907801418
+09661,"Aschaffenburg, kreisfreie Stadt",9.96239904988123
+09662,"Schweinfurt, kreisfreie Stadt",4.98194244604317
+09663,"Würzburg, kreisfreie Stadt",9.67009162303665
+09671,"Aschaffenburg, Landkreis",16.2484949092519
+09672,"Bad Kissingen, Landkreis",20.3837285780454
+09673,"Rhön-Grabfeld, Landkreis",18.2121553610503
+09674,"Haßberge, Landkreis",11.9445704467354
+09675,"Kitzingen, Landkreis",14.2523636363636
+09676,"Miltenberg, Landkreis",16.120769650655
+09677,"Main-Spessart, Landkreis",19.1774638297872
+09678,"Schweinfurt, Landkreis",11.773024
+09679,"Würzburg, Landkreis",16.6021405750799
+09761,"Augsburg, kreisfreie Stadt",6.60953947368421
+09762,"Kaufbeuren, kreisfreie Stadt",5.89043333333333
+09763,"Kempten (Allgäu), kreisfreie Stadt",24.951734006734
+09764,"Memmingen, kreisfreie Stadt",6.24371559633027
+09771,"Aichach-Friedberg, Landkreis",12.4542478941035
+09772,"Augsburg, Landkreis",13.3086484998624
+09773,"Dillingen an der Donau, Landkreis",12.381490837048
+09774,"Günzburg, Landkreis",12.6351424979044
+09775,"Neu-Ulm, Landkreis",9.37508229426434
+09776,"Lindau (Bodensee), Landkreis",12.2359292035398
+09777,"Ostallgäu, Landkreis",15.4046729435084
+09778,"Unterallgäu, Landkreis",13.9156414219475
+09779,"Donau-Ries, Landkreis",16.2080650626906
+09780,"Oberallgäu, Landkreis",20.0519744859101
+10041,"Regionalverband Saarbrücken, Landkreis",9.54323753462604
+10042,"Merzig-Wadern, Landkreis",12.5158377595365
+10043,"Neunkirchen, Landkreis",10.0786601705238
+10044,"Saarlouis, Landkreis",9.97955135773318
+10045,Saarpfalz-Kreis,12.8725252016129
+10046,"Sankt Wendel, Landkreis",13.7979192030991
+11000,"Berlin, kreisfreie Stadt",6.75815430520034
+12051,"Brandenburg an der Havel, kreisfreie Stadt",10.2852918781726
+12052,"Cottbus, kreisfreie Stadt",10.3262038073908
+12053,"Frankfurt (Oder), kreisfreie Stadt",10.5341207815275
+12054,"Potsdam, kreisfreie Stadt",9.24625
+12060,"Barnim, Landkreis",15.2089708310402
+12061,"Dahme-Spreewald, Landkreis",14.73984375
+12062,"Elbe-Elster, Landkreis",16.2816089385475
+12063,"Havelland, Landkreis",15.7874635741897
+12064,"Märkisch-Oderland, Landkreis",16.1718064516129
+12065,"Oberhavel, Landkreis",21.8271428571429
+12066,"Oberspreewald-Lausitz, Landkreis",17.3459827779858
+12067,"Oder-Spree, Landkreis",17.042332543614
+12068,"Ostprignitz-Ruppin, Landkreis",19.04754987356
+12069,"Potsdam-Mittelmark, Landkreis",16.2024296919839
+12070,"Prignitz, Landkreis",17.5111752265861
+12071,"Spree-Neiße, Landkreis",21.2306935445164
+12072,"Teltow-Fläming, Landkreis",19.0454511478911
+12073,"Uckermark, Landkreis",18.429506558401
+13003,"Rostock, kreisfreie Stadt",11.8306256517205
+13004,"Schwerin, kreisfreie Stadt",11.7699831081081
+13071,"Mecklenburgische Seenplatte, Landkreis",20.7435174152154
+13072,"Rostock, Landkreis",17.9881973701009
+13073,"Vorpommern-Rügen, Landkreis",20.0231646710442
+13074,"Nordwestmecklenburg, Landkreis",19.0239843604543
+13075,"Vorpommern-Greifswald, Landkreis",19.2920821035686
+13076,"Ludwigslust-Parchim, Landkreis",17.7787328280436
+14511,"Chemnitz, kreisfreie Stadt",9.90985884907709
+14521,Erzgebirgskreis,13.314732564237
+14522,"Mittelsachsen, Landkreis",14.2683358596795
+14523,Vogtlandkreis,13.0044847890088
+14524,"Zwickau, Landkreis",10.7242846675215
+14612,"Dresden, kreisfreie Stadt",10.3617890772128
+14625,"Bautzen, Landkreis",14.7090740028216
+14626,"Görlitz, Landkreis",14.0193495254048
+14627,"Meißen, Landkreis",22.0645379413974
+14628,"Sächsische Schweiz-Osterzgebirge, Landkreis",15.6498070846499
+14713,"Leipzig, kreisfreie Stadt",9.35172887172887
+14729,"Leipzig, Landkreis",12.9811448300927
+14730,"Nordsachsen, Landkreis",11.9437418677859
+15001,"Dessau-Roßlau, kreisfreie Stadt",9.00832926829268
+15002,"Halle (Saale), kreisfreie Stadt",6.07374551971326
+15003,"Magdeburg, kreisfreie Stadt",8.38172131147541
+15081,Altmarkkreis Salzwedel,19.050044039006
+15082,"Anhalt-Bitterfeld, Landkreis",13.3168187660668
+15083,"Börde, Landkreis",16.6752827729997
+15084,Burgenlandkreis,14.2206736526946
+15085,"Harz, Landkreis",16.0345988730883
+15086,"Jerichower Land, Landkreis",18.0131196054254
+15087,"Mansfeld-Südharz, Landkreis",14.2523298692591
+15088,Saalekreis,14.3964091635589
+15089,Salzlandkreis,16.6699060606061
+15090,"Stendal, Landkreis",17.1212101210121
+15091,"Wittenberg, Landkreis",20.3048483161703
+16051,"Erfurt, kreisfreie Stadt",9.19026877470356
+16052,"Gera, kreisfreie Stadt",11.4030857142857
+16053,"Jena, kreisfreie Stadt",12.0944920634921
+16054,"Suhl, kreisfreie Stadt",10.0458786610879
+16055,"Weimar, kreisfreie Stadt",20.4323404255319
+16061,"Eichsfeld, Landkreis",12.2918181818182
+16062,"Nordhausen, Landkreis",12.7873927178153
+16063,Wartburgkreis,15.9160190664037
+16064,Unstrut-Hainich-Kreis,12.6065059486537
+16065,Kyffhäuserkreis,15.7014648065948
+16066,"Schmalkalden-Meiningen, Landkreis",15.2043655650755
+16067,"Gotha, Landkreis",12.1049417131272
+16068,"Sömmerda, Landkreis",15.4481053525913
+16069,"Hildburghausen, Landkreis",16.9194885679904
+16070,Ilm-Kreis,12.4575114678899
+16071,"Weimarer Land, Landkreis",13.6062086956522
+16072,"Sonneberg, Landkreis",12.0617512877116
+16073,"Saalfeld-Rudolstadt, Landkreis",17.8027322868053
+16074,Saale-Holzland-Kreis,13.75980664353
+16075,Saale-Orla-Kreis,21.5402908643998
+16076,"Greiz, Landkreis",20.255011900714
+16077,"Altenburger Land, Landkreis",13.8139666520404

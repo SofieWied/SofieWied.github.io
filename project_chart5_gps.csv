@@ -1,0 +1,401 @@
+district_code,district_name,gp_med
+01001,"Flensburg, kreisfreie Stadt",6.26
+01002,"Kiel, kreisfreie Stadt",6.65
+01003,"Lübeck, kreisfreie Stadt",6.82
+01004,"Neumünster, kreisfreie Stadt",5.86
+01051,"Dithmarschen, Landkreis",6.4
+01053,"Herzogtum Lauenburg, Landkreis",6.25
+01054,"Nordfriesland, Landkreis",6.65
+01055,"Ostholstein, Landkreis",6.85
+01056,"Pinneberg, Landkreis",6.14
+01057,"Plön, Landkreis",6.95
+01058,"Rendsburg-Eckernförde, Landkreis",6.68
+01059,"Schleswig-Flensburg, Landkreis",6.16
+01060,"Segeberg, Landkreis",5.78
+01061,"Steinburg, Landkreis",6.02
+01062,"Stormarn, Landkreis",6.04
+02000,"Hamburg, kreisfreie Stadt",6.39
+03101,"Braunschweig, kreisfreie Stadt",6.51
+03102,"Salzgitter, kreisfreie Stadt",5.59
+03103,"Wolfsburg, kreisfreie Stadt",5.61
+03151,"Gifhorn, Landkreis",5.59
+03153,"Goslar, Landkreis",7.37
+03154,"Helmstedt, Landkreis",6.02
+03155,"Northeim, Landkreis",8.06
+03157,"Peine, Landkreis",5.83
+03158,"Wolfenbüttel, Landkreis",5.9
+03159,"Göttingen, Landkreis",6.99
+03241,"Region Hannover, Landkreis",6.7
+03251,"Diepholz, Landkreis",5.29
+03252,"Hameln-Pyrmont, Landkreis",6.42
+03254,"Hildesheim, Landkreis",7.02
+03255,"Holzminden, Landkreis",7.47
+03256,"Nienburg (Weser), Landkreis",5.59
+03257,"Schaumburg, Landkreis",6.33
+03351,"Celle, Landkreis",6.61
+03352,"Cuxhaven, Landkreis",5.95
+03353,"Harburg, Landkreis",5.9
+03354,"Lüchow-Dannenberg, Landkreis",6.84
+03355,"Lüneburg, Landkreis",6.71
+03356,"Osterholz, Landkreis",6.2
+03357,"Rotenburg (Wümme), Landkreis",5.71
+03358,Heidekreis,5.76
+03359,"Stade, Landkreis",5.6
+03360,"Uelzen, Landkreis",6.78
+03361,"Verden, Landkreis",6.5
+03401,"Delmenhorst, kreisfreie Stadt",5.73
+03402,"Emden, kreisfreie Stadt",6.2
+03403,"Oldenburg (Oldenburg), kreisfreie Stadt",6.13
+03404,"Osnabrück, kreisfreie Stadt",6.79
+03405,"Wilhelmshaven, kreisfreie Stadt",6.82
+03451,"Ammerland, Landkreis",7.22
+03452,"Aurich, Landkreis",6.34
+03453,"Cloppenburg, Landkreis",5.07
+03454,"Emsland, Landkreis",5.61
+03455,"Friesland, Landkreis",7.22
+03456,"Grafschaft Bentheim, Landkreis",5.3
+03457,"Leer, Landkreis",6.36
+03458,"Oldenburg, Landkreis",6.13
+03459,"Osnabrück, Landkreis",6.19
+03460,"Vechta, Landkreis",5.74
+03461,"Wesermarsch, Landkreis",5.97
+03462,"Wittmund, Landkreis",7.06
+04011,"Bremen, kreisfreie Stadt",6.08
+04012,"Bremerhaven, kreisfreie Stadt",5.83
+05111,"Düsseldorf, kreisfreie Stadt",6.41
+05112,"Duisburg, kreisfreie Stadt",5.36
+05113,"Essen, kreisfreie Stadt",5.96
+05114,"Krefeld, kreisfreie Stadt",6.57
+05116,"Mönchengladbach, kreisfreie Stadt",6.17
+05117,"Mülheim an der Ruhr, kreisfreie Stadt",5.72
+05119,"Oberhausen, kreisfreie Stadt",5.32
+05120,"Remscheid, kreisfreie Stadt",6.07
+05122,"Solingen, kreisfreie Stadt",5.65
+05124,"Wuppertal, kreisfreie Stadt",5.9
+05154,"Kleve, Landkreis",5.4
+05158,"Mettmann, Landkreis",6.15
+05162,Rhein-Kreis Neuss,6.03
+05166,"Viersen, Landkreis",6.14
+05170,"Wesel, Landkreis",5.68
+05314,"Bonn, kreisfreie Stadt",6.52
+05315,"Köln, kreisfreie Stadt",6.54
+05316,"Leverkusen, kreisfreie Stadt",6.52
+05334,"Städteregion Aachen, Landkreis",6.36
+05358,"Düren, Landkreis",6.1
+05362,Rhein-Erft-Kreis,6.09
+05366,"Euskirchen, Landkreis",6.29
+05370,"Heinsberg, Landkreis",6.18
+05374,Oberbergischer Kreis,5.44
+05378,Rheinisch-Bergischer Kreis,5.99
+05382,Rhein-Sieg-Kreis,6.31
+05512,"Bottrop, kreisfreie Stadt",5.35
+05513,"Gelsenkirchen, kreisfreie Stadt",5.38
+05515,"Münster, kreisfreie Stadt",6.52
+05554,"Borken, Landkreis",5.36
+05558,"Coesfeld, Landkreis",6.4
+05562,"Recklinghausen, Landkreis",5.51
+05566,"Steinfurt, Landkreis",6.2
+05570,"Warendorf, Landkreis",5.79
+05711,"Bielefeld, kreisfreie Stadt",5.45
+05754,"Gütersloh, Landkreis",4.98
+05758,"Herford, Landkreis",4.93
+05762,"Höxter, Landkreis",6.15
+05766,"Lippe, Landkreis",5.18
+05770,"Minden-Lübbecke, Landkreis",5.77
+05774,"Paderborn, Landkreis",5.32
+05911,"Bochum, kreisfreie Stadt",6.03
+05913,"Dortmund, kreisfreie Stadt",5.41
+05914,"Hagen, kreisfreie Stadt",5.92
+05915,"Hamm, kreisfreie Stadt",4.83
+05916,"Herne, kreisfreie Stadt",5.58
+05954,Ennepe-Ruhr-Kreis,5.84
+05958,Hochsauerlandkreis,5.86
+05962,Märkischer Kreis,5.61
+05966,"Olpe, Landkreis",5.87
+05970,"Siegen-Wittgenstein, Landkreis",5.55
+05974,"Soest, Landkreis",5.66
+05978,"Unna, Landkreis",5.5
+06411,"Darmstadt, kreisfreie Stadt",6.58
+06412,"Frankfurt am Main, kreisfreie Stadt",6.1
+06413,"Offenbach am Main, kreisfreie Stadt",6.19
+06414,"Wiesbaden, kreisfreie Stadt",6.57
+06431,"Bergstraße, Landkreis",5.98
+06432,"Darmstadt-Dieburg, Landkreis",5.04
+06433,"Groß-Gerau, Landkreis",5.79
+06434,Hochtaunuskreis,5.74
+06435,Main-Kinzig-Kreis,5.97
+06436,Main-Taunus-Kreis,5.54
+06437,Odenwaldkreis,6.74
+06438,"Offenbach, Landkreis",5.72
+06439,Rheingau-Taunus-Kreis,6.04
+06440,Wetteraukreis,6.56
+06531,"Gießen, Landkreis",6.96
+06532,Lahn-Dill-Kreis,6.5
+06533,"Limburg-Weilburg, Landkreis",6.13
+06534,"Marburg-Biedenkopf, Landkreis",6.37
+06535,Vogelsbergkreis,6.25
+06611,"Kassel, kreisfreie Stadt",6.73
+06631,"Fulda, Landkreis",6.83
+06632,"Hersfeld-Rotenburg, Landkreis",6.83
+06633,"Kassel, Landkreis",6.36
+06634,Schwalm-Eder-Kreis,5.92
+06635,"Waldeck-Frankenberg, Landkreis",6.34
+06636,Werra-Meißner-Kreis,5.99
+07111,"Koblenz, kreisfreie Stadt",6.91
+07131,"Ahrweiler, Landkreis",6.27
+07132,"Altenkirchen (Westerwald), Landkreis",6.06
+07133,"Bad Kreuznach, Landkreis",6.05
+07134,"Birkenfeld, Landkreis",6.38
+07135,"Cochem-Zell, Landkreis",5.69
+07137,"Mayen-Koblenz, Landkreis",5.79
+07138,"Neuwied, Landkreis",6.32
+07140,Rhein-Hunsrück-Kreis,6.18
+07141,Rhein-Lahn-Kreis,5.93
+07143,Westerwaldkreis,5.78
+07211,"Trier, kreisfreie Stadt",6.56
+07231,"Bernkastel-Wittlich, Landkreis",5.91
+07232,Eifelkreis Bitburg-Prüm,5.03
+07233,"Vulkaneifel, Landkreis",6.57
+07235,"Trier-Saarburg, Landkreis",5.3
+07311,"Frankenthal (Pfalz), kreisfreie Stadt",6.51
+07312,"Kaiserslautern, kreisfreie Stadt",5.78
+07313,"Landau in der Pfalz, kreisfreie Stadt",6.49
+07314,"Ludwigshafen am Rhein, kreisfreie Stadt",6.33
+07315,"Mainz, kreisfreie Stadt",5.71
+07316,"Neustadt an der Weinstraße, kreisfreie Stadt",5.41
+07317,"Pirmasens, kreisfreie Stadt",6.29
+07318,"Speyer, kreisfreie Stadt",6.42
+07319,"Worms, kreisfreie Stadt",5.45
+07320,"Zweibrücken, kreisfreie Stadt",6.54
+07331,"Alzey-Worms, Landkreis",6.22
+07332,"Bad Dürkheim, Landkreis",6.17
+07333,Donnersbergkreis,4.98
+07334,"Germersheim, Landkreis",5.21
+07335,"Kaiserslautern, Landkreis",6.56
+07336,"Kusel, Landkreis",5.78
+07337,"Südliche Weinstraße, Landkreis",6.11
+07338,Rhein-Pfalz-Kreis,5.29
+07339,"Mainz-Bingen, Landkreis",6.54
+07340,"Südwestpfalz, Landkreis",6.66
+08111,"Stuttgart, kreisfreie Stadt",5.92
+08115,"Böblingen, Landkreis",5.19
+08116,"Esslingen, Landkreis",5.62
+08117,"Göppingen, Landkreis",5.35
+08118,"Ludwigsburg, Landkreis",6.21
+08119,Rems-Murr-Kreis,5.49
+08121,"Heilbronn, kreisfreie Stadt",6.14
+08125,"Heilbronn, Landkreis",5.36
+08126,Hohenlohekreis,5.72
+08127,"Schwäbisch Hall, Landkreis",6.03
+08128,Main-Tauber-Kreis,6.17
+08135,"Heidenheim, Landkreis",5.75
+08136,Ostalbkreis,5.65
+08211,"Baden-Baden, kreisfreie Stadt",7.76
+08212,"Karlsruhe, kreisfreie Stadt",5.76
+08215,"Karlsruhe, Landkreis",5.37
+08216,"Rastatt, Landkreis",5.79
+08221,"Heidelberg, kreisfreie Stadt",6.95
+08222,"Mannheim, kreisfreie Stadt",6.45
+08225,Neckar-Odenwald-Kreis,5.56
+08226,Rhein-Neckar-Kreis,6.24
+08231,"Pforzheim, kreisfreie Stadt",5.74
+08235,"Calw, Landkreis",5.53
+08236,Enzkreis,5.18
+08237,"Freudenstadt, Landkreis",5.8
+08311,"Freiburg im Breisgau, kreisfreie Stadt",7.99
+08315,"Breisgau-Hochschwarzwald, Landkreis",6.28
+08316,"Emmendingen, Landkreis",6.59
+08317,Ortenaukreis,6.34
+08325,"Rottweil, Landkreis",5.14
+08326,Schwarzwald-Baar-Kreis,5.91
+08327,"Tuttlingen, Landkreis",4.52
+08335,"Konstanz, Landkreis",6.04
+08336,"Lörrach, Landkreis",5.41
+08337,"Waldshut, Landkreis",5.4
+08415,"Reutlingen, Landkreis",6.08
+08416,"Tübingen, Landkreis",6.02
+08417,Zollernalbkreis,4.94
+08421,"Ulm, kreisfreie Stadt",8.17
+08425,Alb-Donau-Kreis,5.8
+08426,"Biberach, Landkreis",5.99
+08435,Bodenseekreis,6.24
+08436,"Ravensburg, Landkreis",6.16
+08437,"Sigmaringen, Landkreis",5.36
+09161,"Ingolstadt, kreisfreie Stadt",5.86
+09162,"München, kreisfreie Stadt",6.62
+09163,"Rosenheim, kreisfreie Stadt",7.7
+09171,"Altötting, Landkreis",6.37
+09172,"Berchtesgadener Land, Landkreis",6.78
+09173,"Bad Tölz-Wolfratshausen, Landkreis",6.53
+09174,"Dachau, Landkreis",6.34
+09175,"Ebersberg, Landkreis",5.8
+09176,"Eichstätt, Landkreis",5.23
+09177,"Erding, Landkreis",5.93
+09178,"Freising, Landkreis",5.44
+09179,"Fürstenfeldbruck, Landkreis",6.25
+09180,"Garmisch-Partenkirchen, Landkreis",8.05
+09181,"Landsberg am Lech, Landkreis",6.27
+09182,"Miesbach, Landkreis",7.64
+09183,"Mühldorf am Inn, Landkreis",6.13
+09184,"München, Landkreis",5.58
+09185,"Neuburg-Schrobenhausen, Landkreis",5.78
+09186,"Pfaffenhofen an der Ilm, Landkreis",5.95
+09187,"Rosenheim, Landkreis",6.66
+09188,"Starnberg, Landkreis",6.85
+09189,"Traunstein, Landkreis",7.3
+09190,"Weilheim-Schongau, Landkreis",7.27
+09261,"Landshut, kreisfreie Stadt",6.84
+09262,"Passau, kreisfreie Stadt",7.51
+09263,"Straubing, kreisfreie Stadt",7.67
+09271,"Deggendorf, Landkreis",6.16
+09272,"Freyung-Grafenau, Landkreis",6.53
+09273,"Kelheim, Landkreis",6.34
+09274,"Landshut, Landkreis",6.19
+09275,"Passau, Landkreis",7.31
+09276,"Regen, Landkreis",6.68
+09277,"Rottal-Inn, Landkreis",6.03
+09278,"Straubing-Bogen, Landkreis",6.1
+09279,"Dingolfing-Landau, Landkreis",5.41
+09361,"Amberg, kreisfreie Stadt",9.09
+09362,"Regensburg, kreisfreie Stadt",6.91
+09363,"Weiden in der Oberpfalz, kreisfreie Stadt",7.1
+09371,"Amberg-Sulzbach, Landkreis",5.94
+09372,"Cham, Landkreis",6.83
+09373,"Neumarkt in der Oberpfalz, Landkreis",6.15
+09374,"Neustadt an der Waldnaab, Landkreis",6.89
+09375,"Regensburg, Landkreis",6.55
+09376,"Schwandorf, Landkreis",6.84
+09377,"Tirschenreuth, Landkreis",5.75
+09461,"Bamberg, kreisfreie Stadt",7.23
+09462,"Bayreuth, kreisfreie Stadt",7.5
+09463,"Coburg, kreisfreie Stadt",5.35
+09464,"Hof, kreisfreie Stadt",8.23
+09471,"Bamberg, Landkreis",6.27
+09472,"Bayreuth, Landkreis",6.01
+09473,"Coburg, Landkreis",5.75
+09474,"Forchheim, Landkreis",6.24
+09475,"Hof, Landkreis",6.51
+09476,"Kronach, Landkreis",6.07
+09477,"Kulmbach, Landkreis",7.52
+09478,"Lichtenfels, Landkreis",6.63
+09479,"Wunsiedel im Fichtelgebirge, Landkreis",6.55
+09561,"Ansbach, kreisfreie Stadt",7.01
+09562,"Erlangen, kreisfreie Stadt",6.62
+09563,"Fürth, kreisfreie Stadt",6.45
+09564,"Nürnberg, kreisfreie Stadt",6.78
+09565,"Schwabach, kreisfreie Stadt",7.6
+09571,"Ansbach, Landkreis",5.5
+09572,"Erlangen-Höchstadt, Landkreis",6.74
+09573,"Fürth, Landkreis",6.7
+09574,"Nürnberger Land, Landkreis",6.69
+09575,"Neustadt an der Aisch-Bad Windsheim, Landkreis",6.14
+09576,"Roth, Landkreis",6.49
+09577,"Weißenburg-Gunzenhausen, Landkreis",6.99
+09661,"Aschaffenburg, kreisfreie Stadt",5.97
+09662,"Schweinfurt, kreisfreie Stadt",7.19
+09663,"Würzburg, kreisfreie Stadt",7.7
+09671,"Aschaffenburg, Landkreis",6.5
+09672,"Bad Kissingen, Landkreis",6.38
+09673,"Rhön-Grabfeld, Landkreis",6.31
+09674,"Haßberge, Landkreis",6.55
+09675,"Kitzingen, Landkreis",6.24
+09676,"Miltenberg, Landkreis",6.75
+09677,"Main-Spessart, Landkreis",6.33
+09678,"Schweinfurt, Landkreis",5.93
+09679,"Würzburg, Landkreis",6.37
+09761,"Augsburg, kreisfreie Stadt",6.28
+09762,"Kaufbeuren, kreisfreie Stadt",6.65
+09763,"Kempten (Allgäu), kreisfreie Stadt",7.67
+09764,"Memmingen, kreisfreie Stadt",6.69
+09771,"Aichach-Friedberg, Landkreis",5.77
+09772,"Augsburg, Landkreis",6.47
+09773,"Dillingen an der Donau, Landkreis",5.72
+09774,"Günzburg, Landkreis",5.83
+09775,"Neu-Ulm, Landkreis",5.37
+09776,"Lindau (Bodensee), Landkreis",6.53
+09777,"Ostallgäu, Landkreis",6.35
+09778,"Unterallgäu, Landkreis",5.62
+09779,"Donau-Ries, Landkreis",5.82
+09780,"Oberallgäu, Landkreis",6.86
+10041,"Regionalverband Saarbrücken, Landkreis",6.2
+10042,"Merzig-Wadern, Landkreis",5.78
+10043,"Neunkirchen, Landkreis",5.39
+10044,"Saarlouis, Landkreis",6.11
+10045,Saarpfalz-Kreis,6.51
+10046,"Sankt Wendel, Landkreis",6.85
+11000,"Berlin, kreisfreie Stadt",6.53
+12051,"Brandenburg an der Havel, kreisfreie Stadt",6.86
+12052,"Cottbus, kreisfreie Stadt",8.28
+12053,"Frankfurt (Oder), kreisfreie Stadt",7.71
+12054,"Potsdam, kreisfreie Stadt",6.5
+12060,"Barnim, Landkreis",5.35
+12061,"Dahme-Spreewald, Landkreis",5.84
+12062,"Elbe-Elster, Landkreis",7.35
+12063,"Havelland, Landkreis",5.82
+12064,"Märkisch-Oderland, Landkreis",6.03
+12065,"Oberhavel, Landkreis",6.17
+12066,"Oberspreewald-Lausitz, Landkreis",6.39
+12067,"Oder-Spree, Landkreis",5.84
+12068,"Ostprignitz-Ruppin, Landkreis",6.8
+12069,"Potsdam-Mittelmark, Landkreis",6.13
+12070,"Prignitz, Landkreis",6.52
+12071,"Spree-Neiße, Landkreis",5.47
+12072,"Teltow-Fläming, Landkreis",5.51
+12073,"Uckermark, Landkreis",6.39
+13003,"Rostock, kreisfreie Stadt",6.93
+13004,"Schwerin, kreisfreie Stadt",7.27
+13071,"Mecklenburgische Seenplatte, Landkreis",7.27
+13072,"Rostock, Landkreis",6.67
+13073,"Vorpommern-Rügen, Landkreis",7.11
+13074,"Nordwestmecklenburg, Landkreis",6.62
+13075,"Vorpommern-Greifswald, Landkreis",7.66
+13076,"Ludwigslust-Parchim, Landkreis",6.15
+14511,"Chemnitz, kreisfreie Stadt",5.98
+14521,Erzgebirgskreis,5.68
+14522,"Mittelsachsen, Landkreis",6.14
+14523,Vogtlandkreis,6.06
+14524,"Zwickau, Landkreis",6.02
+14612,"Dresden, kreisfreie Stadt",6.47
+14625,"Bautzen, Landkreis",6.83
+14626,"Görlitz, Landkreis",6.56
+14627,"Meißen, Landkreis",6.37
+14628,"Sächsische Schweiz-Osterzgebirge, Landkreis",6.49
+14713,"Leipzig, kreisfreie Stadt",6.27
+14729,"Leipzig, Landkreis",7.18
+14730,"Nordsachsen, Landkreis",6.34
+15001,"Dessau-Roßlau, kreisfreie Stadt",6.97
+15002,"Halle (Saale), kreisfreie Stadt",7.39
+15003,"Magdeburg, kreisfreie Stadt",6.69
+15081,Altmarkkreis Salzwedel,4.95
+15082,"Anhalt-Bitterfeld, Landkreis",6.49
+15083,"Börde, Landkreis",6.32
+15084,Burgenlandkreis,6.48
+15085,"Harz, Landkreis",6.7
+15086,"Jerichower Land, Landkreis",6.32
+15087,"Mansfeld-Südharz, Landkreis",6.39
+15088,Saalekreis,6.17
+15089,Salzlandkreis,6.74
+15090,"Stendal, Landkreis",6.77
+15091,"Wittenberg, Landkreis",6.43
+16051,"Erfurt, kreisfreie Stadt",6.38
+16052,"Gera, kreisfreie Stadt",6.8
+16053,"Jena, kreisfreie Stadt",6.7
+16054,"Suhl, kreisfreie Stadt",6.19
+16055,"Weimar, kreisfreie Stadt",7.02
+16061,"Eichsfeld, Landkreis",6.82
+16062,"Nordhausen, Landkreis",6.78
+16063,Wartburgkreis,6.56
+16064,Unstrut-Hainich-Kreis,6.97
+16065,Kyffhäuserkreis,6.3
+16066,"Schmalkalden-Meiningen, Landkreis",6.86
+16067,"Gotha, Landkreis",6.28
+16068,"Sömmerda, Landkreis",6.81
+16069,"Hildburghausen, Landkreis",6.37
+16070,Ilm-Kreis,6.45
+16071,"Weimarer Land, Landkreis",6.61
+16072,"Sonneberg, Landkreis",7.22
+16073,"Saalfeld-Rudolstadt, Landkreis",6.87
+16074,Saale-Holzland-Kreis,7.15
+16075,Saale-Orla-Kreis,6.73
+16076,"Greiz, Landkreis",6.35
+16077,"Altenburger Land, Landkreis",6.65
