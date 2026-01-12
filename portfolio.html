@@ -31,9 +31,7 @@
     <!-- Title Section -->
     <section id="title">
         <h1 class="centered-title">Data Visualisation Portfolio</h1>
-        <p>
-            [PLACEHOLDER: This is a portfolio of ten coding challenges I have created for PP434: Automated Data Visualisation for Policymaking. TBD: add one sentence on difficulty TBD: add one sentence on click on the different challenges]
-        </p>
+        <p>This portfolio presents ten coding challenges created for PP434: Automated Data Visualisation for Policymaking. Click on individual challenges below to explore the data sources, methodologies, and interactive features behind each visualisation.</p>
     </section>
 
     <!-- CC1: HOSTING -->
@@ -202,38 +200,14 @@
     </div>
     </section>  
 
-    <!-- CC8: BIG DATA -->
-    <section id="cc8" class="collapsible-section">
-    <div class="collapsible-header" onclick="this.parentElement.classList.toggle('active')">
-        <h2>CC8. Big Data</h2>
-        <span class="toggle-icon"></span>
-    </div>
-    <div class="collapsible-content">
-        <p> <b>Task:</b> Produce two charts using either of the two UK prices datasets provided in class. </p>
-
-        <div class="chart-container">
-            <h3>Price Analysis Chart 1</h3>
-            <figure id="cc8_chart1"></figure>
-            <p class="chart-description">Description of first price analysis.</p>
-        </div>
-        
-        <div class="chart-container">
-            <h3>Price Analysis Chart 2</h3>
-            <figure id="cc8_chart2"></figure>
-            <p class="chart-description">Description of second price analysis.</p>
-        </div>
-
-    </div>
-    </section>  
-
     <!-- CC9: INTERACTIVE CHARTS -->
     <section id="cc9" class="collapsible-section">
     <div class="collapsible-header" onclick="this.parentElement.classList.toggle('active')">
         <h2>CC9. Interactive Charts</h2>
         <span class="toggle-icon"></span>
     </div>
-    <div class="collapsible-content">
-        <p> <b>Task:</b> Produce two charts that include interactivity  beyond simple tooltips (e.g., sliders, dropdowns, clickable legends).</p>
+    <div class="collapsible-content" id="fn8-ref">
+        <p> <b>Task:</b> Produce two charts that include interactivity  beyond simple tooltips (e.g., sliders, dropdowns, clickable legends).<sup><a href="#fn8">8</a></sup></p>
         
         <div class="chart-container">
             <figure id="cc9_chart1"></figure>
@@ -252,19 +226,12 @@
         <h2>CC10. Advanced Analysis & Machine Learning</h2>
         <span class="toggle-icon"></span>
     </div>
-    <div class="collapsible-content">
+    <div class="collapsible-content" id="fn9-ref">
         <h3>Advanced Analytics</h3>
-        <p> <b>Task:</b> Produce a chart that uses more advanced analytics such as bubble, histogram of distributions, de-trended, shock analysis, Diff-in-Diff, or heat maps. </p>
+        <p> <b>Task:</b> Produce a chart that uses more advanced analytics such as bubble, histogram of distributions, de-trended, shock analysis, Diff-in-Diff, or heat maps.<sup><a href="#fn9">9</a></sup></p>
         <div class="chart-container">
             <figure id="cc10_chart1"></figure>
             <p class="chart-description">Description of advanced analytical technique used.</p>
-        </div>
-        
-        <h3>Machine Learning</h3>
-        <p> <b>Task:</b> Conduct an applied data analysis using either a supervised or an unsupervised learning method.</p>
-        <div class="chart-container">
-            <figure id="cc10_chart2"></figure>
-            <p class="chart-description"> supervised method .</p>
         </div>
 
     </div>
@@ -280,7 +247,9 @@
         <p class="footnote-text" id="fn4" > [4] I obtained the latitude and longitude coordinates by right-clicking on the location of interest on Google Maps.<a href="#fn4-ref">↩</a>
         <p class="footnote-text" id="fn5" > [5] The Python script I used to scrape the website can be found in my <a href="https://github.com/SofieWied/SofieWied.github.io/blob/fbe28874166cd1f3a66ece29be8779a5310cc221/cc5_chart2_scraping%20code.ipynb">GitHub repository</a>.<a href="#fn5-ref">↩</a>
         <p class="footnote-text" id="fn6" > [6] The Python script I used can be found in my <a href="https://github.com/SofieWied/SofieWied.github.io/blob/e8cf699e2caf76fd6bf5bf1a5e9b02272ce4efd3/cc6_loop_code.py">GitHub repository</a>. When replicating my chart, please note that the Historical Weather Data API from Open Meteo has minutely and hourly call limits that are reached after running the code once. Like in CC5 Chart 1, I retrieved the geographic coordinates of the locations of interest through a simple Google Maps search.<a href="#fn6-ref">↩</a>
-        <p class="footnote-text" id="fn7" > [7] The data for the cloropleth map can be retrieved from the <a href="https://www.ons.gov.uk/explore-local-statistics/indicators/5g-coverage">ONS Website</a>. The coordinate data used for the coordinates map originates from a project conducted by students at the University of Waterloo, who developed a route connecting all pubs in the United Kingdom as part of a Travelling Salesman Problem study. The data is available via <a href="https://www.math.uwaterloo.ca/tsp/pubs/data.html"> their website</a>. The code I used to filter out only Welsh coordinates can be found in my <a href="https://github.com/SofieWied/SofieWied.github.io/blob/7562dd5922b827371e8e515e3a19bfdfa4aa940b/cc7_chart2_coordinate_filter_code.py"> GitHub repository</a>.<a href="#fn7-ref">↩</a>
+        <p class="footnote-text" id="fn7" > [7] The data for the cloropleth map can be retrieved from the <a href="https://www.ons.gov.uk/explore-local-statistics/indicators/5g-coverage">ONS Website</a>. The coordinate data used for the coordinates map originates from a project conducted by students at the University of Waterloo, who developed a route connecting all pubs in the United Kingdom as part of a Travelling Salesman Problem study. The data is available via <a href="https://www.math.uwaterloo.ca/tsp/pubs/data.html"> their website</a>. The code I used to filter out only Welsh coordinates can be found in my <a href="https://github.com/SofieWied/SofieWied.github.io/blob/7562dd5922b827371e8e515e3a19bfdfa4aa940b/cc7_chart2_coordinate_filter_code.py">GitHub repository</a>.<a href="#fn7-ref">↩</a>
+        <p class="footnote-text" id="fn8" > [8] The district-level population data was obtained from the <a href="https://www-genesis.destatis.de/datenbank/online/statistic/12411/table/12411-0018/table-toolbar/search/s/QWx0ZXJzZ3J1cHBlbg%3D%3D">Destatis</a> portal via the Genesis API. The code for retrieving and preprocessing the data can be found <a href="https://github.com/SofieWied/SofieWied.github.io/blob/main/cc9_germany_age_map_API.ipynb">here</a>. Note: Replicating this API call requires a free registration on the Destatis portal to obtain a unique personal authentication token. The data for the second chart was downloaded from the <a href="https://www.demografie-portal.de/DE/Fakten/altersrentner-beitragszahler.html?nn=228384">Demografie Portal</a>. The visualisation design was inspired by Vega-Lite examples for <a href="https://vega.github.io/vega-lite/examples/isotype_bar_chart_emoji.html">isotype dot plots</a>. I modified the provided code and added an interactive slider for year selection.<a href="#fn8-ref">↩</a>
+        <p class="footnote-text" id="fn9" > [9] The historical population data for Chart 1 (population in each age group annually from 1950 to 2024) was downloaded from <a href="https://service.destatis.de/bevoelkerungspyramide/#!">this data visualisation page</a> on the Destatis platform. Initial manual assessment and preparation of the dataset was necessary for preprocessing, as numbers appeared in inconsistent formats throughout (300.0, 300, and 300,0 all representing 300,000).The <a href="https://github.com/SofieWied/SofieWied.github.io/blob/5d5f43777955ad8ff97146f4400ecb8501dc4a6a/cc10_chart1_data_preprocessing.ipynb">preprocessing code</a> used to transform the data into long format can be found in my GitHub repository.<a href="#fn9-ref">↩</a>
         </p>
     </section>
 
@@ -358,12 +327,6 @@
 
         let cc7_chart2 = "cc7_chart2.json";
         vegaEmbed('#cc7_chart2', cc7_chart2);
-
-        // CC8: Big Data
-        let cc8_spec1 = "price_chart1.json";
-        let cc8_spec2 = "price_chart2.json";
-        vegaEmbed('#cc8_chart1', cc8_spec1);
-        vegaEmbed('#cc8_chart2', cc8_spec2);
 
         // CC9: Interactive
         let cc9_spec1 = "cc9_chart1.json";
