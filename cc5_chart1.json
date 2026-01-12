@@ -1,0 +1,135 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Snow Forecast for Mount Zugspitze (Next 16 Days)",
+    "anchor": "start",
+    "subtitle": "Source: Open-Meteo API",
+    "fontSize": 22,
+    "subtitleFontSize": 16,
+    "color": "#333",
+    "subtitleColor": "#333"
+  },
+  "height": 350,
+  "width": 600,
+  "background": "#faf8f3",
+  "config": {
+    "font": "Calibri"
+  },
+  "view": {
+    "fill": "#faf8f3",
+    "strokeOpacity": 0
+  },
+  "data": {
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=47.42&longitude=10.98&hourly=snowfall,snow_depth&timezone=Europe%2FBerlin&forecast_days=16",
+    "format": {
+      "type": "json",
+      "property": "hourly"
+    }
+  },
+  "transform": [
+    {
+      "flatten": ["time", "snowfall", "snow_depth"]
+    },
+    {
+      "calculate": "toDate(datum.time)",
+      "as": "date"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "strokeWidth": 3,
+        "line": true,
+        "opacity": 1
+      },
+      "encoding": {
+        "y": {
+          "field": "snow_depth",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "metric",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Snowfall", "Snow Depth"],
+            "range": ["#0173B2", "#b0c4de"]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top-right",
+            "labelColor": "#333",
+            "labelFontSize": 14,
+            "symbolType": "stroke",
+            "symbolStrokeWidth": 3
+          }
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "title": "Date & Time"},
+          {"field": "snow_depth", "type": "quantitative", "title": "Snow Depth (m)", "format": ".1f"}
+        ]
+      },
+      "transform": [
+        {"calculate": "'Snow Depth'", "as": "metric"}
+      ]
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "width": 5
+      },
+      "encoding": {
+        "y": {
+          "field": "snowfall",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "metric",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Snowfall", "Snow Depth"],
+            "range": ["#0173B2", "#b0c4de"]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top-right",
+            "labelColor": "#333",
+            "labelFontSize": 14,
+            "symbolType": "stroke",
+            "symbolStrokeWidth": 3
+          }
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "title": "Date & Time"},
+          {"field": "snowfall", "type": "quantitative", "title": "Snowfall (m)", "format": ".1f"}
+        ]
+      },
+      "transform": [
+        {"calculate": "'Snowfall'", "as": "metric"}
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "title": "",
+        "titleColor": "#333",
+        "labelColor": "#333",
+        "grid": false
+      }
+    },
+    "y": {
+      "type": "quantitative",
+      "axis": {
+        "title": "Snow (m)",
+        "titleColor": "#333",
+        "labelColor": "#333",
+        "grid": true,
+        "gridColor": "#e0e0e0",
+        "gridOpacity": 0.5
+      }
+    }
+  }
+}

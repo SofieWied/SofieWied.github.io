@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Regional Healthcare Capacity: Current Resources vs. Future Demand",
+    "anchor": "start",
+    "subtitle": [
+      "Source: Destatis API, Regionalstatistik, Thünen Institute | Note: Dark red or white areas indicate missing data"
+    ],
+    "fontSize": 22,
+    "subtitleFontSize": 14,
+    "color": "#333",
+    "subtitleColor": "#666"
+  },
+  "width": 600,
+  "height": 600,
+  "background": "#faf8f3",
+  "config": {
+    "font": "Calibri"
+  },
+  "params": [
+    {
+      "name": "metricSelect",
+      "value": "age_55_75_pct",
+      "bind": {
+        "input": "select",
+        "options": [
+          "age_55_75_pct",
+          "gp_med",
+          "hospital_drive",
+          "beds_per_1000",
+          "personnel_per_1000"
+        ],
+        "labels": [
+          "Population 55-75 (%, 2024)",
+          "GPs per 1000 (2022)",
+          "Car drive to hospital (min, 2022)",
+          "+65 care beds per 1000 (2023)",
+          "Care personnel per 1000 (2023)"
+        ],
+        "name": "Metric: "
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/cc9_population_2024_percentages_for_map_corrected.csv"
+  },
+  "transform": [
+    {
+      "lookup": "district_code",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart5_care_beds_per_1000_inhabitants.csv"
+        },
+        "key": "district_code",
+        "fields": ["beds_per_1000"]
+      }
+    },
+    {
+      "lookup": "district_code",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart5_care_personnel_per_1000_inhabitants.csv"
+        },
+        "key": "district_code",
+        "fields": ["personnel_per_1000"]
+      }
+    },
+    {
+      "lookup": "district_code",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart5_hospital_drive.csv"
+        },
+        "key": "district_code",
+        "fields": ["hospital_drive"]
+      }
+    },
+    {
+      "lookup": "district_code",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart5_gps.csv"
+        },
+        "key": "district_code",
+        "fields": ["gp_med"]
+      }
+    },
+    {
+      "lookup": "district_code",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/cc9_germany_base_map_kreise.topojson",
+          "format": {
+            "type": "topojson",
+            "feature": "1_germany_base_map_kreise"
+          }
+        },
+        "key": "properties.CC_2",
+        "fields": ["type", "properties", "geometry"]
+      }
+    },
+    {
+      "calculate": "metricSelect == 'age_55_75_pct' ? datum.age_55_75_pct : metricSelect == 'beds_per_1000' ? datum.beds_per_1000 : metricSelect == 'personnel_per_1000' ? datum.personnel_per_1000 : metricSelect == 'hospital_drive' ? datum.hospital_drive : datum.gp_med",
+      "as": "selected_value"
+    },
+    {
+      "calculate": "metricSelect == 'age_55_75_pct' ? 'Population aged 55-75 (%)' : metricSelect == 'beds_per_1000' ? 'Elderly care beds per 1000 (2013)' : metricSelect == 'personnel_per_1000' ? 'Care personnel per 1000 residents 65+ (2022)' : metricSelect == 'hospital_drive' ? 'Avg. drive time to hospital (min)' : 'GPs per 1000 (2022)'",
+      "as": "metric_label"
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "selected_value",
+      "type": "quantitative",
+      "scale": {
+        "scheme": {
+          "expr": "metricSelect == 'age_55_75_pct' ? ['#faf8f3', '#08306b'] : metricSelect == 'gp_med' ? ['#d73027', '#fee08b', '#1a9850'] : metricSelect == 'hospital_drive' ? ['#ffffcc', '#fd8d3c', '#bd0026'] : metricSelect == 'beds_per_1000' ? ['#bd0026', '#fd8d3c', '#ffffcc'] : ['#bd0026', '#fd8d3c', '#ffffcc']"
+        }
+      },
+      "title": "Value",
+      "legend": {
+        "labelColor": "#333",
+        "titleColor": "#333",
+        "orient": "bottom-right",
+        "direction": "vertical",
+        "gradientLength": 200,
+        "gradientThickness": 15,
+        "format": ".1f",
+        "titleFontSize": 12,
+        "labelFontSize": 11
+      }
+    },
+    "tooltip": [
+      {"field": "district_name", "type": "nominal", "title": "District"},
+      {"field": "metric_label", "type": "nominal", "title": "Metric"},
+      {"field": "selected_value", "type": "quantitative", "title": "Value", "format": ".1f"},
+      {"field": "total_population", "type": "quantitative", "title": "Total Population", "format": ",.0f"}
+    ]
+  },
+  "projection": {
+    "type": "mercator",
+    "scale": 2800,
+    "center": [10.5, 51.3]
+  }
+}

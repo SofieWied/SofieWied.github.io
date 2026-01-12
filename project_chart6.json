@@ -1,0 +1,253 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Scenario Analysis: Care Demand vs. Supply Projections (2024-2050)",
+    "anchor": "start",
+    "subtitle": "Source: Destatis | Note: Official predictions used without modification",
+    "fontSize": 22,
+    "subtitleFontSize": 14,
+    "color": "#333",
+    "subtitleColor": "#333"
+  },
+  "width": 600,
+  "height": 400,
+  "background": "#faf8f3",
+  "config": {
+    "font": "Calibri",
+    "legend": {
+      "orient": "none",
+      "legendX": 10,
+      "legendY": 10,
+      "labelFontSize": 12,
+      "symbolSize": 150,
+      "symbolStrokeWidth": 6
+    }
+  },
+  "view": {
+    "fill": "#faf8f3",
+    "strokeOpacity": 0
+  },
+  "params": [
+    {
+      "name": "scenarioSelect",
+      "value": "status_quo",
+      "bind": {
+        "input": "select",
+        "options": ["status_quo", "trend"],
+        "labels": ["Status Quo", "Trend"],
+        "name": "Supply Scenario: "
+      }
+    },
+    {
+      "name": "pflichtjahrPct",
+      "value": "none",
+      "bind": {
+        "input": "radio",
+        "options": ["none", 0, 10, 20, 30, 40, 50],
+        "labels": ["None", "0%", "10%", "20%", "30%", "40%", "50%"],
+        "name": "Pflichtjahr: "
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart6_personnel_with_pflichtjahr.csv"
+  },
+  "transform": [
+    {
+      "lookup": "year",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart6_care_dependents.csv"
+        },
+        "key": "year",
+        "fields": ["care_dependents"]
+      }
+    },
+    {
+      "calculate": "pflichtjahrPct == 'none' ? null : (scenarioSelect == 'status_quo' ? (pflichtjahrPct == 0 ? datum.supply_sq_plus_0pct : pflichtjahrPct == 10 ? datum.supply_sq_plus_10pct : pflichtjahrPct == 20 ? datum.supply_sq_plus_20pct : pflichtjahrPct == 30 ? datum.supply_sq_plus_30pct : pflichtjahrPct == 40 ? datum.supply_sq_plus_40pct : datum.supply_sq_plus_50pct) : (pflichtjahrPct == 0 ? datum.supply_trend_plus_0pct : pflichtjahrPct == 10 ? datum.supply_trend_plus_10pct : pflichtjahrPct == 20 ? datum.supply_trend_plus_20pct : pflichtjahrPct == 30 ? datum.supply_trend_plus_30pct : pflichtjahrPct == 40 ? datum.supply_trend_plus_40pct : datum.supply_trend_plus_50pct))",
+      "as": "supply_with_pflichtjahr"
+    },
+    {
+      "calculate": "scenarioSelect == 'status_quo' ? datum.supply_sq : datum.supply_trend",
+      "as": "supply_base"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "opacity": 0.1,
+        "color": "#C96763"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {
+            "domain": [2024, 2049],
+            "nice": false,
+            "padding": 0
+          },
+          "axis": {
+            "title": "Year",
+            "titleColor": "#333",
+            "labelColor": "#333",
+            "grid": false,
+            "format": "d"
+          }
+        },
+        "y": {
+          "field": "supply_with_pflichtjahr",
+          "type": "quantitative",
+          "scale": {
+            "domain": [1.4, 2.8]
+          },
+          "axis": {
+            "title": "People (millions)",
+            "titleColor": "#333",
+            "labelColor": "#333",
+            "grid": true,
+            "gridColor": "#e0e0e0",
+            "gridOpacity": 0.5
+          }
+        },
+        "y2": {"field": "total_demand"},
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "care_dependents", "type": "quantitative", "title": "Care-Dependent Population", "format": ".2f"},
+          {"field": "total_demand", "type": "quantitative", "title": "Care Staff Demand", "format": ".2f"},
+          {"field": "supply_base", "type": "quantitative", "title": "Supply Prediction", "format": ".2f"},
+          {"field": "supply_with_pflichtjahr", "type": "quantitative", "title": "Supply + Pflichtjahr", "format": ".2f"}
+        ]
+      },
+      "transform": [
+        {"filter": "pflichtjahrPct != 'none'"},
+        {"filter": "datum.supply_with_pflichtjahr < datum.total_demand"}
+      ]
+    },
+    {
+      "mark": {
+        "type": "area",
+        "opacity": 0.1,
+        "color": "#1a9850"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {
+          "field": "total_demand",
+          "type": "quantitative",
+          "scale": {
+            "domain": [1.4, 2.8]
+          }
+        },
+        "y2": {"field": "supply_with_pflichtjahr"},
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "care_dependents", "type": "quantitative", "title": "Care-Dependent Population", "format": ".2f"},
+          {"field": "total_demand", "type": "quantitative", "title": "Care Staff Demand", "format": ".2f"},
+          {"field": "supply_base", "type": "quantitative", "title": "Supply Prediction", "format": ".2f"},
+          {"field": "supply_with_pflichtjahr", "type": "quantitative", "title": "Supply + Pflichtjahr", "format": ".2f"}
+        ]
+      },
+      "transform": [
+        {"filter": "pflichtjahrPct != 'none'"},
+        {"filter": "datum.supply_with_pflichtjahr >= datum.total_demand"}
+      ]
+    },
+    {
+      "mark": {
+        "type": "area",
+        "opacity": 0.1,
+        "color": "#C96763"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {
+          "field": "supply_base",
+          "type": "quantitative",
+          "scale": {
+            "domain": [1.4, 2.8]
+          }
+        },
+        "y2": {"field": "total_demand"},
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "care_dependents", "type": "quantitative", "title": "Care-Dependent Population", "format": ".2f"},
+          {"field": "total_demand", "type": "quantitative", "title": "Care Staff Demand", "format": ".2f"},
+          {"field": "supply_base", "type": "quantitative", "title": "Supply Prediction", "format": ".2f"}
+        ]
+      },
+      "transform": [
+        {"filter": "pflichtjahrPct == 'none'"}
+      ]
+    },
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "color": "#666"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {"field": "care_dependents", "type": "quantitative"},
+        "color": {
+          "datum": "Care-Dependent Population",
+          "scale": {
+            "domain": ["Care-Dependent Population", "Care Staff Demand", "Supply Prediction", "Supply + Pflichtjahr"],
+            "range": ["#666", "#C96763", "#9467BD", "#E69F00"]
+          },
+          "legend": {"title": null}
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 1.5,
+        "color": "#C96763"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {"field": "total_demand", "type": "quantitative"},
+        "color": {
+          "datum": "Care Staff Demand",
+          "legend": {"title": null}
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 1.5,
+        "strokeDash": [5, 5],
+        "color": "#9467BD"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {"field": "supply_base", "type": "quantitative"},
+        "color": {
+          "datum": "Supply Prediction",
+          "legend": {"title": null}
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "color": "#E69F00"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {"field": "supply_with_pflichtjahr", "type": "quantitative"},
+        "color": {
+          "datum": "Supply + Pflichtjahr",
+          "legend": {"title": null}
+        }
+      },
+      "transform": [
+        {"filter": "pflichtjahrPct != 'none'"}
+      ]
+    }
+  ]
+}

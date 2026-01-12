@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Point map showing pub locations in Wales with administrative boundaries.",
+  "title": {
+    "text": "Where Wales Drinks: 1,245 Pubs Across the Nation (2018)",
+    "anchor": "start",
+    "subtitle": "Source: University of Waterloo, Department of Mathematics",
+    "fontSize": 22,
+    "subtitleFontSize": 16,
+    "color": "#333",
+    "subtitleColor": "#333"
+  },
+  "width": 600,
+  "height": 400,
+  "background": "#faf8f3",
+  "config": {
+    "font": "Calibri"
+  },
+  "view": {
+    "fill": "#faf8f3",
+    "strokeOpacity": 0
+  },
+  "projection": {
+    "type": "mercator",
+    "scale": 6000,
+    "center": [-3.8, 52.3]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/MappingWorkshop/geo_data/LAD_WLS_2025_05.topojson",
+        "format": {"type": "topojson", "feature": "object_name"}
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgray",
+        "stroke": "white",
+        "strokeWidth": 0.5
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/cc7_pub_coordinates_wales.csv"
+      },
+      "mark": {
+        "type": "circle",
+        "size": 20,
+        "opacity": 0.6
+      },
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "color": {"value": "#C0392B"},
+        "tooltip": [
+          {"field": "latitude", "type": "quantitative", "title": "Latitude", "format": ".6f"},
+          {"field": "longitude", "type": "quantitative", "title": "Longitude", "format": ".6f"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"city": "Cardiff", "latitude": 51.48, "longitude": -3.18},
+          {"city": "Swansea", "latitude": 51.62, "longitude": -3.94},
+          {"city": "Newport", "latitude": 51.59, "longitude": -3.0},
+          {"city": "Wrexham", "latitude": 53.05, "longitude": -2.99}
+        ]
+      },
+      "mark": {
+        "type": "circle",
+        "size": 100,
+        "opacity": 1
+      },
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "color": {"value": "#333"},
+        "tooltip": [
+          {"field": "city", "type": "nominal", "title": "City"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"city": "Cardiff", "latitude": 51.48, "longitude": -3.18},
+          {"city": "Swansea", "latitude": 51.62, "longitude": -3.94},
+          {"city": "Newport", "latitude": 51.59, "longitude": -3.0},
+          {"city": "Wrexham", "latitude": 53.05, "longitude": -2.99}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "dy": 11,
+        "dx": 13,
+        "fontSize": 14,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "text": {"field": "city", "type": "nominal"},
+        "color": {"value": "#333"}
+      }
+    }
+  ]
+}

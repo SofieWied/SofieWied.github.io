@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Federal Budget Composition (2014-2026)",
+    "anchor": "start",
+    "subtitle": "Source: Own calculations based on data from Bundeshaushalt API",
+    "fontSize": 22,
+    "subtitleFontSize": 14,
+    "color": "#333",
+    "subtitleColor": "#333"
+  },
+  "width": 600,
+  "height": 400,
+  "background": "#faf8f3",
+  "config": {
+    "font": "Calibri",
+    "legend": {
+      "orient": "none",
+      "legendX": 10,
+      "legendY": 10,
+      "labelFontSize": 12,
+      "symbolSize": 150,
+      "symbolStrokeWidth": 6,
+      "fillColor": "#faf8f3",
+      "strokeColor": "#333",
+      "padding": 10,
+      "cornerRadius": 5
+    }
+  },
+  "view": {
+    "fill": "#faf8f3",
+    "strokeOpacity": 0
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart4_federal_budget.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.Kategorie == 'Total Federal Budget' ? datum.Wert_Euro : null",
+      "as": "Total_Budget_Raw"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "max",
+          "field": "Total_Budget_Raw",
+          "as": "Total_Budget"
+        }
+      ],
+      "groupby": ["Jahr"]
+    },
+    {
+      "filter": "datum.Kategorie != 'Total Federal Budget'"
+    },
+    {
+      "calculate": "datum.Total_Budget / 1000000000",
+      "as": "Total_Budget_Billions"
+    },
+    {
+      "calculate": "datum.Kategorie == 'Subsidies Pension Insurance' ? 1 : datum.Kategorie == 'Other Labour & Social Expenses' ? 2 : datum.Kategorie == 'Defense' ? 3 : datum.Kategorie == 'Education & Family' ? 4 : 5",
+      "as": "stack_order"
+    }
+  ],
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "x": {
+      "field": "Jahr",
+      "type": "ordinal",
+      "axis": {
+        "title": "Year",
+        "titleColor": "#333",
+        "labelColor": "#333",
+        "labelAngle": 0,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Relativer_Wert_Prozent",
+      "type": "quantitative",
+      "stack": true,
+      "axis": {
+        "title": "Budget Share (%)",
+        "titleColor": "#333",
+        "labelColor": "#333",
+        "grid": true,
+        "gridColor": "#e0e0e0",
+        "gridOpacity": 0.5
+      }
+    },
+    "color": {
+      "field": "Kategorie",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Subsidies Pension Insurance",
+          "Other Labour & Social Expenses",
+          "Defense",
+          "Education & Family",
+          "Other Federal Budget"
+        ],
+        "range": ["#C96763", "#E69F00", "#0173B2", "#9467BD", "#CCCCCC"]
+      },
+      "legend": {
+        "title": null
+      }
+    },
+    "order": {
+      "field": "stack_order",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "Jahr",
+        "type": "ordinal",
+        "title": "Year"
+      },
+      {
+        "field": "Kategorie",
+        "type": "nominal",
+        "title": "Category"
+      },
+      {
+        "field": "Relativer_Wert_Prozent",
+        "type": "quantitative",
+        "title": "Budget Share (%)",
+        "format": ".1f"
+      },
+      {
+        "field": "Wert_Euro",
+        "type": "quantitative",
+        "title": "Amount (€)",
+        "format": ",.0f"
+      },
+      {
+        "field": "Total_Budget_Billions",
+        "type": "quantitative",
+        "title": "Total Federal Budget (Billion €)",
+        "format": ".1f"
+      }
+    ]
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Germany's Shifting Age Distribution: Baby Boomers in Focus (1950-2070)",
+    "anchor": "start",
+    "subtitle": "Source: Destatis, 16th population forecast ",
+    "fontSize": 22,
+    "subtitleFontSize": 16,
+    "color": "#333",
+    "subtitleColor": "#333"
+  },
+  "width": 600,
+  "height": 400,
+  "background": "#faf8f3",
+  "config": {
+    "font": "Calibri"
+  },
+  "view": {
+    "fill": "#faf8f3",
+    "strokeOpacity": 0
+  },
+  "params": [
+    {
+      "name": "yearSelect",
+      "value": 2000,
+      "bind": {
+        "input": "range",
+        "min": 1950,
+        "max": 2070,
+        "step": 1,
+        "name": "Year: "
+      }
+    },
+    {
+      "name": "genderSelect",
+      "value": "Both",
+      "bind": {
+        "input": "select",
+        "options": ["Male", "Female", "Both"],
+        "name": "Gender: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/cc10_chart1_german_population_male_long_final.json"
+      },
+      "transform": [
+        {"calculate": "'Male'", "as": "gender"},
+        {"filter": "datum.year == yearSelect"},
+        {"filter": "genderSelect == 'Male'"},
+        {"calculate": "yearSelect - datum.age", "as": "birth_year"},
+        {"calculate": "datum.birth_year >= 1955 && datum.birth_year <= 1970 ? 'Baby Boomer' : 'Other'", "as": "cohort"}
+      ],
+      "mark": {"type": "bar", "tooltip": true},
+      "encoding": {
+        "x": {
+          "field": "age",
+          "type": "quantitative",
+          "title": "Age",
+          "scale": {
+            "domain": [0, 99],
+            "nice": false
+          },
+          "axis": {
+            "tickCount": 10,
+            "titleColor": "#333",
+            "labelColor": "#333",
+            "grid": true,
+            "gridColor": "#e0e0e0",
+            "gridOpacity": 0.5
+          }
+        },
+        "y": {
+          "field": "population",
+          "type": "quantitative",
+          "title": "Population (thousands)",
+          "axis": {
+            "format": ",.0f",
+            "titleColor": "#333",
+            "labelColor": "#333",
+            "grid": true,
+            "gridColor": "#e0e0e0",
+            "gridOpacity": 0.5
+          }
+        },
+        "color": {
+          "field": "cohort",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Baby Boomer", "Other"],
+            "range": ["#C96763", "#0173B2"]
+          },
+          "legend": {
+            "title": "Cohort",
+            "orient": "top-right",
+            "labelColor": "#333",
+            "labelFontSize": 14,
+            "titleColor": "#333"
+          }
+        },
+        "tooltip": [
+          {"field": "age", "type": "quantitative", "title": "Age"},
+          {"field": "birth_year", "type": "quantitative", "title": "Birth Year"},
+          {"value": "Male", "title": "Gender"},
+          {"field": "population", "type": "quantitative", "title": "Population (thousands)", "format": ",.0f"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/cc10_chart1_german_population_female_long_final.json"
+      },
+      "transform": [
+        {"calculate": "'Female'", "as": "gender"},
+        {"filter": "datum.year == yearSelect"},
+        {"filter": "genderSelect == 'Female'"},
+        {"calculate": "yearSelect - datum.age", "as": "birth_year"},
+        {"calculate": "datum.birth_year >= 1955 && datum.birth_year <= 1970 ? 'Baby Boomer' : 'Other'", "as": "cohort"}
+      ],
+      "mark": {"type": "bar", "tooltip": true},
+      "encoding": {
+        "x": {
+          "field": "age",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "population",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "cohort",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Baby Boomer", "Other"],
+            "range": ["#C96763", "#0173B2"]
+          },
+          "legend": {
+            "title": "Cohort",
+            "orient": "top-right",
+            "labelColor": "#333",
+            "labelFontSize": 14,
+            "titleColor": "#333"
+          }
+        },
+        "tooltip": [
+          {"field": "age", "type": "quantitative", "title": "Age"},
+          {"field": "birth_year", "type": "quantitative", "title": "Birth Year"},
+          {"value": "Female", "title": "Gender"},
+          {"field": "population", "type": "quantitative", "title": "Population (thousands)", "format": ",.0f"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/cc10_chart1_german_population_both_long_final.json"
+      },
+      "transform": [
+        {"calculate": "'Both'", "as": "gender"},
+        {"filter": "datum.year == yearSelect"},
+        {"filter": "genderSelect == 'Both'"},
+        {"calculate": "yearSelect - datum.age", "as": "birth_year"},
+        {"calculate": "datum.birth_year >= 1955 && datum.birth_year <= 1970 ? 'Baby Boomer' : 'Other'", "as": "cohort"}
+      ],
+      "mark": {"type": "bar", "tooltip": true},
+      "encoding": {
+        "x": {
+          "field": "age",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "population",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "cohort",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Baby Boomer", "Other"],
+            "range": ["#C96763", "#0173B2"]
+          },
+          "legend": {
+            "title": "Cohort",
+            "orient": "top-right",
+            "labelColor": "#333",
+            "labelFontSize": 14,
+            "titleColor": "#333"
+          }
+        },
+        "tooltip": [
+          {"field": "age", "type": "quantitative", "title": "Age"},
+          {"field": "birth_year", "type": "quantitative", "title": "Birth Year"},
+          {"value": "Male + Female", "title": "Gender"},
+          {"field": "population", "type": "quantitative", "title": "Population (thousands)", "format": ",.0f"}
+        ]
+      }
+    }
+  ]
+}

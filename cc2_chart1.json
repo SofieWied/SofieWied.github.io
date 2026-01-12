@@ -1,0 +1,181 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Unemployment Rate in Germany (1998 - 2022)",
+    "anchor": "start",
+    "subtitle": "Source: Destatis through ECO API",
+    "fontSize": 22,
+    "subtitleFontSize": 16,
+    "color": "#333",
+    "subtitleColor": "#333"
+  },
+  "height": 350,
+  "width": 600,
+  "background": "#faf8f3",
+  "config": {
+    "font": "Calibri"
+  },
+  "view": {
+    "fill": "#faf8f3",
+    "strokeOpacity": 0
+  },
+  "data": {
+    "url": "https://api.economicsobservatory.com/deu/unem?vega",
+    "format": {
+      "type": "json"
+    }
+  },
+  "transform": [
+    {
+      "filter": "year(datum.date) <= 2022"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "opacity": 0.05,
+        "color": "#dcdcdc"
+      },
+      "encoding": {
+        "x": {"datum": {"year": 2000, "month": 1}},
+        "x2": {"datum": {"year": 2002, "month": 6}}
+      }
+    },
+    {
+      "mark": {
+        "type": "rect",
+        "opacity": 0.05,
+        "color": "#dcdcdc"
+      },
+      "encoding": {
+        "x": {"datum": {"year": 2008, "month": 1}},
+        "x2": {"datum": {"year": 2009, "month": 12}}
+      }
+    },
+    {
+      "mark": {
+        "type": "rect",
+        "opacity": 0.05,
+        "color": "#dcdcdc"
+      },
+      "encoding": {
+        "x": {"datum": {"year": 2020, "month": 1}},
+        "x2": {"datum": {"year": 2021, "month": 6}}
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 1.5,
+        "strokeDash": [5, 5],
+        "color": "#C96763"
+      },
+      "encoding": {
+        "x": {"datum": {"year": 2003, "month": 6}}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "dx": 0,
+        "dy": 5,
+        "fontSize": 14,
+        "fontWeight":100,
+        "color": "#666"
+      },
+      "encoding": {
+        "x": {"datum": {"year": 2001, "month": 3}},
+        "y": {"value": 300},
+        "text": {"value": "Dot-com Crisis"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "dx": 0,
+        "dy": 5,
+        "fontSize": 14,
+        "fontWeight":100,
+        "color": "#C96763"
+      },
+      "encoding": {
+        "x": {"datum": {"year": 2003, "month": 8}},
+        "y": {"value": 0},
+        "text": {"value": "Labour Market Reforms"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "dx": 0,
+        "dy": 5,
+        "fontSize": 14,
+        "fontWeight":100,
+        "color": "#666"
+      },
+      "encoding": {
+        "x": {"datum": {"year": 2009, "month": 1}},
+        "y": {"value": 300},
+        "text": {"value": "Financial Crisis"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "dx": 0,
+        "dy": 5,
+        "fontSize": 14,
+        "fontWeight":100,
+        "color": "#666"
+      },
+      "encoding": {
+        "x": {"datum": {"year": 2020, "month": 9}},
+        "y": {"value": 300},
+        "text": {"value": "COVID-19"}
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#0173B2",
+        "strokeWidth": 3.5,
+        "point": true
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": {
+            "title": "",
+            "titleColor": "#333",
+            "labelColor": "#333",
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": {
+            "title": "",
+            "titleColor": "#333",
+            "labelColor": "#333",
+            "grid": false
+          }
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "title": "Date"},
+          {"field": "value", "type": "quantitative", "title": "Unemployment Rate", "format": ".1f"}
+        ]
+      }
+    }
+  ]
+}

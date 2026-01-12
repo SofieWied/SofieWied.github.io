@@ -1,0 +1,125 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Internally Displaced Persons in Ukraine (2014-2022)",
+    "anchor": "start",
+    "subtitle": "Source: UNHCR via ECO-API",
+    "fontSize": 22,
+    "subtitleFontSize": 16,
+    "color": "#333",
+    "subtitleColor": "#333"
+  },
+  "height": 350,
+  "width": 600,
+  "background": "#faf8f3",
+  "config": {
+    "font": "Calibri"
+  },
+  "view": {
+    "fill": "#faf8f3",
+    "strokeOpacity": 0
+  },
+  "data": {
+    "url": "https://api.economicsobservatory.com/ukr/displ?vega",
+    "format": {
+      "type": "json"
+    }
+  },
+  "transform": [
+    {
+      "filter": "year(datum.date) <= 2022"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "width": 40
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": {
+            "title": "",
+            "titleColor": "#333",
+            "labelColor": "#333",
+            "grid": false,
+            "labelOffset": 0,
+            "offset": 0,
+            "ticks": false
+          },
+          "scale": {
+            "padding": 40
+          }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": {
+            "title": "",
+            "titleColor": "#333",
+            "labelColor": "#333",
+            "grid": true,
+            "gridColor": "#e0e0e0",
+            "gridOpacity": 0.5,
+            "tickCount": 6,
+            "format": "~s",
+            "labelExpr": "datum.value >= 1000000 ? (datum.value / 1000000) + 'M' : datum.value"
+          }
+        },
+        "color": {
+          "condition": [
+            {
+              "test": "year(datum.date) == 2015 || year(datum.date) == 2016",
+              "value": "#d3d3d3"
+            },
+            {
+              "test": "year(datum.date) == 2022",
+              "value": "#C96763"
+            }
+          ],
+          "value": "#0173B2"
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "title": "Date"},
+          {"field": "value", "type": "quantitative", "title": "Displaced Persons", "format": ","}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "dx": 0,
+        "dy": 5,
+        "fontSize": 14,
+        "fontWeight": 300,
+        "color": "#999"
+      },
+      "encoding": {
+        "x": {"datum": {"year": 2015, "month": 7}},
+        "y": {"value": 230},
+        "text": {"value": "Annexation of Crimea"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "dx": 0,
+        "dy": 5,
+        "fontSize": 14,
+        "fontWeight": 300,
+        "color": "#C96763"
+      },
+      "encoding": {
+        "x": {"datum": {"year": 2020, "month": 12}},
+        "y": {"value": 0},
+        "text": {"value": "Russian Invasion"}
+      }
+    }
+  ]
+}

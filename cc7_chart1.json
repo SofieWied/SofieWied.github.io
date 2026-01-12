@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Scotland's 5G Network Coverage (June 2025)",
+    "anchor": "start",
+    "subtitle": "Share (%) of area with at least one 5G network provider | Source: ONS",
+    "fontSize": 22,
+    "subtitleFontSize": 16,
+    "color": "#333",
+    "subtitleColor": "#333"
+  },
+  "width": 600,
+  "height": 400,
+  "background": "#faf8f3",
+  "config": {
+    "font": "Calibri"
+  },
+  "view": {
+    "fill": "#faf8f3",
+    "strokeOpacity": 0
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/MappingWorkshop/geo_data/LAD_SCT_2025_05.topojson",
+    "format": {"type": "topojson", "feature": "object_name"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.LAD25CD",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/cc7_5G_coverage_scotland.csv"
+        },
+        "key": "Area code",
+        "fields": ["Value", "Area name"]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "Value",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "redyellowgreen",
+        "domain": [0, 100]
+      },
+      "title": "5G Coverage (%)",
+      "legend": {
+        "labelColor": "#333",
+        "titleColor": "#333",
+        "orient": "none",
+        "legendY":100,
+        "legendX":450
+
+      }
+    },
+    "tooltip": [
+      {"field": "Area name", "type": "nominal", "title": "Local Authority"},
+      {"field": "Value", "type": "quantitative", "title": "5G Coverage (%)", "format": ".2f"}
+    ]
+  },
+  "projection": {
+    "type": "mercator",
+    "scale": 2500,
+    "center": [-4, 57]
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "background": "#faf8f3",
+    "view": {"stroke": "transparent"},
+    "font": "Times New Roman",
+    "legend": {
+      "orient": "none",
+      "legendX": 140,
+      "legendY": 20,
+      "direction": "horizontal",
+      "labelColor": "#333",
+      "labelFont": "Times New Roman",
+      "labelFontSize": 20,
+      "symbolType": "square",
+      "symbolSize": 10,
+      "symbolStrokeWidth": 15,
+      "columnPadding": 20
+    }
+  },
+  "width": 600,
+  "height": 300,
+  "padding": {"top": 30, "bottom": 10, "left": 20, "right": 20},
+  "title": {
+    "text": ["Trump has overtaken Biden in", "head-to-head matchup since June"],
+    "fontSize": 35,
+    "fontWeight": "bold",
+    "color": "#333",
+    "anchor": "middle",
+    "font": "Times New Roman",
+    "offset": 5
+  },
+  "data": {
+    "values": [
+      {"date": "Jun '23", "candidate": "Donald Trump", "percentage": 40, "label": "44%", "labelDy": -5},
+      {"date": "Jun '23", "candidate": "Joe Biden", "percentage": 50, "label": "46%", "labelDy": 3},
+      {"date": "Sep '23", "candidate": "Donald Trump", "percentage": 45, "label": "45%", "labelDy": 3},
+      {"date": "Sep '23", "candidate": "Joe Biden", "percentage": 40, "label": "44%", "labelDy": -5},
+      {"date": "Dec '23", "candidate": "Donald Trump", "percentage": 50, "label": "46%", "labelDy": 3},
+      {"date": "Dec '23", "candidate": "Joe Biden", "percentage": 35, "label": "43%", "labelDy": -5}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "color": "white",
+        "strokeWidth": 1,
+        "opacity": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "ordinal",
+          "sort": ["Jun '23", "Sep '23", "Dec '23"],
+          "axis": {
+            "title": null,
+            "labelColor": "#333",
+            "labelFontSize": 15,
+            "labelFontWeight": "bold",
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "grid": false,
+            "labelPadding": 0
+          }
+        },
+        "y": {
+          "datum": 0,
+          "type": "quantitative",
+          "scale": {
+            "domain": [0, 100]
+          },
+          "axis": null
+        },
+        "y2": {
+          "datum": 80
+        },
+        "color": {
+          "field": "candidate",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Donald Trump", "Joe Biden"],
+            "range": ["#BA4030", "#94B2DC"]
+          },
+          "legend": {
+            "title": null
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 4,
+        "opacity": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "ordinal",
+          "sort": ["Jun '23", "Sep '23", "Dec '23"]
+        },
+        "y": {
+          "field": "percentage",
+          "type": "quantitative",
+          "scale": {
+            "domain": [0, 100]
+          },
+          "axis": null
+        },
+        "color": {
+          "field": "candidate",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Donald Trump", "Joe Biden"],
+            "range": ["#BA4030", "#94B2DC"]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 150,
+        "opacity": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "ordinal",
+          "sort": ["Jun '23", "Sep '23", "Dec '23"]
+        },
+        "y": {
+          "field": "percentage",
+          "type": "quantitative",
+          "scale": {
+            "domain": [0, 100]
+          },
+          "axis": null
+        },
+        "color": {
+          "field": "candidate",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Donald Trump", "Joe Biden"],
+            "range": ["#BA4030", "#94B2DC"]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "transform": [
+        {"calculate": "datum.percentage + datum.labelDy*2", "as": "labelY"}
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 22,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "ordinal",
+          "sort": ["Jun '23", "Sep '23", "Dec '23"]
+        },
+        "y": {
+          "field": "labelY",
+          "type": "quantitative",
+          "scale": {
+            "domain": [0, 100]
+          },
+          "axis": null
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "candidate",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Donald Trump", "Joe Biden"],
+            "range": ["#BA4030", "#94B2DC"]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "data": {"values": [{}]},
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "bottom",
+        "fontSize": 12,
+        "color": "#333",
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "x": {"value": 380},
+        "y": {"value": 340},
+        "text": {"value": "(Numbers rounded to nearest digit)"}
+      }
+    }
+  ]
+}

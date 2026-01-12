@@ -1,0 +1,112 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Where Is Germany Ageing Most? (2024)",
+    "anchor": "start",
+    "subtitle": " Source: Destatis via Genesis API ",
+    "fontSize": 22,
+    "subtitleFontSize": 14,
+    "color": "#333",
+    "subtitleColor": "#666"
+  },
+  "width": 600,
+  "height": 600,
+  "background": "#faf8f3",
+  "config": {
+    "font": "Calibri"
+  },
+  "params": [
+    {
+      "name": "ageGroupSelect",
+      "value": "age_55_75_pct",
+      "bind": {
+        "input": "select",
+        "options": [
+          "age_55_75_pct",
+          "age_75_plus_pct",
+          "age_20_55_pct",
+          "age_0_20_pct"
+        ],
+        "labels": [
+          "55-75 years (Retiring generation)",
+          "75+ years (Elderly)",
+          "20-55 years (Working age)",
+          "0-20 years (Youth)"
+        ],
+        "name": "Age Group: "
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/cc9_germany_base_map_kreise.topojson",
+    "format": {
+      "type": "topojson",
+      "feature": "1_germany_base_map_kreise"
+    }
+  },
+  "transform": [
+    {
+      "lookup": "properties.CC_2",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/cc9_population_2024_percentages_for_map_corrected.csv"
+        },
+        "key": "district_code",
+        "fields": [
+          "district_name",
+          "total_population",
+          "age_0_20_pct",
+          "age_20_55_pct",
+          "age_55_75_pct",
+          "age_75_plus_pct"
+        ]
+      }
+    },
+    {
+      "calculate": "ageGroupSelect == 'age_0_20_pct' ? datum.age_0_20_pct : ageGroupSelect == 'age_20_55_pct' ? datum.age_20_55_pct : ageGroupSelect == 'age_55_75_pct' ? datum.age_55_75_pct : datum.age_75_plus_pct",
+      "as": "selected_percentage"
+    },
+    {
+      "calculate": "ageGroupSelect == 'age_0_20_pct' ? '0-20 years (Youth)' : ageGroupSelect == 'age_20_55_pct' ? '20-55 years (Working age)' : ageGroupSelect == 'age_55_75_pct' ? '55-75 years (Retiring generation)' : '75+ years (Elderly)'",
+      "as": "age_group_label"
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "selected_percentage",
+      "type": "quantitative",
+      "scale": {
+        "range": ["#faf8f3", "#08306b"]
+      },
+      "title": "Share (%)",
+      "legend": {
+        "labelColor": "#333",
+        "titleColor": "#333",
+        "orient": "bottom-right",
+        "direction": "vertical",
+        "gradientLength": 200,
+        "gradientThickness": 15,
+        "format": ".0f",
+        "titleFontSize": 12,
+        "labelFontSize": 11,
+        "legendX": 400
+      }
+    },
+    "tooltip": [
+      {"field": "district_name", "type": "nominal", "title": "District"},
+      {"field": "age_group_label", "type": "nominal", "title": "Age Group"},
+      {"field": "selected_percentage", "type": "quantitative", "title": "Share (%)", "format": ".1f"},
+      {"field": "total_population", "type": "quantitative", "title": "Total Population", "format": ",.0f"}
+    ]
+  },
+  "projection": {
+    "type": "mercator",
+    "scale": 2800,
+    "center": [10.5, 51.3]
+  }
+}

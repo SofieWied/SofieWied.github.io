@@ -1,0 +1,225 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "From 6 to 2: How Many Workers Fund One Retiree? (1962-2022)",
+    "anchor": "start",
+    "subtitle": "Source: Demografie Portal",
+    "fontSize": 22,
+    "subtitleFontSize": 16,
+    "color": "#333",
+    "subtitleColor": "#333"
+  },
+  "width": 600,
+  "height": 400,
+  "background": "#faf8f3",
+  "config": {
+    "font": "Calibri"
+  },
+  "view": {
+    "fill": "#faf8f3",
+    "strokeOpacity": 0
+  },
+  "data": {
+    "values": [
+      {"year": 1962, "ratio": 6.05},
+      {"year": 1963, "ratio": 5.92},
+      {"year": 1964, "ratio": 5.68},
+      {"year": 1965, "ratio": 5.45},
+      {"year": 1966, "ratio": 5.2},
+      {"year": 1967, "ratio": 4.83},
+      {"year": 1968, "ratio": 4.59},
+      {"year": 1969, "ratio": 4.49},
+      {"year": 1970, "ratio": 4.46},
+      {"year": 1971, "ratio": 4.3},
+      {"year": 1972, "ratio": 4.2},
+      {"year": 1973, "ratio": 4.04},
+      {"year": 1974, "ratio": 3.81},
+      {"year": 1975, "ratio": 3.53},
+      {"year": 1976, "ratio": 3.44},
+      {"year": 1977, "ratio": 3.39},
+      {"year": 1978, "ratio": 3.45},
+      {"year": 1979, "ratio": 3.49},
+      {"year": 1980, "ratio": 3.56},
+      {"year": 1981, "ratio": 3.45},
+      {"year": 1982, "ratio": 3.47},
+      {"year": 1983, "ratio": 3.39},
+      {"year": 1984, "ratio": 3.24},
+      {"year": 1985, "ratio": 3.22},
+      {"year": 1986, "ratio": 3.17},
+      {"year": 1987, "ratio": 3.1},
+      {"year": 1988, "ratio": 2.99},
+      {"year": 1989, "ratio": 2.9},
+      {"year": 1990, "ratio": 2.83},
+      {"year": 1991, "ratio": 2.73},
+      {"year": 1992, "ratio": 2.74},
+      {"year": 1993, "ratio": 2.64},
+      {"year": 1994, "ratio": 2.5},
+      {"year": 1995, "ratio": 2.37},
+      {"year": 1996, "ratio": 2.3},
+      {"year": 1997, "ratio": 2.22},
+      {"year": 1998, "ratio": 2.12},
+      {"year": 1999, "ratio": 2.24},
+      {"year": 2000, "ratio": 2.21},
+      {"year": 2001, "ratio": 2.14},
+      {"year": 2002, "ratio": 2.12},
+      {"year": 2003, "ratio": 2.05},
+      {"year": 2004, "ratio": 2.01},
+      {"year": 2005, "ratio": 2.05},
+      {"year": 2006, "ratio": 2.05},
+      {"year": 2007, "ratio": 2.02},
+      {"year": 2008, "ratio": 2.01},
+      {"year": 2009, "ratio": 2.0},
+      {"year": 2010, "ratio": 2.01},
+      {"year": 2011, "ratio": 2.01},
+      {"year": 2012, "ratio": 2.02},
+      {"year": 2013, "ratio": 2.05},
+      {"year": 2014, "ratio": 2.04},
+      {"year": 2015, "ratio": 2.05},
+      {"year": 2016, "ratio": 2.07},
+      {"year": 2017, "ratio": 2.1},
+      {"year": 2018, "ratio": 2.12},
+      {"year": 2019, "ratio": 2.13},
+      {"year": 2020, "ratio": 2.12},
+      {"year": 2021, "ratio": 2.12},
+      {"year": 2022, "ratio": 2.15}
+    ]
+  },
+  "params": [
+    {
+      "name": "yearSelect",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1962,
+        "max": 2022,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.year == yearSelect"},
+    {"calculate": "floor(datum.ratio)", "as": "fullWorkers"}
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 60,
+        "dx": -150,
+        "dy": -50
+      },
+      "encoding": {
+        "text": {"value": "👨‍🏫"}
+      }
+    },
+    {
+      "transform": [
+        {"filter": "datum.fullWorkers >= 2"}
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 60,
+        "dx": -50,
+        "dy": -50
+      },
+      "encoding": {
+        "text": {"value": "👨‍💼"}
+      }
+    },
+    {
+      "transform": [
+        {"filter": "datum.fullWorkers >= 3"}
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 60,
+        "dx": 50,
+        "dy": -50
+      },
+      "encoding": {
+        "text": {"value": "👨‍🏭"}
+      }
+    },
+    {
+      "transform": [
+        {"filter": "datum.fullWorkers >= 4"}
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 60,
+        "dx": 150,
+        "dy": -50
+      },
+      "encoding": {
+        "text": {"value": "👩‍⚕️"}
+      }
+    },
+    {
+      "transform": [
+        {"filter": "datum.fullWorkers >= 5"}
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 60,
+        "dx": -100,
+        "dy": -150
+      },
+      "encoding": {
+        "text": {"value": "👷"}
+      }
+    },
+    {
+      "transform": [
+        {"filter": "datum.fullWorkers >= 6"}
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 60,
+        "dx": 0,
+        "dy": -150
+      },
+      "encoding": {
+        "text": {"value": "👩‍💼"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 80,
+        "dy": 80,
+        "color": "#e74c3c"
+      },
+      "encoding": {
+        "text": {"value": "👵"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 40,
+        "fontWeight": "bold",
+        "dy": 150,
+        "color": "#333"
+      },
+      "encoding": {
+        "text": {
+          "field": "ratio",
+          "type": "quantitative",
+          "format": ".2f"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 16,
+        "dy": 180,
+        "color": "#333"
+      },
+      "encoding": {
+        "text": {"value": "contributors per pensioner"}
+      }
+    }
+  ]
+}

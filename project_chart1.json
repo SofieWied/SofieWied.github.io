@@ -1,0 +1,583 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Retirement and Life Expectancy in Germany (1960-2020)",
+    "anchor": "start",
+    "subtitle": "Source: Demografie Portal, BPB, Destatis",
+    "fontSize": 22,
+    "subtitleFontSize": 16,
+    "color": "#333",
+    "subtitleColor": "#333"
+  },
+  "height": 400,
+  "width": 600,
+  "background": "#faf8f3",
+  "config": {
+    "font": "Calibri",
+    "legend": {
+      "orient": "none",
+      "legendX": 10,
+      "legendY": 80,
+      "labelFontSize": 11,
+      "symbolSize": 100,
+      "symbolStrokeWidth": 3
+    }
+  },
+  "view": {
+    "fill": "#faf8f3",
+    "strokeOpacity": 0
+  },
+  "params": [
+    {
+      "name": "genderSelect",
+      "value": "female",
+      "bind": {
+        "input": "select",
+        "options": ["female", "male"],
+        "labels": ["Women", "Men"],
+        "name": "Gender: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_pension_end_age_female.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.year >= 1960 && datum.year <= 2020"
+        },
+        {
+          "filter": "genderSelect == 'female'"
+        },
+        {
+          "lookup": "year",
+          "from": {
+            "data": {"url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_retirement_age_female.csv"},
+            "key": "year",
+            "fields": ["retirement_age"]
+          }
+        },
+        {
+          "calculate": "datum.end_age - datum.retirement_age",
+          "as": "pension_duration"
+        }
+      ],
+      "mark": {
+        "type": "area",
+        "color": "#333333",
+        "opacity": 0.2
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {
+            "domain": [1960, 2020],
+            "nice": false,
+            "padding": 0
+          },
+          "axis": {
+            "title": "Year",
+            "titleColor": "#333",
+            "labelColor": "#333",
+            "grid": false,
+            "format": "d"
+          }
+        },
+        "y": {
+          "field": "retirement_age",
+          "type": "quantitative",
+          "scale": {
+            "domain": [60, 88]
+          },
+          "axis": {
+            "title": "Age",
+            "titleColor": "#333",
+            "labelColor": "#333",
+            "grid": true,
+            "gridColor": "#e0e0e0",
+            "gridOpacity": 0.5
+          }
+        },
+        "y2": {
+          "field": "end_age"
+        },
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "retirement_age", "type": "quantitative", "title": "Retirement Age", "format": ".1f"},
+          {"field": "pension_duration", "type": "quantitative", "title": "Pension Duration (Years)", "format": ".1f"},
+          {"field": "end_age", "type": "quantitative", "title": "End Age", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_pension_end_age_male.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.year >= 1960 && datum.year <= 2020"
+        },
+        {
+          "filter": "genderSelect == 'male'"
+        },
+        {
+          "lookup": "year",
+          "from": {
+            "data": {"url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_retirement_age_male.csv"},
+            "key": "year",
+            "fields": ["retirement_age"]
+          }
+        },
+        {
+          "calculate": "datum.end_age - datum.retirement_age",
+          "as": "pension_duration"
+        }
+      ],
+      "mark": {
+        "type": "area",
+        "color": "#333333",
+        "opacity": 0.2
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {
+            "domain": [1960, 2020],
+            "nice": false,
+            "padding": 0
+          }
+        },
+        "y": {
+          "field": "retirement_age",
+          "type": "quantitative",
+          "scale": {
+            "domain": [60, 88]
+          }
+        },
+        "y2": {
+          "field": "end_age"
+        },
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "retirement_age", "type": "quantitative", "title": "Retirement Age", "format": ".1f"},
+          {"field": "pension_duration", "type": "quantitative", "title": "Pension Duration (Years)", "format": ".1f"},
+          {"field": "end_age", "type": "quantitative", "title": "End Age", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_death_age_female.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.year >= 1960 && datum.year <= 2020"
+        },
+        {
+          "filter": "genderSelect == 'female'"
+        },
+        {
+          "lookup": "year",
+          "from": {
+            "data": {"url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_life_expectancy_female_65.csv"},
+            "key": "year",
+            "fields": ["life_expectancy"]
+          }
+        },
+        {
+          "calculate": "'Average Life Expectancy'",
+          "as": "line_type"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2,
+        "strokeDash": [8, 4]
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {
+            "domain": [1960, 2020],
+            "nice": false,
+            "padding": 0
+          }
+        },
+        "y": {
+          "field": "death_age",
+          "type": "quantitative",
+          "scale": {
+            "domain": [60, 88]
+          }
+        },
+        "color": {
+          "field": "line_type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Average Retirement Age", "End of Pension Period", "Average Life Expectancy", "Life Expectancy at 65"],
+            "range": ["#0173B2", "#333333", "#9467BD", "#C96763"]
+          },
+          "legend": {
+            "title": null
+          }
+        },
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "death_age", "type": "quantitative", "title": "Average Life Expectancy", "format": ".1f"},
+          {"field": "life_expectancy", "type": "quantitative", "title": "Life Expectancy at 65", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_death_age_male.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.year >= 1960 && datum.year <= 2020"
+        },
+        {
+          "filter": "genderSelect == 'male'"
+        },
+        {
+          "lookup": "year",
+          "from": {
+            "data": {"url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_life_expectancy_male_65.csv"},
+            "key": "year",
+            "fields": ["life_expectancy"]
+          }
+        },
+        {
+          "calculate": "'Average Life Expectancy'",
+          "as": "line_type"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2,
+        "strokeDash": [8, 4]
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "scale": {
+            "domain": [1960, 2020],
+            "nice": false,
+            "padding": 0
+          }
+        },
+        "y": {
+          "field": "death_age",
+          "type": "quantitative",
+          "scale": {
+            "domain": [60, 88]
+          }
+        },
+        "color": {
+          "field": "line_type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Average Retirement Age", "End of Pension Period", "Average Life Expectancy", "Life Expectancy at 65"],
+            "range": ["#0173B2", "#333333", "#9467BD", "#C96763"]
+          },
+          "legend": {
+            "title": null
+          }
+        },
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "death_age", "type": "quantitative", "title": "Average Life Expectancy", "format": ".1f"},
+          {"field": "life_expectancy", "type": "quantitative", "title": "Life Expectancy at 65", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_life_expectancy_female_65.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.year >= 1960 && datum.year <= 2020"
+        },
+        {
+          "filter": "genderSelect == 'female'"
+        },
+        {
+          "lookup": "year",
+          "from": {
+            "data": {"url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_death_age_female.csv"},
+            "key": "year",
+            "fields": ["death_age"]
+          }
+        },
+        {
+          "calculate": "'Life Expectancy at 65'",
+          "as": "line_type"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2,
+        "strokeDash": [2, 2]
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {
+          "field": "life_expectancy",
+          "type": "quantitative",
+          "scale": {"domain": [60, 88]}
+        },
+        "color": {
+          "field": "line_type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Average Retirement Age", "End of Pension Period", "Average Life Expectancy", "Life Expectancy at 65"],
+            "range": ["#0173B2", "#333333", "#9467BD", "#C96763"]
+          },
+          "legend": {
+            "title": null
+          }
+        },
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "death_age", "type": "quantitative", "title": "Average Life Expectancy", "format": ".1f"},
+          {"field": "life_expectancy", "type": "quantitative", "title": "Life Expectancy at 65", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_life_expectancy_male_65.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.year >= 1960 && datum.year <= 2020"
+        },
+        {
+          "filter": "genderSelect == 'male'"
+        },
+        {
+          "lookup": "year",
+          "from": {
+            "data": {"url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_death_age_male.csv"},
+            "key": "year",
+            "fields": ["death_age"]
+          }
+        },
+        {
+          "calculate": "'Life Expectancy at 65'",
+          "as": "line_type"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2,
+        "strokeDash": [2, 2]
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {
+          "field": "life_expectancy",
+          "type": "quantitative",
+          "scale": {"domain": [60, 88]}
+        },
+        "color": {
+          "field": "line_type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Average Retirement Age", "End of Pension Period", "Average Life Expectancy", "Life Expectancy at 65"],
+            "range": ["#0173B2", "#333333", "#9467BD", "#C96763"]
+          },
+          "legend": {
+            "title": null
+          }
+        },
+        "tooltip": [
+          {"field": "year", "type": "quantitative", "title": "Year"},
+          {"field": "death_age", "type": "quantitative", "title": "Average Life Expectancy", "format": ".1f"},
+          {"field": "life_expectancy", "type": "quantitative", "title": "Life Expectancy at 65", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_retirement_age_female.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.year >= 1960 && datum.year <= 2020"
+        },
+        {
+          "filter": "genderSelect == 'female'"
+        },
+        {
+          "calculate": "'Average Retirement Age'",
+          "as": "line_type"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 4
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "retirement_age",
+          "type": "quantitative",
+          "scale": {
+            "domain": [60, 88]
+          }
+        },
+        "color": {
+          "field": "line_type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Average Retirement Age", "End of Pension Period", "Average Life Expectancy", "Life Expectancy at 65"],
+            "range": ["#0173B2", "#333333", "#9467BD", "#C96763"]
+          },
+          "legend": {
+            "title": null
+          }
+        },
+        "tooltip": null
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_retirement_age_male.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.year >= 1960 && datum.year <= 2020"
+        },
+        {
+          "filter": "genderSelect == 'male'"
+        },
+        {
+          "calculate": "'Average Retirement Age'",
+          "as": "line_type"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 4
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "retirement_age",
+          "type": "quantitative",
+          "scale": {
+            "domain": [60, 88]
+          }
+        },
+        "color": {
+          "field": "line_type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Average Retirement Age", "End of Pension Period", "Average Life Expectancy", "Life Expectancy at 65"],
+            "range": ["#0173B2", "#333333", "#9467BD", "#C96763"]
+          },
+          "legend": {
+            "title": null
+          }
+        },
+        "tooltip": null
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_pension_end_age_female.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.year >= 1960 && datum.year <= 2020"
+        },
+        {
+          "filter": "genderSelect == 'female'"
+        },
+        {
+          "calculate": "'End of Pension Period'",
+          "as": "line_type"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {
+          "field": "end_age",
+          "type": "quantitative",
+          "scale": {"domain": [60, 88]}
+        },
+        "color": {
+          "field": "line_type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Average Retirement Age", "End of Pension Period", "Average Life Expectancy", "Life Expectancy at 65"],
+            "range": ["#0173B2", "#333333", "#9467BD", "#C96763"]
+          },
+          "legend": {
+            "title": null
+          }
+        },
+        "tooltip": null
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart1_pension_end_age_male.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.year >= 1960 && datum.year <= 2020"
+        },
+        {
+          "filter": "genderSelect == 'male'"
+        },
+        {
+          "calculate": "'End of Pension Period'",
+          "as": "line_type"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {
+          "field": "end_age",
+          "type": "quantitative",
+          "scale": {"domain": [60, 88]}
+        },
+        "color": {
+          "field": "line_type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Average Retirement Age", "End of Pension Period", "Average Life Expectancy", "Life Expectancy at 65"],
+            "range": ["#0173B2", "#333333", "#9467BD", "#C96763"]
+          },
+          "legend": {
+            "title": null
+          }
+        },
+        "tooltip": null
+      }
+    }
+  ]
+}

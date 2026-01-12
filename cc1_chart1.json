@@ -1,0 +1,257 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "title": {
+    "text": "G20 Debt Outstanding (April 2025)",
+    "anchor": "start",
+    "subtitle": "Source: Economics Observatory Newsletter",
+    "fontSize": 22,
+    "subtitleFontSize": 16,
+    "color": "#333",
+    "subtitleColor": "#333"
+  },
+  "config": {
+    "font": "Calibri",
+    "background": "#faf8f3",
+    "view": {
+      "stroke": null
+    }
+  },
+  "height": 350,
+  "width": 600,
+  "layer": [
+    {
+      "data": {
+        "name": "data-309e3b1ba592b2e5550680b416053ec4"
+      },
+      "mark": {
+        "type": "bar",
+        "color": {
+          "expr": "datum.id == 'GBR' ? '#C96763' : '#0173B2'"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": {
+            "labelExpr": "datum.label + '%'",
+            "tickCount": 6,
+            "grid": false,
+            "titleColor": "#333",
+            "labelColor": "#333",
+            "title": ""
+          }
+        },
+        "y": {
+          "field": "country",
+          "type": "nominal",
+          "sort": {
+            "field": "value",
+            "order": "descending"
+          },
+          "axis": {
+            "title": "Gross debt, % of GDP",
+            "titleAngle": 0,
+            "titleAlign": "left",
+            "titleY": 0,
+            "titleX": 0,
+            "ticks": false,
+            "titleColor": "#333",
+            "labelColor": "#333",
+            "titleFontSize": 10,
+            "titleFontWeight":"normal"
+          }
+        },
+        "tooltip": [
+          {"field": "country", "type": "nominal", "title": "Country"},
+          {"field": "value", "type": "quantitative", "title": "Gross Debt (%)", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "name": "data-309e3b1ba592b2e5550680b416053ec4"
+      },
+      "mark": {
+        "type": "text",
+        "align": {
+          "expr": "datum.id == 'GBR' || datum.id == 'USA' || datum.id == 'DEU' || datum.id == 'FRA' ? 'left' : 'right'"
+        },
+        "dx": 4,
+        "fontSize": 11,
+        "color": "#333"
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "test": {
+              "field": "id",
+              "oneOf": [
+                "GBR",
+                "USA",
+                "DEU",
+                "FRA"
+              ]
+            },
+            "value": 1
+          },
+          "value": 0
+        },
+        "text": {
+          "field": "value",
+          "type": "quantitative",
+          "format": ".1f"
+        },
+        "x": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "country",
+          "type": "nominal",
+          "sort": {
+            "field": "value",
+            "order": "descending"
+          }
+        }
+      }
+    }
+  ],
+  "datasets": {
+    "data-309e3b1ba592b2e5550680b416053ec4": [
+      {
+        "date": 2025,
+        "value": 73.091251591104,
+        "id": "ARG",
+        "country": "Argentina",
+        "value_pct": 0.73091251591104
+      },
+      {
+        "date": 2025,
+        "value": 50.936501060367,
+        "id": "AUS",
+        "country": "Australia",
+        "value_pct": 0.50936501060367
+      },
+      {
+        "date": 2025,
+        "value": 92.041318027898,
+        "id": "BRA",
+        "country": "Brazil",
+        "value_pct": 0.92041318027898
+      },
+      {
+        "date": 2025,
+        "value": 112.54106357287,
+        "id": "CAN",
+        "country": "Canada",
+        "value_pct": 1.1254106357287
+      },
+      {
+        "date": 2025,
+        "value": 96.305713563963,
+        "id": "CHN",
+        "country": "China",
+        "value_pct": 0.9630571356396299
+      },
+      {
+        "date": 2025,
+        "value": 116.3007960432,
+        "id": "FRA",
+        "country": "France",
+        "value_pct": 1.163007960432
+      },
+      {
+        "date": 2025,
+        "value": 65.380637644952,
+        "id": "DEU",
+        "country": "Germany",
+        "value_pct": 0.65380637644952
+      },
+      {
+        "date": 2025,
+        "value": 80.391094275688,
+        "id": "IND",
+        "country": "India",
+        "value_pct": 0.80391094275688
+      },
+      {
+        "date": 2025,
+        "value": 40.990083942977,
+        "id": "IDN",
+        "country": "Indonesia",
+        "value_pct": 0.40990083942977
+      },
+      {
+        "date": 2025,
+        "value": 137.27979668867,
+        "id": "ITA",
+        "country": "Italy",
+        "value_pct": 1.3727979668866999
+      },
+      {
+        "date": 2025,
+        "value": 234.85787511531,
+        "id": "JPN",
+        "country": "Japan",
+        "value_pct": 2.3485787511531
+      },
+      {
+        "date": 2025,
+        "value": 60.663899752961,
+        "id": "MEX",
+        "country": "Mexico",
+        "value_pct": 0.60663899752961
+      },
+      {
+        "date": 2025,
+        "value": 21.38267313071,
+        "id": "RUS",
+        "country": "Russia",
+        "value_pct": 0.2138267313071
+      },
+      {
+        "date": 2025,
+        "value": 34.849040566528,
+        "id": "SAU",
+        "country": "Saudi Arabia",
+        "value_pct": 0.34849040566527995
+      },
+      {
+        "date": 2025,
+        "value": 79.5510497764,
+        "id": "ZAF",
+        "country": "South Africa",
+        "value_pct": 0.7955104977640001
+      },
+      {
+        "date": 2025,
+        "value": 54.45306660843,
+        "id": "KOR",
+        "country": "South Korea",
+        "value_pct": 0.5445306660843
+      },
+      {
+        "date": 2025,
+        "value": 26.672828587464,
+        "id": "TUR",
+        "country": "Türkiye",
+        "value_pct": 0.26672828587464
+      },
+      {
+        "date": 2025,
+        "value": 103.89434254602,
+        "id": "GBR",
+        "country": "UK",
+        "value_pct": 1.0389434254602
+      },
+      {
+        "date": 2025,
+        "value": 122.46421163238,
+        "id": "USA",
+        "country": "US",
+        "value_pct": 1.2246421163238
+      }
+    ]
+  }
+}

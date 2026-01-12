@@ -1,0 +1,104 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "All-Time Olympic Medals by Country (Top 15)",
+    "anchor": "start",
+    "subtitle": "Source: Olympedia",
+    "fontSize": 22,
+    "subtitleFontSize": 16,
+    "color": "#333",
+    "subtitleColor": "#333"
+  },
+  "height": 400,
+  "width": 600,
+  "background": "#faf8f3",
+  "config": {
+    "font": "Calibri"
+  },
+  "view": {
+    "fill": "#faf8f3",
+    "strokeOpacity": 0
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/cc5_chart2_data.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.Medal_Type === 'Bronze' ? 1 : datum.Medal_Type === 'Silver' ? 2 : 3",
+      "as": "order_field"
+    },
+    {
+      "calculate": "datum.Country === 'People\\'s Republic of China' ? 'P.R. China' : datum.Country",
+      "as": "Country_Display"
+    }
+  ],
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "y": {
+      "field": "Country_Display",
+      "type": "nominal",
+      "axis": {
+        "title": "",
+        "labelColor": "#333",
+        "grid": false
+      },
+      "sort": "-x"
+    },
+    "x": {
+      "field": "Count",
+      "type": "quantitative",
+      "axis": {
+        "title": "Number of Medals",
+        "titleColor": "#333",
+        "labelColor": "#333",
+        "grid": true,
+        "gridColor": "#e0e0e0",
+        "gridOpacity": 0.5
+      },
+      "stack": "zero",
+      "scale": {
+        "domain": [0, 3200]
+      }
+    },
+    "color": {
+      "field": "Medal_Type",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Bronze", "Silver", "Gold"],
+        "range": ["#CD7F32", "#C0C0C0", "#FFD700"]
+      },
+      "legend": {
+        "title": null,
+        "orient": "bottom-right",
+        "labelColor": "#333",
+        "labelFontSize": 14
+      }
+    },
+    "order": {
+      "field": "order_field",
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {
+        "field": "Country_Display",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "Medal_Type",
+        "type": "nominal",
+        "title": "Medal Type"
+      },
+      {
+        "field": "Count",
+        "type": "quantitative",
+        "title": "Count"
+      }
+    ]
+  }
+}

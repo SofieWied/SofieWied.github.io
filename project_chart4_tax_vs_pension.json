@@ -1,0 +1,103 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Tax Revenue vs. Pension Spending (2014-2024)",
+    "anchor": "start",
+    "subtitle": "Source: Own calculations based on data from Destatis (Genesis API) and Bundeshaushalt API",
+    "fontSize": 22,
+    "subtitleFontSize": 14,
+    "color": "#333",
+    "subtitleColor": "#333"
+  },
+  "width": 600,
+  "height": 400,
+  "background": "#faf8f3",
+  "config": {
+    "font": "Calibri",
+    "legend": {
+      "orient": "none",
+      "legendX": 10,
+      "legendY": 10,
+      "labelFontSize": 12,
+      "symbolSize": 150,
+      "symbolStrokeWidth": 6,
+      "fillColor": "#faf8f3",
+      "strokeColor": "#333",
+      "padding": 10,
+      "cornerRadius": 5
+    }
+  },
+  "view": {
+    "fill": "#faf8f3",
+    "strokeOpacity": 0
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/SofieWied/SofieWied.github.io/refs/heads/main/project_chart4_tax_vs_pension.csv"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "x": {
+      "field": "Jahr",
+      "type": "ordinal",
+      "axis": {
+        "title": "Year",
+        "titleColor": "#333",
+        "labelColor": "#333",
+        "labelAngle": 0,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Amount_Billion_Euro",
+      "type": "quantitative",
+      "axis": {
+        "title": "Amount (Billion €)",
+        "titleColor": "#333",
+        "labelColor": "#333",
+        "grid": true,
+        "gridColor": "#e0e0e0",
+        "gridOpacity": 0.5
+      }
+    },
+    "xOffset": {
+      "field": "Category"
+    },
+    "color": {
+      "field": "Category",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Pension Spending", "Tax Revenue"],
+        "range": ["#C96763", "#0173B2"]
+      },
+      "legend": {
+        "title": null
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Jahr",
+        "type": "ordinal",
+        "title": "Year"
+      },
+      {
+        "field": "Category",
+        "type": "nominal",
+        "title": "Category"
+      },
+      {
+        "field": "Amount_Billion_Euro",
+        "type": "quantitative",
+        "title": "Amount (Billion €)",
+        "format": ".2f"
+      },
+      {
+        "field": "Pension_Percent_of_Tax",
+        "type": "quantitative",
+        "title": "Pension as % of Tax Revenue",
+        "format": ".1f"
+      }
+    ]
+  }
+}

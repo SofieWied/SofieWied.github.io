@@ -1,0 +1,207 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "",
+        "subtitle": "Annual Min & Max Temperatures | Source: Open-Meteo API",
+        "anchor": "start",
+        "fontSize": 18,
+        "subtitleFontSize": 12,
+        "color": "#333",
+        "subtitleColor": "#333"
+    },
+    "height": 250,
+    "width": 280,
+    "background": "#faf8f3",
+    "config": {
+        "font": "Calibri",
+        "legend": {
+            "orient": "top",
+            "direction": "horizontal",
+            "titleAnchor": "middle"
+        }
+    },
+    "view": {
+        "fill": "#faf8f3",
+        "strokeOpacity": 0
+    },
+    "data": {
+        "url": "",
+        "format": {
+            "type": "json",
+            "property": "data"
+        }
+    },
+    "transform": [
+        {
+            "calculate": "toDate(datum.date)",
+            "as": "date_parsed"
+        }
+    ],
+    "layer": [
+        {
+            "mark": {
+                "type": "point",
+                "filled": true,
+                "size": 30,
+                "color": "#DC143C"
+            },
+            "encoding": {
+                "x": {
+                    "field": "date_parsed",
+                    "type": "temporal",
+                    "axis": {
+                        "title": "",
+                        "labelColor": "#333",
+                        "grid": false,
+                        "format": "%Y"
+                    }
+                },
+                "y": {
+                    "field": "temp_max",
+                    "type": "quantitative",
+                    "axis": {
+                        "title": "Temperature (°C)",
+                        "titleColor": "#333",
+                        "labelColor": "#333",
+                        "grid": true,
+                        "gridColor": "#e0e0e0",
+                        "gridOpacity": 0.5
+                    },
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "datum": "Yearly Max",
+                    "scale": {
+                        "domain": ["Yearly Max", "Yearly Min", "10-yr Avg Max", "10-yr Avg Min"],
+                        "range": ["#DC143C", "#4682B4", "#FFB6C1", "#87CEEB"]
+                    },
+                    "legend": {
+                        "title": null,
+                        "labelColor": "#333",
+                        "labelFontSize": 11
+                    }
+                },
+                "tooltip": [
+                    {
+                        "field": "date_parsed",
+                        "type": "temporal",
+                        "title": "Year",
+                        "format": "%Y"
+                    },
+                    {
+                        "field": "temp_max",
+                        "type": "quantitative",
+                        "title": "Max Temp (°C)",
+                        "format": ".1f"
+                    }
+                ]
+            }
+        },
+        {
+            "mark": {
+                "type": "point",
+                "filled": true,
+                "size": 30,
+                "color": "#4682B4"
+            },
+            "encoding": {
+                "x": {
+                    "field": "date_parsed",
+                    "type": "temporal"
+                },
+                "y": {
+                    "field": "temp_min",
+                    "type": "quantitative"
+                },
+                "color": {
+                    "datum": "Yearly Min",
+                    "scale": {
+                        "domain": ["Yearly Max", "Yearly Min", "10-yr Avg Max", "10-yr Avg Min"],
+                        "range": ["#DC143C", "#4682B4", "#FFB6C1", "#87CEEB"]
+                    },
+                    "legend": null
+                },
+                "tooltip": [
+                    {
+                        "field": "date_parsed",
+                        "type": "temporal",
+                        "title": "Year",
+                        "format": "%Y"
+                    },
+                    {
+                        "field": "temp_min",
+                        "type": "quantitative",
+                        "title": "Min Temp (°C)",
+                        "format": ".1f"
+                    }
+                ]
+            }
+        },
+        {
+            "transform": [
+                {
+                    "window": [{"op": "mean", "field": "temp_max", "as": "rolling_max"}],
+                    "frame": [-4, 5]
+                }
+            ],
+            "mark": {
+                "type": "line",
+                "strokeWidth": 2,
+                "color": "#FFB6C1",
+                "opacity": 0.8
+            },
+            "encoding": {
+                "x": {
+                    "field": "date_parsed",
+                    "type": "temporal"
+                },
+                "y": {
+                    "field": "rolling_max",
+                    "type": "quantitative"
+                },
+                "color": {
+                    "datum": "10-yr Avg Max",
+                    "scale": {
+                        "domain": ["Yearly Max", "Yearly Min", "10-yr Avg Max", "10-yr Avg Min"],
+                        "range": ["#DC143C", "#4682B4", "#FFB6C1", "#87CEEB"]
+                    },
+                    "legend": null
+                }
+            }
+        },
+        {
+            "transform": [
+                {
+                    "window": [{"op": "mean", "field": "temp_min", "as": "rolling_min"}],
+                    "frame": [-4, 5]
+                }
+            ],
+            "mark": {
+                "type": "line",
+                "strokeWidth": 2,
+                "color": "#87CEEB",
+                "opacity": 0.8
+            },
+            "encoding": {
+                "x": {
+                    "field": "date_parsed",
+                    "type": "temporal"
+                },
+                "y": {
+                    "field": "rolling_min",
+                    "type": "quantitative"
+                },
+                "color": {
+                    "datum": "10-yr Avg Min",
+                    "scale": {
+                        "domain": ["Yearly Max", "Yearly Min", "10-yr Avg Max", "10-yr Avg Min"],
+                        "range": ["#DC143C", "#4682B4", "#FFB6C1", "#87CEEB"]
+                    },
+                    "legend": null
+                }
+            }
+        }
+    ]
+}
