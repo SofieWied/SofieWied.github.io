@@ -1,0 +1,343 @@
+<!-- PORTFOLIO = Coding Challenges -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+    <!-- Vega-Lite for charts -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+
+<body>
+    <!-- HEADER - always the same!!! -->
+    <header>
+        <div class="header-left">
+            <h1>Charts as Data</h1>
+        </div>
+        <nav class="header-right">
+            <a href="index.html">About</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="project.html">Project</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+    <!-- Title Section -->
+    <section id="title">
+        <h1 class="centered-title">Data Visualisation Portfolio</h1>
+        <p>This portfolio presents ten coding challenges created for PP434: Automated Data Visualisation for Policymaking. Click on individual challenges below to explore the data sources, methodologies, and interactive features behind each visualisation.</p>
+    </section>
+
+    <!-- CC1: HOSTING -->
+    <section id="cc1" class="collapsible-section" id="fn1-ref">
+    <div class="collapsible-header" onclick="this.parentElement.classList.toggle('active')">
+        <h2>CC1. Hosting</h2>
+        <span class="toggle-icon"></span>
+    </div>
+    <div class="collapsible-content">
+        <p><b>Task:</b> Set up your own Github account and live page. Add two charts using the <a href="https://github.com/vega/vega-embed">vegaEmbed</a> function.<sup><a href="#fn1">1</a></p>
+    
+        <div class="chart-container">
+            <figure id="cc1_chart1"></figure>
+        </div>
+        
+        <div class="chart-container">
+            <figure id="cc1_chart2"></figure>
+        </div>
+
+    </div>
+    </section>
+
+
+    <!-- CC2: BUILDING -->
+    <section id="cc2" class="collapsible-section">
+    <div class="collapsible-header" onclick="this.parentElement.classList.toggle('active')">
+        <h2>CC2. Building</h2>
+        <span class="toggle-icon"></span>
+    </div>
+    <div class="collapsible-content">
+        <p> <b>Task:</b> Set up an account on the <a href="https://github.com/vega/vega-embed">Economics Observatory Data Hub</a>. Build two separate charts using the “create” tool.</p>
+        
+        <div class="chart-container">
+            <figure id="cc2_chart1"></figure>
+        </div>
+
+        <div class="chart-container">
+            <figure id="cc2_chart2"></figure>
+        </div>
+
+    </div>
+    </section>    
+
+    <!-- CC3: DEBATE -->
+    <section id="cc3" class="collapsible-section">
+    <div class="collapsible-header" onclick="this.parentElement.classList.toggle('active')">
+        <h2>CC3. Debate</h2>
+        <span class="toggle-icon"></span>
+    </div>
+    <div class="collapsible-content">
+
+        <p> <b>Task:</b> Produce two charts that support or refute (or are related to in some way) to a topic of policy debate.</p>
+        <p>Across Europe, nations race towards a green transition, yet a fundamental question divides them: what counts as "green" energy? Germany and France offer contrasting answers</p>
+        
+        <div class="chart-container">
+            <figure id="cc3_chart1"></figure>
+        </div>
+
+        <p>Germany has abandoned nuclear power whilst renewables have skyrocketed. France maintains declining but still substantial nuclear energy, which it counts as "green" in line with <a href=https://sustainablefutures.linklaters.com/post/102l4qq/eu-general-court-upholds-commissions-classification-of-nuclear-energy-and-natura>EU Taxonomy</a>.</p>
+
+        <div class="chart-container">
+            <figure id="cc3_chart2"></figure>
+        </div>
+
+    </div>
+    </section> 
+
+    <!-- CC4: REPLICATION -->   
+    <section id="cc4" class="collapsible-section">
+    <div class="collapsible-header" onclick="this.parentElement.classList.toggle('active')">
+        <h2>CC4. Replication</h2>
+        <span class="toggle-icon"></span>
+    </div>
+    <div class="collapsible-content">
+        <p> <b>Task:</b> Find a chart that a policy organisation, a journalist, think tank, television channel or company has used. Replicate and then improve on it. </p>
+        <div class="chart-container">
+            <h3>Original Chart</h3>
+            <p id="fn2-ref">Source: Crilly, Rob. "A choice between REVENGE or NOTHING". <a href="https://www.dailymail.co.uk/news/article-12890411/Voters-2024-choice-Trump-second-term-Biden-second-term-choice-REVENGE-Daily-Mail-poll.htmll">Daily Mail</a>, December 26, 2023. <sup><a href="#fn2">2</a></sup></p> 
+            <img src="images/cc4_chart1.jpg" alt="Original chart from Daily Mail" style="max-width: 717px; width: 100%; height: auto;">
+        </div>
+        
+        <div class="chart-container">
+            <h3>My Replication</h3>
+            <p id="fn3-ref">I was unable to source the background image used in the original. As an alternative, I reconstructed a similar visual effect using comparable imagery combined with a transparent black filter.<sup><a href="#fn3">3</a></sup></p>
+            <figure id="cc4_chart2"></figure>
+
+        </div>
+        
+        <div class="chart-container">
+            <h3>My Improvement</h3>
+            <p>I removed the distracting background image, corrected misleading vertical positioning of identical data points, and removed inconsistent x-axis intervals to eliminate temporal distortion.</p>
+            <figure id="cc4_chart3"></figure>
+        </div>
+
+    </div>
+    </section>    
+
+    <!-- CC5: ACCESSING DATA -->
+    <section id="cc5" class="collapsible-section">
+    <div class="collapsible-header" onclick="this.parentElement.classList.toggle('active')">
+        <h2>CC5. Accessing Data</h2>
+        <span class="toggle-icon"></span>
+    </div>
+    <div class="collapsible-content">
+        <h3>API Task</h3>
+        <p> <b>Task:</b> Add a chart to your site that uses a live link to an API. Below your chart, add a functional description of the API (Application Programming Interface).</p>
+        <div class="chart-container">
+            <figure id="cc5_chart1"></figure>
+            <p> I retrieved the chart data from the <a href=https://open-meteo.com/en/docs?hourly=snowfall,snow_depth&timezone=Europe%2FBerlin&forecast_days=16&latitude=47.42&longitude=10.98>Open-Meteo API</a>, a free and well-documented weather forecasting service. The API endpoint is constructed using several key parameters:</p>
+            <p class="bullet"> <b>Base URL:</b> https://api.open-meteo.com/v1/forecast</p>
+            <p class="bullet" id="fn4-ref"> <b>latitude=47.42 & longitude=10.98</b> specify the geographical coordinates for the location of interest, in my case mount Zugspitze in southern Germany.<sup><a href="#fn4">4</a></sup></p>
+            <p class="bullet"> <b>hourly=snowfall,snow_depth</b> requests hourly measurements for both forecasted snowfall rates and accumulated snow depth.</p>
+            <p class="bullet"> <b>timezone=Europe/Berlin</b> ensures alignment with the Central European Time zone.</p>
+            <p class="bullet"> <b>forecast_days=16</b> retrieves forecast data for the next 16 days (maximum forecast period).</p>
+        </div>
+        
+        <h3>Scraper Task</h3>
+        <p> <b>Task:</b> Using a Google Colab python notebook, scrape a website. Then clean and normalise the data and export into TIDY format. </p>
+        <div class="chart-container" id="fn5-ref">
+            <figure id="cc5_chart2"></figure>
+            <p> I extracted the medal data from <a href=https://www.olympedia.org/statistics/medal/country>Olympedia</a>, which the <a href=https://library.olympics.com/default/external-collections.aspx?_lg=en-GB>Olympic World Library</a> recognises as the most comprehensive database on the Olympic Games. The site's straightforward tabular structure made it particularly suitable for web scraping. I applied the scraping methodology covered in the PP434 seminar.<sup><a href="#fn5">5</a></sup></p>
+        </div>
+
+    </div>
+    </section>  
+
+    <!-- CC6: LOOPS -->
+    <section id="cc6" class="collapsible-section">
+    <div class="collapsible-header" onclick="this.parentElement.classList.toggle('active')">
+        <h2>CC6. Loops</h2>
+        <span class="toggle-icon"></span>
+    </div>
+    <div class="collapsible-content" id="fn6-ref">
+        <p> <b>Task:</b> Use a loop to batch download six different series as JSON files. Save these to your GitHub account and use these to supply the data to six (or more) charts on a theme of your choice. In addition, use use a loop in your Javascript in order to embed the six charts.<sup><a href="#fn6">6</a></sup></p>
+        
+        <div class="dashboard-grid">
+        <div class="chart-container" id="cc6_chart1"></div>
+        <div class="chart-container" id="cc6_chart2"></div>
+        <div class="chart-container" id="cc6_chart3"></div>
+        <div class="chart-container" id="cc6_chart4"></div>
+        <div class="chart-container" id="cc6_chart5"></div>
+        <div class="chart-container" id="cc6_chart6"></div>
+    </div>
+
+    </div>
+    </section>  
+
+    <!-- CC7: MAPS -->
+    <section id="cc7" class="collapsible-section">
+    <div class="collapsible-header" onclick="this.parentElement.classList.toggle('active')">
+        <h2>CC7. Maps</h2>
+        <span class="toggle-icon"></span>
+    </div>
+    <div class="collapsible-content" id="fn7-ref">
+        <p> <b>Task:</b> Produce two maps covering Scotland and Wales. One map should be a coordinates map, the other should be a cloropleth.<sup><a href="#fn7">7</a></sup></p>
+
+        <div class="chart-container">
+            <figure id="cc7_chart1"></figure>
+        </div>
+        
+        <div class="chart-container">
+            <figure id="cc7_chart2"></figure>
+
+        </div>
+
+    </div>
+    </section>  
+
+    <!-- CC9: INTERACTIVE CHARTS -->
+    <section id="cc9" class="collapsible-section">
+    <div class="collapsible-header" onclick="this.parentElement.classList.toggle('active')">
+        <h2>CC9. Interactive Charts</h2>
+        <span class="toggle-icon"></span>
+    </div>
+    <div class="collapsible-content" id="fn8-ref">
+        <p> <b>Task:</b> Produce two charts that include interactivity  beyond simple tooltips (e.g., sliders, dropdowns, clickable legends).<sup><a href="#fn8">8</a></sup></p>
+        
+        <div class="chart-container">
+            <figure id="cc9_chart1"></figure>
+        </div>
+        
+        <div class="chart-container">
+            <figure id="cc9_chart2"></figure>
+        </div>
+
+    </div>
+    </section>  
+
+    <!-- CC10: ADVANCED ANALYSIS -->
+    <section id="cc10" class="collapsible-section">
+    <div class="collapsible-header" onclick="this.parentElement.classList.toggle('active')">
+        <h2>CC10. Advanced Analysis & Machine Learning</h2>
+        <span class="toggle-icon"></span>
+    </div>
+    <div class="collapsible-content">
+        <h3>Advanced Analytics</h3>
+        <p> <b>Task:</b> Produce a chart that uses more advanced analytics such as bubble, histogram of distributions, de-trended, shock analysis, Diff-in-Diff, or heat maps.</p>
+        <div class="chart-container">
+            <figure id="cc10_chart1"></figure>
+            <p class="chart-description">This histogram displays the population distribution in Germany over time. For each year and age group, it counts the number of people (by gender). The population data was downloaded from <a href="https://service.destatis.de/bevoelkerungspyramide/#!">this data visualisation page</a> on the Destatis platform. Initial manual assessment and preparation of the dataset was necessary for preprocessing, as numbers appeared in inconsistent formats throughout (300.0, 300, and 300,0 all representing 300,000).The <a href="https://github.com/SofieWied/SofieWied.github.io/blob/5d5f43777955ad8ff97146f4400ecb8501dc4a6a/cc10_chart1_data_preprocessing.ipynb">preprocessing code</a> used to transform the data into long format can be found in my GitHub repository.</p>
+        </div>
+
+    </div>
+    </section>  
+
+    <!-- FOOTNOTES -->    
+    <hr class="footnote-separator">
+    <section id="footnotes">
+        <h3>Footnotes</h3>
+        <p class="footnote-text" id="fn1" > [1] In both CC1 charts, I modified the JSON specifications to adjust background color and dimensions. The complete source of Chart 1 is: Economics Observatory. "The debt mountain: The G7's big problem". <a href="https://daviesrichard.substack.com/p/the-debt-mountain">Substack</a>, Jul 18, 2025. The complete source of Chart 2 is: Jo Wood (GitHub: <a href="https://github.com/jwoLondon">jwoLondon</a>), "London Tube Map", Vega-Lite <a href="https://vega.github.io/vega-lite/examples/geo_layer_line_london.html">Examples</a>. <a href="#fn1-ref">↩</a> </p>
+        <p class="footnote-text" id="fn2" > [2] I originally discovered this chart in the <a href="https://www.reddit.com/r/ChartCrimes/comments/18rovoz/44_45/">r/ChartCrimes</a> subreddit channel. <a href="#fn2-ref">↩</a>
+        <p class="footnote-text" id="fn3" > [3] Please note that downloaded versions of the replicated chart will not include the background image, as I was unable to integrate both elements within the JSON specification. Instead, I have defined the background as a container element in the CSS governing the page design, with the chart overlaid accordingly.<a href="#fn3-ref">↩</a>
+        <p class="footnote-text" id="fn4" > [4] I obtained the latitude and longitude coordinates by right-clicking on the location of interest on Google Maps.<a href="#fn4-ref">↩</a>
+        <p class="footnote-text" id="fn5" > [5] The Python script I used to scrape the website can be found in my <a href="https://github.com/SofieWied/SofieWied.github.io/blob/fbe28874166cd1f3a66ece29be8779a5310cc221/cc5_chart2_scraping%20code.ipynb">GitHub repository</a>.<a href="#fn5-ref">↩</a>
+        <p class="footnote-text" id="fn6" > [6] The Python script I used can be found in my <a href="https://github.com/SofieWied/SofieWied.github.io/blob/e8cf699e2caf76fd6bf5bf1a5e9b02272ce4efd3/cc6_loop_code.py">GitHub repository</a>. When replicating my chart, please note that the Historical Weather Data API from Open Meteo has minutely and hourly call limits that are reached after running the code once. Like in CC5 Chart 1, I retrieved the geographic coordinates of the locations of interest through a simple Google Maps search.<a href="#fn6-ref">↩</a>
+        <p class="footnote-text" id="fn7" > [7] The data for the cloropleth map can be retrieved from the <a href="https://www.ons.gov.uk/explore-local-statistics/indicators/5g-coverage">ONS Website</a>. The coordinate data used for the coordinates map originates from a project conducted by students at the University of Waterloo, who developed a route connecting all pubs in the United Kingdom as part of a Travelling Salesman Problem study. The data is available via <a href="https://www.math.uwaterloo.ca/tsp/pubs/data.html"> their website</a>. The code I used to filter out only Welsh coordinates can be found in my <a href="https://github.com/SofieWied/SofieWied.github.io/blob/7562dd5922b827371e8e515e3a19bfdfa4aa940b/cc7_chart2_coordinate_filter_code.py">GitHub repository</a>.<a href="#fn7-ref">↩</a>
+        <p class="footnote-text" id="fn8" > [8] The district-level population data was obtained from the <a href="https://www-genesis.destatis.de/datenbank/online/statistic/12411/table/12411-0018/table-toolbar/search/s/QWx0ZXJzZ3J1cHBlbg%3D%3D">Destatis</a> portal via the Genesis API. The code for retrieving and preprocessing the data can be found <a href="https://github.com/SofieWied/SofieWied.github.io/blob/main/cc9_germany_age_map_API.ipynb">here</a>. Note: Replicating this API call requires a free registration on the Destatis portal to obtain a unique personal authentication token. The data for the second chart was downloaded from the <a href="https://www.demografie-portal.de/DE/Fakten/altersrentner-beitragszahler.html?nn=228384">Demografie Portal</a>. The visualisation design was inspired by Vega-Lite examples for <a href="https://vega.github.io/vega-lite/examples/isotype_bar_chart_emoji.html">isotype dot plots</a>. I modified the provided code and added an interactive slider for year selection.<a href="#fn8-ref">↩</a>
+        </p>
+    </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="https://www.linkedin.com/in/sofie-wiedemeyer/">LinkedIn</a> | 
+        <a href="https://github.com/SofieWied/SofieWied.github.io">GitHub</a>
+        <p>&copy; 2026 Sofie Wiedemeyer</p>
+    </footer>
+
+    <!-- JavaScript for embedding all charts -->
+    
+    <script>
+        // CC1: Hosting
+        let cc1_spec1 = "cc1_chart1.json";
+        vegaEmbed('#cc1_chart1', cc1_spec1);
+
+        let cc1_spec2 = "cc1_chart2.json";
+        vegaEmbed('#cc1_chart2', cc1_spec2);
+
+        // CC2: Building
+        let cc2_spec1 = "cc2_chart1.json";
+        vegaEmbed('#cc2_chart1', cc2_spec1);
+        let cc2_spec2 = "cc2_chart2.json";
+        vegaEmbed('#cc2_chart2', cc2_spec2);
+
+        // CC3: Debate
+        let cc3_spec1 = "cc3_chart1.json";
+        let cc3_spec2 = "cc3_chart2.json";
+        vegaEmbed('#cc3_chart1', cc3_spec1);
+        vegaEmbed('#cc3_chart2', cc3_spec2);
+
+        // CC4: Replication
+        let cc4_chart2 = "cc4_chart2.json";
+        vegaEmbed('#cc4_chart2', cc4_chart2);
+        let cc4_chart3 = "cc4_chart3.json";
+        vegaEmbed('#cc4_chart3', cc4_chart3);
+
+        // CC5: Accessing Data
+        let cc5_chart1 = "cc5_chart1.json";
+        let cc5_chart2 = "cc5_chart2.json";
+        vegaEmbed('#cc5_chart1', cc5_chart1);
+        vegaEmbed('#cc5_chart2', cc5_chart2);
+
+        // CC6: Loops - Dashboard (can use a loop here for second point)
+        const cityNames = ['Cape Town', 'Los Angeles', 'London', 'Tokyo', 'Sydney', 'Rio de Janeiro'];
+        const dataFiles = ['weather_cape_town.json', 'weather_los_angeles.json', 'weather_london.json', 
+                           'weather_tokyo.json', 'weather_sydney.json', 'weather_rio_de_janeiro.json'];
+
+        // Base specification
+        const baseSpecURL = "cc6_baseSpec.json";
+
+        // Loop through cities and embed charts
+        for (let i = 0; i < cityNames.length; i++) {
+            
+            // Load base specification
+            fetch(baseSpecURL)
+                .then(response => response.json())
+                .then(spec => {
+                    // Modify spec for this city
+                    spec.title.text = cityNames[i] + " Temperature Range (1950–2025)";
+                    spec.data.url = dataFiles[i];
+                    
+                    // Embed chart
+                    vegaEmbed('#cc6_chart' + (i + 1), spec);
+                })
+                .catch(error => console.log('Error loading spec:', error));
+        }
+
+        // CC7: Maps
+        let cc7_chart1 = "cc7_chart1.json";
+        vegaEmbed('#cc7_chart1', cc7_chart1);
+
+        let cc7_chart2 = "cc7_chart2.json";
+        vegaEmbed('#cc7_chart2', cc7_chart2);
+
+        // CC9: Interactive
+        let cc9_spec1 = "cc9_chart1.json";
+        let cc9_spec2 = "cc9_chart2.json";
+        vegaEmbed('#cc9_chart1', cc9_spec1);
+        vegaEmbed('#cc9_chart2', cc9_spec2);
+
+        // CC10: Advanced Analysis
+        let cc10_chart1 = "cc10_chart1.json";
+        let cc10_chart2 = "cc10_chart2.json";
+        vegaEmbed('#cc10_chart1', cc10_chart1);
+        vegaEmbed('#cc10_chart2', cc10_chart2);
+    </script>
+</body>
+</html>

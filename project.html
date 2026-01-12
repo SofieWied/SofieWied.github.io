@@ -1,0 +1,264 @@
+<!-- PROJECT PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+    <!-- Vega-Lite for charts -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-left">
+            <h1>Charts as Data</h1>
+        </div>
+        <nav class="header-right">
+            <a href="index.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="project.html" class="active">Project</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- Title Section -->
+        <section id="title">
+            <h1 class="centered-title">The Silver Squeeze: Can Germany Care for its Retiring Boomers?</h1>
+        </section>
+
+        <!-- MOTIVATION -->
+        <section id="motivation">
+            <p>Germany faces an unprecedented demographic challenge as its baby boomers - born between 1946 and 1964 during the post-war economic recovery - reach retirement age. By 2036, nearly 20 million will have left the workforce, testing Germany's capacity to provide care and finance pensions for an ageing population of this scale.</p>
+            <p>The political stakes are immense: in autumn 2025, disputes over pension financing nearly collapsed the governing coalition. The compromise? Defer critical decisions to commissions or postpone them beyond 2030. Yet postponement merely delays the reckoning: <b>Can Germany's fiscal resources and care capacity, as of today, sustain its retiring boomer generation?</b></p>
+        
+        </section>
+
+        <!-- CHART 1: LIFE EXPECTANCY -->
+        <section id="life-expectancy" class="project-section">
+            <h2>Living longer, retiring later?</h2>
+            <p>The past six decades have fundamentally transformed Germany's pension landscape. Average pension receipt duration - the period from retirement to death - has more than doubled, extending from approximately 10 years in the 1960s to over 20 years by 2020.</p>
+            <p>This transformation reflects remarkable advances in healthcare and longevity. Yet paradoxically, the average retirement age has remained constant at around 64 years throughout this entire period, placing mounting pressure on Germany's pension system.</p>
+            
+            <div class="chart-container">
+                <figure id="project_chart1"></figure>
+            </div>
+            
+            <div class="technical-details">
+                <button class="tech-button" onclick="toggleTechnical(this)">Technical Details</button>
+                <div class="tech-content">
+                    <p>The <a href="https://www-genesis.destatis.de/datenbank/online/statistic/12613/table/12613-0007">average life expectancy</a> (average death age) data was obtained from the GENESIS portal of Destatis. Despite an API being available, manual download was necessary due to inconsistent data structure (male and female data could not be filtered but were instead stacked vertically) requiring manual transformation.</p>
+                    <p>The average retirement age data are from the <a href="https://www.demografie-portal.de/DE/Fakten/renteneintrittsalter.html">Demografie Portal</a>, where the data could be directly downloaded.</p>
+                    <p>The end of pension period was calculated using data on pension receipt duration. To my knowledge, there is no comprehensive, publicly available data source for this metric in Germany. I obtained the data from an analysis conducted by the <a href="https://www.bpb.de/kurz-knapp/zahlen-und-fakten/soziale-situation-in-deutschland/61863/durchschnittliche-rentenbezugsdauer-grv/">BPB</a> (Federal Agency for Civic Education), which is however incomplete, so missing values were imputed.</p>
+                    <p>A general issue with the data used throughout this project was the German convention of separating decimals with commas, which I addressed by manually changing values in Excel or programmatically in Python using string replacement functions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHART 2: DEPENDENCY RATIO -->
+        <section id="dependency-ratio" class="project-section">
+            <h2>The Shrinking Support Base</h2>
+            <p>Dependency ratios offer a stark metric for assessing demographic sustainability: they measure how many non-working individuals - both youth (0-19) and elderly (65+) - depend on every 100 working-age people. The total dependency ratio combines both groups.</p>
+            <p>For Germany, the total dependency ratio is projected to continue to increase. In practical terms, an ever-shrinking proportion of workers must finance an expanding dependent population of old people. The interactive scenarios, however, reveal a potential intervention: raising retirement age could substantially mitigate this burden in the short term.</p>
+
+            <div class="chart-container">
+                <figure id="project_chart2"></figure>
+            </div>
+            
+            <div class="technical-details">
+                <button class="tech-button" onclick="toggleTechnical(this)">Technical Details</button>
+                <div class="tech-content">
+                    <p>The historical population data (population in each age group annually from 1950 to 2024) was downloaded from <a href="https://service.destatis.de/bevoelkerungspyramide/#!">this data visualisation page</a> on the Destatis platform. Initial manual assessment and preparation of the dataset was necessary for preprocessing, as numbers appeared in inconsistent formats throughout (300.0, 300, and 300,0 all representing 300,000).</p>
+                    <p>The <a href="https://github.com/SofieWied/SofieWied.github.io/blob/5d5f43777955ad8ff97146f4400ecb8501dc4a6a/cc10_chart1_data_preprocessing.ipynb">preprocessing code</a> used to transform the data into long format can be found here (note: this is the same code also used for CC10. Chart 1). The code for calculating the three dependency ratios is <a href="https://github.com/SofieWied/SofieWied.github.io/blob/5d5f43777955ad8ff97146f4400ecb8501dc4a6a/project_chart2b_scenario_calculation.ipynb">available here</a>.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CHART 3: EUROPEAN COMPARISON -->
+        <section id="european-comparison" class="project-section">
+            <h2>European Comparison: Pensions as A Stable Burden? </h2>
+            <p>Pension expenditure as a percentage of GDP captures all retirement-related government spending, offering a standardised metric for international comparison. Germany's pension spending has remained remarkably stable between 11-12% of GDP from 2012 to 2023, placing it firmly within the range of comparable EU economies such as France, Austria, and Italy.</p>
+            <p> This stability seems to contradict warnings of a mounting pension crisis. Yet GDP percentages obscure a critical factor: absolute fiscal commitments.</p>
+
+            <div class="chart-container">
+                <figure id="project_chart3"></figure>
+            </div>
+            
+            <div class="technical-details">
+                <button class="tech-button" onclick="toggleTechnical(this)">Technical Details</button>
+                <div class="tech-content">
+                    <p>The data is obtained from Eurostat via their <a href="https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/api-detailed-guidelines/api-statistics">Statistics API</a>. To modify the API call, one needs to specify the unique table identifier (tps00103), the geographic level of interest (geoLevel=country for individual countries, or aggregate for EU/Europe-wide data), and the years of interest (e.g. time=2012).</p>
+                    <p>Before making Charts, the API output requires restructuring. The raw data is converted from Eurostat's nested JSON format into a flat table structure. The preprocessing code can be found in my <a href="https://github.com/SofieWied/SofieWied.github.io/blob/f31bd84ebd57a6d61516d83d92cbfba72f1137eb/project_chart3_eurostat_pension_gdp_API.ipynb">GitHub repository</a>.</p>
+                    <p>The EU base map is a GeoJSON file found on GitHub, provided by user <a href="https://github.com/leakyMirror/map-of-europe">leakyMirror</a>. The geographic features are matched to the data using ISO2 country codes via a lookup transform.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CHART 4: FEDERAL BUDGET -->
+        <section id="federal-budget" class="project-section">
+            <h2>The Fiscal Reality - A Growing Burden!</h2>
+            <p>Due to the larger share of retirees and inflation increasing the cost of living over time, the German pay-as-you-go pension system requires substantial federal subsidies. The budget composition chart shows pension subsidies at roughly one-quarter of federal spending today. However, the government taking debt since 2020 - first for COVID-19 response, then defence spending - inflated the total budget, obscuring pension subsidies' true fiscal weight.</p>
+            <p> This becomes clearer when comparing the absolute value of pension subsidies to federal tax revenue. Between 2014 and 2024, pension subsidies grew 44% whilst tax revenue increased only 39% - one-third of federal tax income now funds pensions directly. With competing demands from defence, climate, and debt servicing, this intensifies intergenerational fiscal tensions.</p>
+
+            <!-- Dropdown für Chart-Auswahl -->
+            <div style="margin: 20px 0;">
+                <label for="chart4-select" style="font-weight: 500; margin-right: 10px;">View:</label>
+                <select id="chart4-select" style="padding: 8px 12px; font-family: 'Montserrat', sans-serif; border: 1px solid #333; border-radius: 4px; background-color: #fff; cursor: pointer;">
+                    <option value="budget">Budget Composition</option>
+                    <option value="tax">Tax Revenue vs Pension Spending</option>
+                </select>
+            </div>
+            
+            <div class="chart-container">
+                <figure id="project_chart4"></figure>
+            </div>
+            
+            <div class="technical-details">
+                <button class="tech-button" onclick="toggleTechnical(this)">Technical Details</button>
+                <div class="tech-content">
+                    <p><a href="https://www.bundeshaushalt.de/DE/Bundeshaushalt-digital/bundeshaushalt-digital.html">Bundeshaushalt Digital</a> is an interactive tool to display German federal budget allocations across different spending categories. However, it has two major limitations for longitudinal analysis. First, budget IDs and the composition of expense categories vary over time, making it difficult to track identical spending positions consistently across years without detailed manual analysis. Second, data prior to 2012 is only available as multiple PDFs, which due to their verbosity and scattered structure are not suitable for automated scraping.</p>
+                    <p>Fortunately, I found an <a href="https://bund.dev/apis">official</a> <a href="https://github.com/bundesAPI/bundeshaushalt-api">API</a> for accessing the data on Bundeshaushalt Digital, which only required adjustment for the years and budget IDs of interest. For federal tax revenue data, I used the Genesis API from the <a href="https://www-genesis.destatis.de/datenbank/online/statistic/71211/table/71211-0002">Destatis</a> platform. Note: If you try to replicate this API call, you will need to register for free to get a unique personal token. </p>
+                    <p>The API calls for <a href="https://github.com/SofieWied/SofieWied.github.io/blob/5d5f43777955ad8ff97146f4400ecb8501dc4a6a/project_chart4_ministries_API_code.ipynb">ministry-level spending</a>, <a href="https://github.com/SofieWied/SofieWied.github.io/blob/5d5f43777955ad8ff97146f4400ecb8501dc4a6a/project_chart4_pension_insurance_API_code.ipynb">subcategories within ministries</a>, and <a href="https://github.com/SofieWied/SofieWied.github.io/blob/5d5f43777955ad8ff97146f4400ecb8501dc4a6a/project_chart4_federal_tax_revenue_API.ipynb">tax revenue data</a> are documented via the provided links. The <a href="https://github.com/SofieWied/SofieWied.github.io/blob/5d5f43777955ad8ff97146f4400ecb8501dc4a6a/project_chart4_budget_preprocessing.ipynb">preprocessing code</a> and calculations for both chart views can be found in my GitHub repository.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- CHART 5: Regional Care Capacities -->
+        <section id="regional-capacities" class="project-section">
+            <h2>Regional Disparities in Care Infrastructure</h2>
+            <p>Health and care infrastructure varies starkly across Germany, following a pronounced rural-urban divide. Whilst urban areas boast numerous doctors in close proximity, they often lack elderly care facilities - and vice versa in rural regions. Overall, capacities prove insufficient on both fronts.</p>
+            
+            <div class="chart-container">
+                <figure id="project_chart5"></figure>
+            </div>
+            
+            <div class="technical-details">
+                <button class="tech-button" onclick="toggleTechnical(this)">Technical Details</button>
+                <div class="tech-content">
+                    <p>This interactive chart integrates data from multiple official sources. Population data is obtained via the <a href="https://www-genesis.destatis.de/datenbank/online/statistic/12411/table/12411-0018/table-toolbar/search/s/QWx0ZXJzZ3J1cHBlbg%3D%3D">Genesis API</a> from Destatis, Germany's official statistics portal. A detailed explanation of the API implementation and data processing procedures used in both CC9 Chart 1 and this visualisation is available in my <a href="https://github.com/SofieWied/SofieWied.github.io/blob/03f465b26f332fc9358f7d784fbab659bbdb8476/cc9_germany_age_map_API.ipynb">GitHub repository</a>. Note: Replicating the API call requires a free Genesis account to obtain a unique personal authentication token.</p>
+                    <p>The data on stationary care beds for people aged 65+ and stationary care personnel was retrieved from the German <a href="https://www.regionalstatistik.de/genesis//online?operation=table&code=22411-01-02-4&bypass=true&levelindex=0&levelid=1768151607372#abreadcrumb">Regionalstatistik</a>. While this data is also available through the Genesis API, it is only available at the state level rather than at the district level required for this map. The code for transforming both measures into per 1,000 inhabitants can be found in my <a href="https://github.com/SofieWied/SofieWied.github.io/blob/2f42ffd0df7f2bedd514d3424dd5a7fe049f4637/project_chart5_beds_personnel_per1000_calculation.ipynb">GitHub repository</a>.</p>
+                    <p>General Practitioner (GP, German: "Hausarzt") availability and average driving distance to hospitals with emergency care by car data comes from the <a href="https://karten.landatlas.de/">Thünen Atlas</a>, a research institute associated with the German government. While API access is not provided, their data is readily accessible through an interactive visualisation tool for direct download.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHART 6: PROGNOSIS & POSSIBLE SOLUTION -->
+        <section id="regional-care" class="project-section">
+            <h2>Care Crisis Quantified: Demand and Supply Scenarios and a possible policy solution?</h2>
+            <p>Official projections paint a stark picture: Germany's care-dependent population will surge by 50%, from just under 2 million in 2024 to nearly 3 million by 2050. Care staff demand will rise correspondingly yet supply projections - even under optimistic scenarios - reveal a widening gap.</p>
+            <p>One policy proposal under debate is a mandatory social service year (Pflichtjahr), requiring all 18-year-olds to serve in sectors like healthcare, elderly care, or the military. The interactive tool allows readers to explore different scenarios: if only 10% of this cohort worked in health and elderly care, the supply gap could narrow substantially.</p>
+
+            <div class="chart-container">
+                <figure id="project_chart6"></figure>
+            </div>
+            
+            <div class="technical-details">
+                <button class="tech-button" onclick="toggleTechnical(this)">Technical Details</button>
+                <div class="tech-content">
+                    <p>The projection data for the care-dependent population and corresponding care staff demand, as well as the two scenarios for staff supply, are based on calculations from the Federal Statistical Office. All data can be downloaded directly from <a href="https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsvorausberechnung/pflegekraeftevorausberechnung.html">this information page</a>. However, the underlying assumptions and methodologies for these projections are not publicly provided. Additionally, projected values are sometimes only given at five-year intervals, requiring <a href="https://github.com/SofieWied/SofieWied.github.io/blob/main/project_chart6_personnel_interpolation.ipynb">interpolation</a>for intermediate years. </p>
+                    <p>The population projections for 18-year-olds —as used in CC10 Chart 1— were obtained from Destatis, <a href="https://github.com/SofieWied/SofieWied.github.io/blob/main/cc10_chart1_data_preprocessing.ipynb">transformed into long format</a> , and <a href="https://github.com/SofieWied/SofieWied.github.io/blob/main/project_chart6_preprocessing.ipynb">filtered</a> to contain only the 18-year-old cohort.</p>
+                    <p>For simplification, this chart assumes that all 18-year-olds would complete their mandatory service year within the same calendar year. In practice, this would differ, as students typically finish secondary school in summer and would begin their mandatory service from autumn to autumn of the following year. Readers can use the interactive menu to select what proportion of 18-year-olds might work in the health and elderly care sector (as opposed to serving in the military, for instance). The underlying scenario calculations can be found <a href="https://github.com/SofieWied/SofieWied.github.io/blob/main/project_chart6_pflichtjahr_scenarios.ipynb">here</a>.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONCLUSION -->
+        <section id="conclusion" class="project-section">
+            <h2>Conclusion: Can Germany Care for Its Retiring Boomers?</h2>
+            <p>No, Germany is not sufficiently prepared for the oncoming silver squeeze. Raising retirement age would substantially improve dependency ratios yet remains politically contentious given the demographic structure and median voter profile skewing older. The proposed mandatory social service year could address care workforce shortages, but raises critical questions: Will untrained 18-year-olds genuinely assist overburdened care systems? And should this generation bear both mandatory service and the mounting fiscal burden of funding their elders' retirements?</p>
+            <p>These tensions underscore the urgent need for research on effective and implementable policies. Why does Germany's care sector struggle to attract workers despite growing demand? What role might migration play in closing workforce gaps? Finding solutions sooner rather than later is imperative - with the baby boomer retirement wave peaking within the next decade, the window for action is rapidly closing.</p>
+
+        </section>
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="https://www.linkedin.com/in/sofie-wiedemeyer/">LinkedIn</a> | 
+        <a href="https://github.com/SofieWied/SofieWied.github.io">GitHub</a>
+        <p>&copy; 2026 Sofie Wiedemeyer</p>
+    </footer>
+
+    <!-- JavaScript for embedding all charts -->
+    <script>
+        // Function to toggle technical details
+        function toggleTechnical(button) {
+            const content = button.nextElementSibling;
+            content.classList.toggle('active');
+            
+            // Update button text
+            if (content.classList.contains('active')) {
+                button.textContent = 'Hide Technical Details';
+            } else {
+                button.textContent = 'Technical Details';
+            }
+        }
+
+        // Project Chart 1: Germany Map
+        let project_spec1 = "project_chart1.json";
+        vegaEmbed('#project_chart1', project_spec1);
+
+        // Project Chart 2: Dependency Ratio
+        let project_spec2 = "project_chart2.json";
+        vegaEmbed('#project_chart2', project_spec2);
+
+        // Project Chart 3: European Comparison
+        let project_spec3 = "project_chart3.json";
+        vegaEmbed('#project_chart3', project_spec3);
+
+        // Project Chart 5: Regional Care Capacity
+        let project_spec5 = "project_chart5.json";
+        vegaEmbed('#project_chart5', project_spec5);
+
+        // Project Chart 6: Care Workforce Crisis
+        let project_spec6 = "project_chart6.json";
+        vegaEmbed('#project_chart6', project_spec6);
+
+        // Project Chart 7: Solutions 
+        let project_spec7 = "project_chart7.json";
+        vegaEmbed('#project_chart7', project_spec7);
+
+
+        // Project Chart 4: Federal Budget with Dropdown
+        function loadChart4(chartType) {
+            const chartSpec = chartType === 'budget' 
+                ? 'project_chart4_budget_composition.json'
+                : 'project_chart4_tax_vs_pension.json';
+            
+            vegaEmbed('#project_chart4', chartSpec)
+                .then(result => {
+                    console.log('Chart loaded:', chartType);
+                })
+                .catch(error => console.error('Error loading chart:', error));
+        }
+
+        // Wait for DOM to be ready, then set up Chart 4
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load initial chart
+            loadChart4('budget');
+            
+            // Add event listener to dropdown
+            const dropdown = document.getElementById('chart4-select');
+            if (dropdown) {
+                dropdown.addEventListener('change', function(e) {
+                    loadChart4(e.target.value);
+                });
+            }
+        });
+
+
+    </script>
+</body>
+</html>
