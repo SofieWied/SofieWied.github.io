@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Regional Healthcare Capacity: Current Resources vs. Future Demand",
+    "text": "Regional Healthcare Capacity: Status Quo",
     "anchor": "start",
     "subtitle": [
       "Source: Destatis API, Regionalstatistik, Thünen Institute | Note: Dark red or white areas indicate missing data"
@@ -20,22 +20,20 @@
   "params": [
     {
       "name": "metricSelect",
-      "value": "age_55_75_pct",
+      "value": "beds_per_1000",
       "bind": {
         "input": "select",
         "options": [
-          "age_55_75_pct",
-          "gp_med",
-          "hospital_drive",
           "beds_per_1000",
-          "personnel_per_1000"
+          "personnel_per_1000",
+          "gp_med",
+          "hospital_drive"
         ],
         "labels": [
-          "Population 55-75 (%, 2024)",
+          "Elderly care beds per 1000 (2023)",
+          "Care personnel per 1000 (2023)",
           "GPs per 1000 (2022)",
-          "Car drive to hospital (min, 2022)",
-          "+65 care beds per 1000 (2023)",
-          "Care personnel per 1000 (2023)"
+          "Car drive to hospital (min, 2022)"
         ],
         "name": "Metric: "
       }
@@ -100,11 +98,11 @@
       }
     },
     {
-      "calculate": "metricSelect == 'age_55_75_pct' ? datum.age_55_75_pct : metricSelect == 'beds_per_1000' ? datum.beds_per_1000 : metricSelect == 'personnel_per_1000' ? datum.personnel_per_1000 : metricSelect == 'hospital_drive' ? datum.hospital_drive : datum.gp_med",
+      "calculate": "metricSelect == 'beds_per_1000' ? datum.beds_per_1000 : metricSelect == 'personnel_per_1000' ? datum.personnel_per_1000 : metricSelect == 'hospital_drive' ? datum.hospital_drive : datum.gp_med",
       "as": "selected_value"
     },
     {
-      "calculate": "metricSelect == 'age_55_75_pct' ? 'Population aged 55-75 (%)' : metricSelect == 'beds_per_1000' ? 'Elderly care beds per 1000 (2013)' : metricSelect == 'personnel_per_1000' ? 'Care personnel per 1000 residents 65+ (2022)' : metricSelect == 'hospital_drive' ? 'Avg. drive time to hospital (min)' : 'GPs per 1000 (2022)'",
+      "calculate": "metricSelect == 'beds_per_1000' ? 'Elderly care beds per 1000 (2023)' : metricSelect == 'personnel_per_1000' ? 'Care personnel per 1000 residents 65+ (2023)' : metricSelect == 'hospital_drive' ? 'Avg. drive time to hospital (min)' : 'GPs per 1000 (2022)'",
       "as": "metric_label"
     }
   ],
@@ -119,7 +117,7 @@
       "type": "quantitative",
       "scale": {
         "scheme": {
-          "expr": "metricSelect == 'age_55_75_pct' ? ['#faf8f3', '#08306b'] : metricSelect == 'gp_med' ? ['#d73027', '#fee08b', '#1a9850'] : metricSelect == 'hospital_drive' ? ['#ffffcc', '#fd8d3c', '#bd0026'] : metricSelect == 'beds_per_1000' ? ['#bd0026', '#fd8d3c', '#ffffcc'] : ['#bd0026', '#fd8d3c', '#ffffcc']"
+          "expr": "metricSelect == 'gp_med' ? ['#d73027', '#fee08b', '#1a9850'] : metricSelect == 'hospital_drive' ? ['#ffffcc', '#fd8d3c', '#bd0026'] : metricSelect == 'beds_per_1000' ? ['#bd0026', '#fd8d3c', '#ffffcc'] : ['#bd0026', '#fd8d3c', '#ffffcc']"
         }
       },
       "title": "Value",
