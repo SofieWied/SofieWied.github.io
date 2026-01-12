@@ -1,0 +1,88 @@
+<!-- INDEX = about / starting page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+    <!-- Vega-Lite for charts -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Charts as Data</h1>
+        </div>
+        <nav class="header-right">
+            <a href="index.html" class="active">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="project.html">Project</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+        <main>
+        <!-- Title Section -->
+        <section id="title">
+            <h1 class="centered-title">Charts are a kind of data.</h1>
+            <blockquote class="centered-quote">
+                <p class="quote-text">
+                    "Most of us need to listen to the music to understand how beautiful it is. But often that's how we present statistics: 
+                    we just show the notes, we don't play the music."
+                </p>
+                <p class="quote-author">Hans Rosling ("Factfulness")</p>
+            </blockquote>
+        </section>
+
+        <!-- Why Visualization Section -->
+        <section id="why-visualization">
+            <h2>Why use data visualisations?</h2>
+            <p>Data visualisation transforms complexity into clarity. In an era of information overload, well-designed charts enable policymakers and citizens alike to grasp patterns, identify trends, and make evidence-based decisions. Effective visualisation doesn't merely display numbers - it tells stories, reveals relationships, and provokes critical questions that raw data alone cannot answer. Yet as Hans Rosling reminds us, poor visualisation can obscure rather than illuminate: the difference between insight and confusion often lies in thoughtful design choices.</p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About me</h2>
+            <p>
+                I am a Masters student in Data Science for Public Policy at the London School of Economics. My focus is on how data can be 
+                used to inform decision making, especially in policy settings. [PLACEHOLDER: Add more about your background, 
+                interests, or what drives your passion for data visualization.]
+            </p>
+            <p>
+                The charts on this page are my final submission for the PP434 Automated Data Visualisation for Policymaking course. 
+                If there is one thing I've learnt throughout this course, it is that creating "good" charts is as much an art as it 
+                is a science. Browse the links below to see my attempt at striking this balance.
+            </p>
+        </section>
+
+        <!-- Navigation to Other Pages -->
+        <section id="navigation">
+            <h3><a href="portfolio.html">Portfolio</a></h3>
+            <h3><a href="project.html">Project</a></h3>
+        </section>
+    </main>
+ 
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="https://www.linkedin.com/in/sofie-wiedemeyer/">LinkedIn</a> | 
+        <a href="https://github.com/SofieWied/SofieWied.github.io">GitHub</a>
+        <p>&copy; 2026 Sofie Wiedemeyer</p>
+    </footer>
+
+    <!-- JavaScript for charts -->
+    <script>
+        // Featured charts - replace with your actual chart specifications
+        let featured_spec1 = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json";
+        let featured_spec2 = "https://raw.githubusercontent.com/EconomicsObservatory/datavis/refs/heads/main/newsletters/2025-04-05-liberation-day/visualisation/fig5_survey-tariff-harm.json";
+        
+        vegaEmbed('#featured_chart1', featured_spec1);
+        vegaEmbed('#featured_chart2', featured_spec2);
+    </script>
+</body>
+</html>
